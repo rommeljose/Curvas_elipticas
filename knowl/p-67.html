@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-03T00:47:44-04:00    *-->
+<!--*    on 2019-11-07T18:11:20-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,42 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Párrafo</span></h6>
-<p>Pellentesque ac diam mi. Suspendisse vitae semper sapien, vel iaculis ipsum. Suspendisse interdum pretium eros in venenatis. In nec est in nunc accumsan condimentum. Sed vulputate ultricies ipsum, sit amet tincidunt nisi. Vivamus aliquet interdum lacus, vel porttitor erat sollicitudin id. Donec eu tortor aliquam, vehicula lorem vel, condimentum nulla. Cras pellentesque congue est eget iaculis. Morbi ut mauris tristique risus fermentum ultrices quis sed magna. Etiam faucibus nisi dui, a bibendum ante sagittis vitae. Suspendisse nunc turpis, posuere eu sodales et, condimentum eu diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce tempus eget turpis vitae pulvinar. Aenean magna augue, sodales non tempor ut, lobortis auctor nunc. Nunc gravida lectus vel sapien hendrerit feugiat. Duis et nibh pellentesque, auctor nunc id, suscipit purus.</p>
-<span class="incontext"><a href="texto-prueba.html#p-67">in-context</a></span>
+<p>Axiomas que deben cumplir las Leyes de Composición Interna para los campos:</p>
+<ol class="decimal">
+<li>Asociatividad: <p>Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{align}
+a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c\tag{2.1.1}\\
+a \odot (b \odot c) \amp = (a \odot b) \odot c\tag{2.1.2}
+\end{align}
+</div>
+</li>
+<li>Conmutatividad: <p>Para toda \(a, b\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{gather}
+a \oplus b = b \oplus a\tag{2.1.3}\\
+a \odot b = b \odot a\tag{2.1.4}
+\end{gather}
+</div>
+</li>
+<li>Existencia de un elemento neutro: <ol class="lower-alpha">
+<li>Existe un elemento \(0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus 0 = a\text{.}\)</li>
+<li>Existe un elemento \(1\) en un conjunto cualquiera K, diferente de \(0\text{,}\) tal que para todo \(a\) elemento de K se verifique la identidad: \(a \odot 1 = a\text{.}\)</li>
+</ol>
+</li>
+<li>Existencia de elemento opuesto e inverso: <ol class="lower-alpha">
+<li>Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="./knowl/fn-24-hidden.html" title="Nota a pie de página 2.1.12"><sup> 12 </sup></a>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</li>
+<li>Para cada \(a \neq  0\) pertenecientes a un conjunto cualquiera K, existe un elemento \(a - 1\) de K (que llamaremos \(b\))<a data-knowl="./knowl/fn-25-hidden.html" title="Nota a pie de página 2.1.13"><sup> 13 </sup></a>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \odot b = 1\text{.}\)</li>
+</ol>
+</li>
+<li>Distributividad de la multiplicación respecto de la adición: <p>Para toda \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se debe cumplir la identidad:</p>
+<div class="displaymath">
+\begin{gather}
+a \odot (b \oplus c) = (a \odot b) \oplus (a \odot c)\tag{2.1.5}
+\end{gather}
+</div>
+</li>
+</ol>
+<span class="incontext"><a href="la-nueva-algebra.html#p-67">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-11-07T18:11:16-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RJCG Álgebra Moderna</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://ciencia.digital.info.ve" target="_blank"><img src="./images/que_puede_hacer_un_fisico_trasparente.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="libro-estructura.html"><span class="title">Curvas Elípticas:</span> <span class="subtitle">Base criptográfica del Petro</span></a></h1>
+<p class="byline">Rommel J. Contreras G.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="cap_2.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="cap_2.html" title="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="references-2.html" title="Siguiente">Siguiente</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="cap_2.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="cap_2.html" title="Arriba">Arriba</a><a class="next-button button toolbar-item" href="references-2.html" title="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Páginas preliminares</span></a><ul>
+<li><a href="front-colophon.html" data-scroll="front-colophon">Colofón</a></li>
+<li><a href="author-bio-RJCG.html" data-scroll="author-bio-RJCG">Biografía del autor</a></li>
+<li><a href="dedicatoria.html" data-scroll="dedicatoria">Dedicatoria</a></li>
+<li><a href="reconocimiento.html" data-scroll="reconocimiento">Agradecimentos</a></li>
+<li><a href="prefacio.html" data-scroll="prefacio">Prefacio</a></li>
+<li><a href="contribuidores.html" data-scroll="contribuidores">Colaboradores de la 1\(^\mathrm{ra}\) Edición.</a></li>
+</ul>
+</li>
+<li class="link part"><a href="parte-primera.html" data-scroll="parte-primera"><span class="codenumber">I</span> <span class="title">Parte</span></a></li>
+<li class="link">
+<a href="cap_1.html" data-scroll="cap_1"><span class="codenumber">1</span> <span class="title">Preliminares</span></a><ul>
+<li><a href="nota-sobre-pruebas.html" data-scroll="nota-sobre-pruebas">Dios habla matemáticas</a></li>
+<li><a href="lenguaje-matematico.html" data-scroll="lenguaje-matematico">El lenguaje de los matemáticos</a></li>
+<li><a href="references-1.html" data-scroll="references-1">Referencias y lecturas recomendadas</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="cap_2.html" data-scroll="cap_2"><span class="codenumber">2</span> <span class="title">La Nueva Álgebra</span></a><ul>
+<li><a href="la-nueva-algebra.html" data-scroll="la-nueva-algebra" class="active">Álgebra Moderna</a></li>
+<li><a href="references-2.html" data-scroll="references-2">Referencias y lecturas recomendadas</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Materiales Finales</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Pista y soluciones de algunos ejercicios palanteados</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">B</span> <span class="title">Cuaquier apéndice</span></a></li>
+<li class="link">
+<a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">C</span> <span class="title">Estructura para el Apéndice</span></a><ul>
+<li><a href="section-4.html" data-scroll="section-4">A Section in an Appendix</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Numbering in the Back Matter</a></li>
+</ul>
+</li>
+<li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">D</span> <span class="title">GNU Free Documentation License</span></a></li>
+<li class="link"><a href="notacion.html" data-scroll="notacion"><span class="codenumber">E</span> <span class="title">Notación</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Índice alfabético</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colofón</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="la-nueva-algebra"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">2.1</span> <span class="title">Álgebra Moderna</span>
+</h2>
+<a href="la-nueva-algebra.html" class="permalink">¶</a><blockquote class="blockquote" id="blockquote-2">
+<p id="p-51">“Se puede remplazar las palabras «punto», «recta» y «plano» por «mesa», «silla» y «jarra de cerveza» sin cambiar en nada la geometria.”</p>
+<cite class="attribution">―Hilbert</cite>
+</blockquote>
+<section class="subsection" id="algebra-abstracta"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.1.1</span> <span class="title">El álgebra abstracta</span>
+</h3>
+<a href="la-nueva-algebra.html#algebra-abstracta" class="permalink">¶</a><p id="p-52">Hasta el siglo XIX se mantuvo el acuerdo respecto al objeto de la matemática; que en términos generales y en palabras de Platón se refería sólo al tratamiento de números, magnitudes y figuras. Platón refiere a la matemática, como una forma de acceso a una «verdad en si», y considera que los objetos acerca de los que versa poseen una existencia propia en el mundo de las ideas. Una existencia que no admite la consideraciones no formales producto de la "intuición humana"; más allá de los axiomas que la sustentan. Aristóteles no deja de observar que una definición no implica la existencia de la cosa definida, y que es necesario, o bien un postulado, o bien una demostración. De esta manera, la «verdad matemática» durante más de 2000 años se mantuvo soportada unicamente por la deducciones lógicas referidas sobre números, magnitudes y figuras; a partir de premisas fijadas arbitrariamente por los axiomas. Luego del siglo XIX, se reestructura el objeto y los conceptos básico de las matemáticas. Los matemáticos empiezan a considerar objetos que no poseen ninguna interpretación sensible. Al punto de que Bode se atreve a decir en 1848, que la matemática trata : <em class="emphasis">«acerca de las operaciones consideradas en si mismas, independientemente de los distintos objetos a los que puedan aplicarse»</em><a data-knowl="./knowl/bourbaki_0.html" title="Entrada bibliográfica 1.3.2: Elementos De Historia De Las Matemáticas">[1.3.2]</a>.</p>
+<p id="p-53">Esta revolución matemática hace posible el nacimiento de una nueva álgebra, que difiere del álgebra elemental. Un álgebra más general, donde los símbolos y los conceptos que intervienen en sus expresiones, no necesariamente tiene que ser interpretadas como números; pueden también ser interpretadas como otros objetos sometidos a la investigación matemática.</p>
+<p id="p-54">Esta nueva Álgebra Abstracta, continúa utilizando argumentos lógicos; rigurosamente demostrables (como ha sido en la matemática desde la antigüedad). Al estudiar matemáticas abstractas, aún aplicamos un enfoque axiomático; es decir, tomamos una colección de objetos \(\varsigma\) y asumimos algunas reglas sobre su estructura. Estas reglas se llaman axiomas<a data-knowl="" class="id-ref" data-refid="hk-fn-13" id="fn-13"><sup> 1 </sup></a><span id="hk-fn-13" class="hidden-content tex2jax_ignore"><span class="footnote">Un axioma es solo una premisa que se asume, con independencia de que sea o no evidente, y que se usa para demostrar otras proposiciones.</span></span>. Usando los axiomas para \(\varsigma\text{,}\) podemos deducir otra información sobre \(\varsigma\) mediante el uso de argumentos lógicos. Es necesario que nuestros axiomas sean consistentes; por lo tanto, no deben contradecirse entre sí. Es conveniente que no haya un exceso de base axiomática. Por el contrario, si es demasiado restrictivo, habrá pocos ejemplos para apoyar la estructura matemática que se pretende.</p>
+<p id="p-55">Siempre que podamos demostrar que una declaración es verdadera, entonces esa declaración será una proposición<a data-knowl="" class="id-ref" data-refid="hk-fn-14" id="fn-14"><sup> 2 </sup></a><span id="hk-fn-14" class="hidden-content tex2jax_ignore"><span class="footnote">En matemáticas una proposición es una expresión algebraica que puede acarrear dos valores: ser verdadera o ser falsa; aunque nunca ambas a la vez.</span></span>. Una proposición de gran importancia se llama teorema<a data-knowl="" class="id-ref" data-refid="hk-fn-15" id="fn-15"><sup> 3 </sup></a><span id="hk-fn-15" class="hidden-content tex2jax_ignore"><span class="footnote">En matemáticas, es toda proposición que, partiendo de un supuesto, afirma una racionabilidad no evidente por sí misma. Un teorema es una proposición cuya verdad se demuestra.</span></span>. En ciertas ocasiones, es conveniente separar la prueba de un teorema o de una proposición en módulos; es decir, probamos varias proposiciones básicas (llamadas lemas), y utilizamos los resultados de estas proposiciones para probar resultados no tan básicos o de orden superior. Si se ha podido probar una proposición o un teorema, es posible derivar otras proposiciones relacionadas llamadas corolarios<a data-knowl="" class="id-ref" data-refid="hk-fn-16" id="fn-16"><sup> 4 </sup></a><span id="hk-fn-16" class="hidden-content tex2jax_ignore"><span class="footnote">Un corolario es una consecuencia obvia que no necesita demostración. Basado en la consistencia de un teorema ya demostrado, sin necesidad de invertir esfuerzo adicional en su demostración.</span></span>.</p>
+<p id="p-56">En los dos párrafos anteriores no se ha utilizado la palabra número, sólo se han definido conceptos que bien pudieran aplicarse al álgebra en general: elemental o abstracta; o a las otras tantas álgebras; no euclidianas, etc.</p>
+<p id="p-57">Gracias a la abstracción permitida en la moderna matemática, es posible trabajar algebraicamente con objetos que no son números. En general: <em class="emphasis">El álgebra abstracta analiza operaciones con objetos arbitrarios, para los que se han definidos operaciones que satisfacen los principales axiomas algebraicos</em><a data-knowl="./knowl/alexandroff_0.html" title="Entrada bibliográfica 1.3.13: Introducción a la teoría de los grupos">[1.3.13]</a>; la «naturaleza» de los objetos matemáticos es secundaria; y es "poco importante". La esencia de las matemáticas aparece como el estudio de las relaciones entre objetos que no son específicamente conocidos y descritos mas que por algunas de sus propiedades, precisamente aquellas que se toman como axiomas de partida de su teoría.</p>
+<article class="remark-like" id="remark-1"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">2.1.1</span>. <span class="title">El cubo de Rubik.</span>
+</h6>
+<p id="p-58">Un objeto matemático que no tiene carácter numérico; pero contiene un conjunto de estados susceptible de ser cardinalizados y estudiado por el álgebra abstracta, es el Cubo de Rubik. Cada elemento del conjunto de estados, está definido por cada permutación posibles de las teselas que componen las caras de cubo; y todas ellas definen el conjunto de estados posibles. La cardinalización de sus estados, sólo es útil para diferenciar los estados y contarlos; pero no forma parte ni se requiere para estudiar las propiedades matemáticas estructurales del cubo de Rubik.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:25%;justify-content:flex-end;"><img src="images/480px-Rubiks_cubesvg.png" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-59">El Cubo de Rubik es un rompecabezas mecánico tridimensional<a data-knowl="" class="id-ref" data-refid="hk-fn-17" id="fn-17"><sup> 5 </sup></a><span id="hk-fn-17" class="hidden-content tex2jax_ignore"><span class="footnote">Inventado por el escultor y profesor de arquitectura húngaro Ernő Rubik en 1974 (de Wiky)</span></span>. Posee seis caras de colores uniformes (tradicionalmente blanco, rojo, azul, naranja, verde y amarillo); segmentadas en nueve teselas. Un mecanismo permite girar independientemente cada cara externa o nivel intermedio del cubo; mezclando así las diversas teselas de colores en las caras externas del cubo.</p></div>
+</div></div>
+<p id="p-60">El número de permutaciones posibles en el cubo de Rubik de 3x3 tesela por caras, es de <em class="emphasis">cuarenta y tres trillones doscientos cincuenta y dos mil tres billones doscientos setenta y cuatro mil cuatrocientos ochenta y nueve millones ochocientos cincuenta y seis mil permutaciones</em>(43.252.003.274.489.856.000); cada permutación corresponde a un estado posible del cubo.</p></article><article class="remark-like" id="remark-2"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">2.1.2</span>. <span class="title">La Recta Real.</span>
+</h6>
+<p id="p-61">Entre las muchas abstracciones matemáticas estrictamente numéricas, se encuentra la llamada Recta Real: Una abstracción que ubica cualquier número sobre una recta que se extiende desde los números más negativos (supuestos a la izquierda) hasta los números más positivos (supuestos a la derecha): una línea donde se presumen coexisten en buen orden y equidistante todos los números llamados reales (\(\mathbb{R}\)); entre dos entidades inalcanzables conocidas como menos infinitos (\(-\infty\)) y mas infinito (\(+\infty\)). Estos números reales (y la recta con que se representan) incluyen a la gran mayorías de números conocidos (pero no a todos), entre ellos, los llamados: naturales (\(\mathbb{N}\))<a data-knowl="" class="id-ref" data-refid="hk-fn-18" id="fn-18"><sup> 6 </sup></a><span id="hk-fn-18" class="hidden-content tex2jax_ignore"><span class="footnote">Un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos; también se usan en operaciones elementales de cálculo. (Wiki)</span></span>, enteros (\(\mathbb{Z}\))<a data-knowl="" class="id-ref" data-refid="hk-fn-19" id="fn-19"><sup> 7 </sup></a><span id="hk-fn-19" class="hidden-content tex2jax_ignore"><span class="footnote">Número entero: el conjunto de números que puede ser números naturales, sus opuestos (los negativos) y el cero.</span></span>, racionales (\(\mathbb{Q}\))<a data-knowl="" class="id-ref" data-refid="hk-fn-20" id="fn-20"><sup> 8 </sup></a><span id="hk-fn-20" class="hidden-content tex2jax_ignore"><span class="footnote">Los números racionales son todos los números que pueden representarse como el cociente de dos números enteros; es decir, una fracción \(a/b\text{;}\) con numerador entero \(a\) y denominador entero \(b\) distinto de cero. (Wiky)</span></span> e irracionales<a data-knowl="" class="id-ref" data-refid="hk-fn-21" id="fn-21"><sup> 9 </sup></a><span id="hk-fn-21" class="hidden-content tex2jax_ignore"><span class="footnote">Número irracional: son aquellos números reales que no son racional, y su expresión decimal no es ni exacta ni periódica; no existe una notación universal para indicarlos. Las razones son que el conjunto de los números irracionales no constituye alguna estructura algebraica. (Wiky)</span></span>; un cuerpo de esa naturaleza por definición posee incontables («infinitos») elementos de carácter numérico.</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R} 
+\end{equation*}
+</div>
+<p id="p-62">cada símbolo con que se denotan los subconjuntos (\(\subseteq\)) numéricos indicados, están ligado a un largo proceso histórico de propuesta de "nuevos números" que fueron "apareciendo" como resultado de operaciones matemáticas, con una resistencia reflexiva de la comunidad de matemática; aunque su novedad no estaba en disputa; <em class="emphasis">sólo que no eran números</em>, por lo tanto, no existían.</p></article></section><section class="subsection" id="estructuras-matematicas"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.1.2</span> <span class="title">Las Estructuras Matemáticas</span>
+</h3>
+<a href="la-nueva-algebra.html#estructuras-matematicas" class="permalink">¶</a><p id="p-63">Los matemáticos han clasificado la diversidad de estructuras matemáticas estudiadas desde la antigüedad (numéricas y no–numéricas), mediante un sistema descriptivo axiomático que les clasifica según la cantidad de Leyes de Composición Interna<a data-knowl="" class="id-ref" data-refid="hk-fn-22" id="fn-22"><sup> 10 </sup></a><span id="hk-fn-22" class="hidden-content tex2jax_ignore"><span class="footnote">En álgebra abstracta, la ley de composición es un tipo de operación binaria que da lugar a distintas estructuras algebraicas.(de Wiky)</span></span> que verifican los elementos de cada conjunto:</p>
+<ul class="disc">
+<li id="li-6">Con una ley de composición interna: Magma, Semigrupo, Monoide, Grupo, Bucle, Cuasigrupo.</li>
+<li id="li-7">Con dos leyes de composición interna: Semianillo, Anillo, Pseudoanillo, Dominio de integridad, Cuerpo.</li>
+<li id="li-8">Con leyes de composición interna y externa: Módulo, Espacio vectorial, Álgebra sobre un cuerpo, etc.</li>
+</ul>
+<aside class="aside-like" id="biographical-2"><h6 class="heading"><span class="title">Evaristo Galois.</span></h6> <figure class="figure-like" id="evaristo-galois"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="./images/galois.jpg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figura</span> <span class="codenumber">2.1.3.</span> Galois</figcaption></figure> <p id="p-64">Bourg-la-Reine, 25 de octubre de 1811- Paris,31 de mayo de 1832. Matemático francés, mientras aún era un adolescente, fue capaz de determinar la condición necesaria y suficiente para que una ecuación algebraica sea resuelta por radicación. Dio solución a un problema abierto mediante el nuevo concepto de grupo de permutaciones. Su trabajo ofreció las bases fundamentales para la teoría que lleva su nombre,​ una rama principal del álgebra abstracta. Fue el primero en utilizar el término «grupo» en un contexto matemático. La teoría constituye una de las bases matemáticas de la modulación CDMA utilizada en celdas de comunicaciones para teléfonos celularesy; y especialmente, en los Sistemas de navegación por satélite, como GPS, GLONASS, etc. <em class="emphasis">Galois fallece en un duelo de pistolas a la edad de 20 años</em> (Wiky).</p></aside><section class="subsubsection" id="cuerpo-campo"><h4 class="heading hide-type">
+<span class="type">Subsubsección</span> <span class="codenumber">2.1.2.1</span> <span class="title">Cuerpo</span>
+</h4>
+<a href="la-nueva-algebra.html#cuerpo-campo" class="permalink">¶</a><p id="p-65">Como se ha dicho, los cuerpos o campos satisfacen dos leyes de composición interna binarias: (\(\oplus\) y \(\odot\))<a data-knowl="" class="id-ref" data-refid="hk-fn-23" id="fn-23"><sup> 11 </sup></a><span id="hk-fn-23" class="hidden-content tex2jax_ignore"><span class="footnote">Siguiendo la convención establecida en Wikypedia, se utilizan los símbolos aritméticos encerrados en círculos para representar las leyes de composición internas.</span></span>;  en otras palabras, son cerrados a dos operaciones definidas binarias que podemos llamar "adición" (\(\oplus\)) y "multiplicación" (\(\odot\)). Lo que quiere decir, que si operamos dos números pertenecientes a un conjunto K, el resultado será otro número perteneciente al mismo conjunto K.</p>
+<article class="definition-like" id="definition-1"><h6 class="heading">
+<span class="type">Definición</span> <span class="codenumber">2.1.4</span>.</h6>
+<p id="p-66">Campo, aquellas estructuras matemáticas que cumplen con los siguientes axiomas de definición de sus leyes de composición interna:</p>
+<ol class="decimal">
+<li id="li-9">Asociatividad.</li>
+<li id="li-10">Conmutatividad.</li>
+<li id="li-11">Existencia de un elemento neutro.</li>
+<li id="li-12">Existencia de elemento opuestos y de inversos.</li>
+<li id="li-13">Distributividad de la multiplicación respecto de la adición.</li>
+</ol>
+<article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref" data-refid="hk-proof-1"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-1" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-67">Axiomas que deben cumplir las Leyes de Composición Interna para los campos:</p>
+<ol class="decimal">
+<li id="li-14">Asociatividad: <p id="p-68">Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{align}
+a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c\tag{2.1.1}\\
+a \odot (b \odot c) \amp = (a \odot b) \odot c\tag{2.1.2}
+\end{align}
+</div>
+</li>
+<li id="li-15">Conmutatividad: <p id="p-69">Para toda \(a, b\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{gather}
+a \oplus b = b \oplus a\tag{2.1.3}\\
+a \odot b = b \odot a\tag{2.1.4}
+\end{gather}
+</div>
+</li>
+<li id="li-16">Existencia de un elemento neutro: <ol class="lower-alpha">
+<li id="li-17">Existe un elemento \(0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus 0 = a\text{.}\)</li>
+<li id="li-18">Existe un elemento \(1\) en un conjunto cualquiera K, diferente de \(0\text{,}\) tal que para todo \(a\) elemento de K se verifique la identidad: \(a \odot 1 = a\text{.}\)</li>
+</ol>
+</li>
+<li id="li-19">Existencia de elemento opuesto e inverso: <ol class="lower-alpha">
+<li id="li-20">Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-24" id="fn-24"><sup> 12 </sup></a><span id="hk-fn-24" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "-a" o "b", como "opuesto de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</li>
+<li id="li-21">Para cada \(a \neq  0\) pertenecientes a un conjunto cualquiera K, existe un elemento \(a - 1\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-25" id="fn-25"><sup> 13 </sup></a><span id="hk-fn-25" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "a-1" o "b", como "inverso de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \odot b = 1\text{.}\)</li>
+</ol>
+</li>
+<li id="li-22">Distributividad de la multiplicación respecto de la adición: <p id="p-70">Para toda \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se debe cumplir la identidad:</p>
+<div class="displaymath">
+\begin{gather}
+a \odot (b \oplus c) = (a \odot b) \oplus (a \odot c)\tag{2.1.5}
+\end{gather}
+</div>
+</li>
+</ol></article></div></article><p id="p-71">Los números reales (el conjunto de todos ellos), representa un buen ejemplo de la estructura matemática llamada «cuerpo»<a data-knowl="" class="id-ref" data-refid="hk-fn-26" id="fn-26"><sup> 14 </sup></a><span id="hk-fn-26" class="hidden-content tex2jax_ignore"><span class="footnote">Un campo o cuerpo: es cualquier conjunto de elementos que satisface los axiomas de campo tanto para la "suma" como para la "multiplicación" y es una división algebraica conmutativa. Un nombre arcaico para un campo es dominio racional. El término francés para un campo es cuerpo y la palabra alemana es Körper, ambos significan "cuerpo".</span></span> ya que cumple con las dos premisas que se exigen para definirlas: aquellos conjuntos donde es posible utilizar dos operaciones básicas ("adición" y "multiplicación"); donde éstas «funcionan» correctamente. Hay que hacer un alto, para explicar el por que del entrecomillado: las mencionadas operaciones, no tienen que ser iguales a las operaciones aritméticas de suma y producto, aunque sus propiedades intrínsecas al respecto de las <em class="emphasis">leyes de composición interna</em> son idénticas si se aplican sobre un cuerpo o campo; pero tal "adición" o "multiplicación" no tienen necesariamente que ser operaciones de suma o producto, pudiera ser de otros tipos: rotación, transformaciones,  o cualquier otra par de operaciones que cumpla con los axiomas indicados más adelante. Otros ejemplo de cuerpo, son los conjuntos numéricos: \(\mathbb{Q}\text{,}\) \(\mathbb{R}\) y \(\mathbb{C}\text{;}\) con este último símbolo se designan los números llamados «imaginarios» o «complejos» (que serán útiles y necesarios en los siguientes capítulos).</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C} 
+\end{equation*}
+</div>
+<p id="p-72">También podemos definir cuerpos de elementos finitos<a data-knowl="" class="id-ref" data-refid="hk-fn-27" id="fn-27"><sup> 15 </sup></a><span id="hk-fn-27" class="hidden-content tex2jax_ignore"><span class="footnote">Todos los cuerpos finitos tienen un número de elementos \(q=p^{n}\) para algún número primo \(p\) y algún entero positivo \(n\text{.}\) Para cada cardinalidad q así definida hay una y solo una manera posible de definir un campo finito, por lo que todos los campos finitos del mismo orden son isomorfos entre sí (sus estructuras matemáticas son idénticas). Un campo con un número finito de miembros se conoce como campo finito o campo de Galois.</span></span> como subconjunto de \(\mathbb{R}\text{,}\) en forma de otros objetos matemáticos como los elementos que cumplen con las ecuaciones y sus expresiones geométricas; algunas de ellas conocidas desde la antigüedad.</p></section></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>
