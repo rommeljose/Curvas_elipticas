@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-11-09T00:36:23-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RJCG Las estructuras matemáticas</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://ciencia.digital.info.ve" target="_blank"><img src="./images/que_puede_hacer_un_fisico_trasparente.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="libro-estructura.html"><span class="title">Curvas Elípticas:</span> <span class="subtitle">Base criptográfica del Petro</span></a></h1>
+<p class="byline">Rommel J. Contreras G.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="la-nueva-algebra.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="cap_2.html" title="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="congruencia.html" title="Siguiente">Siguiente</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="la-nueva-algebra.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="cap_2.html" title="Arriba">Arriba</a><a class="next-button button toolbar-item" href="congruencia.html" title="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Páginas preliminares</span></a><ul>
+<li><a href="front-colophon.html" data-scroll="front-colophon">Colofón</a></li>
+<li><a href="author-bio-RJCG.html" data-scroll="author-bio-RJCG">Biografía del autor</a></li>
+<li><a href="dedicatoria.html" data-scroll="dedicatoria">Dedicatoria</a></li>
+<li><a href="reconocimiento.html" data-scroll="reconocimiento">Agradecimentos</a></li>
+<li><a href="prefacio.html" data-scroll="prefacio">Prefacio</a></li>
+<li><a href="contribuidores.html" data-scroll="contribuidores">Colaboradores de la 1\(^\mathrm{ra}\) Edición.</a></li>
+</ul>
+</li>
+<li class="link part"><a href="parte-primera.html" data-scroll="parte-primera"><span class="codenumber">I</span> <span class="title">Parte</span></a></li>
+<li class="link">
+<a href="cap_1.html" data-scroll="cap_1"><span class="codenumber">1</span> <span class="title">Preliminares</span></a><ul>
+<li><a href="nota-sobre-pruebas.html" data-scroll="nota-sobre-pruebas">Dios habla matemáticas</a></li>
+<li><a href="lenguaje-matematico.html" data-scroll="lenguaje-matematico">El lenguaje de los matemáticos</a></li>
+<li><a href="references-1.html" data-scroll="references-1">Referencias y lecturas recomendadas</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="cap_2.html" data-scroll="cap_2"><span class="codenumber">2</span> <span class="title">La Nueva Álgebra</span></a><ul>
+<li><a href="la-nueva-algebra.html" data-scroll="la-nueva-algebra">Álgebra Moderna</a></li>
+<li><a href="estructuras-matematicas.html" data-scroll="estructuras-matematicas" class="active">Las estructuras matemáticas</a></li>
+<li><a href="congruencia.html" data-scroll="congruencia">Congruencia o módulo n</a></li>
+<li><a href="references-2.html" data-scroll="references-2">Referencias y lecturas recomendadas</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Materiales Finales</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Pista y soluciones de algunos ejercicios palanteados</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">B</span> <span class="title">Cuaquier apéndice</span></a></li>
+<li class="link">
+<a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">C</span> <span class="title">Estructura para el Apéndice</span></a><ul>
+<li><a href="section-6.html" data-scroll="section-6">A Section in an Appendix</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Numbering in the Back Matter</a></li>
+</ul>
+</li>
+<li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">D</span> <span class="title">GNU Free Documentation License</span></a></li>
+<li class="link"><a href="notacion.html" data-scroll="notacion"><span class="codenumber">E</span> <span class="title">Notación</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Índice alfabético</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colofón</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="estructuras-matematicas"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">2.2</span> <span class="title">Las estructuras matemáticas</span>
+</h2>
+<a href="estructuras-matematicas.html" class="permalink">¶</a><section class="subsection" id="clasificacion-estructuras"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.2.1</span> <span class="title">Clasificación de las estructuras</span>
+</h3>
+<a href="estructuras-matematicas.html#clasificacion-estructuras" class="permalink">¶</a><p id="p-63">Los matemáticos han clasificado la diversidad de estructuras matemáticas estudiadas desde la antigüedad (numéricas y no–numéricas), mediante un sistema descriptivo axiomático que les clasifica según la cantidad de Leyes de Composición Interna que verifican los elementos de cada conjunto.</p>
+<article class="definition-like" id="definition-1"><h6 class="heading">
+<span class="type">Definición</span> <span class="codenumber">2.2.1</span>.</h6>
+<p id="p-64">En álgebra abstracta, la ley de composición, es un tipo de operación binaria que da lugar a distintas estructuras algebraicas; indica como deben ser manipulados los elementos del conjunto.</p>
+<article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref" data-refid="hk-proof-1"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-1" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-65">Una operación binaria o ley de composición en un conjunto G es una función \(G \oplus G \mapsto  G\) que asigna a cada par \((a,b) \in G \oplus G\) un único elemento \(a \oplus b\) en G, llamado composición de \(a\) "mas" \(b\text{.}\)</p>
+<article class="remark-like" id="note-1"><h6 class="heading">
+<span class="type">Nota</span> <span class="codenumber">2.2.2</span>.</h6>
+<p id="p-66">Tener presente que la ley de composición también puede ser definida como una operación binaria o ley de composición "multiplicativa"; en ese caso: \((a,b) \in G \odot G\) asigna un único elemento \(a \odot b\text{,}\) o \(ab\) en G, llamado composición de \(a\) "y" \(b\text{.}\)</p></article></article></div></article><figure class="figure-like" id="clasificacion-estructural"><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines">Estructuras</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Una L.C.I.<a data-knowl="" class="id-ref" data-refid="hk-fn-22" id="fn-22"><sup> 1 </sup></a><span id="hk-fn-22" class="hidden-content tex2jax_ignore"><span class="footnote">Ley de Composición Interna</span></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Magma, Semigrupo, Monoide, Grupo, Bucle, Cuasigrupo.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Dos L.C.I.</td>
+<td class="l m b0 r0 l0 t0 lines">Semianillo, Anillo, Pseudoanillo, Cuerpo.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">L.C.I y E.<a data-knowl="" class="id-ref" data-refid="hk-fn-23" id="fn-23"><sup> 2 </sup></a><span id="hk-fn-23" class="hidden-content tex2jax_ignore"><span class="footnote">Leyes de Composición Interna y Externa</span></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Módulo, Espacio vectorial, Álgebra sobre un cuerpo, etc.</td>
+</tr>
+</table>
+<figcaption><span class="type">Tabla</span> <span class="codenumber">2.2.3.</span> Clasificación de algunas estructuras matemáticas</figcaption></figure></section><section class="subsection" id="base-axiomatica"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.2.2</span> <span class="title">La base axiomática</span>
+</h3>
+<a href="estructuras-matematicas.html#base-axiomatica" class="permalink">¶</a><p id="p-67">La base axiomática asumida por el álgebra abstracta no difiere (como antes se comentó) de la base axiomática que desde la antigüedad ha venido soportando al álgebra elemental. Los axiomas son las colunnas en las que se soportan las matemáticas. Toda afirmación considerada válida debe de tener una base axiomática que la soporte; o debe poder ser demostrada a partir de axiomas. Los axiomas se aceptan como verdaderos; y su veracidad no puede ser demostrada a partir de otros axiomas. Se presenta el axioma de la adición, adaptado de Alexandroff; en base a los números enteros<a data-knowl="./knowl/alexandroff_0.html" title="Entrada bibliográfica 1.3.13: Introducción a la teoría de los grupos">[1.3.13]</a>. Considérese el lector en libertad de cambiar las palabras «número enteros» por las del conjunto que él prefiera (numérico o no-numérico).</p>
+<article class="theorem-like" id="axiom-1"><h6 class="heading">
+<span class="type">Axioma</span> <span class="codenumber">2.2.4</span>. <span class="title">de la Adición.</span>
+</h6>
+<p id="p-68">Dos números enteros pueden siempre ser «sumados» (operación que denotaremos por: \(\oplus\)<a data-knowl="" class="id-ref" data-refid="hk-fn-24" id="fn-24"><sup> 3 </sup></a><span id="hk-fn-24" class="hidden-content tex2jax_ignore"><span class="footnote">En este libro se utilizan los símbolos aritméticos (y otros) encerrados entre círculos para representar las leyes de composición internas; que pueden significar operaciones aritméticas pero que también podría significar una sustitución, una rotación, un giro, una transposición, etc.</span></span>), si satisfacen las siguientes condiciones conocidas como axiomas de las adición.</p>
+<ol id="p-69" class="decimal">
+<li id="li-6">Dos números enteros siempre pueden ser sumados: <p id="p-70">Es decir; dado dos números enteros arbitrarios \(a\) y \(b\text{,}\) existe otro número entero unívocamente determinado, llamado suma y denotado por \(a \oplus b.\)</p>
+</li>
+<li id="li-7">Propiedad asociativa: <p id="p-71">Dado, tres números enteros \(a,b,c\) la identidad: \((a \oplus b) \oplus c = a \oplus (b \oplus c)\) es siempre válida.</p>
+</li>
+<li id="li-8">Existencia del <em class="emphasis">cero</em>: <p id="p-72">Existe un número entero determinado, que llamaremos <em class="emphasis">e = 0</em>, tal que todo número entero \(a\) satisface la relación \(a \oplus e = e \oplus a = a\text{.}\)</p>
+</li>
+<li id="li-9">Existencia de elemento opuestos: <p id="p-73">Para todo número entero \(a\text{,}\) existe otro número entero \(-a\) llamado su opuesto.</p>
+</li>
+<li id="li-10">Conmutatividad: <p id="p-74">El orden de operación de los números enteros sumandos no altera la suma, \(a \oplus b = b \oplus a\text{.}\)</p>
+</li>
+</ol></article><p id="p-75">Planteamos la basé axiomática aditiva preferente a la base axiomática multiplicativa, pero esta preferencia carece de importancia. Es decir, sólo cambiaría el elemento neutro que en el producto será indicado con 1, y en vez del opuesto, consideraremos el inverso que lo denotamos por \(a^{-1}\text{.}\) Si hubiéramos preferido la terminología multiplicativa, entonces llamaríamos a la operación entre los elementos del conjunto «multiplicación»; como queda expresado en el axioma más generalizado, siguiente.</p>
+<article class="theorem-like" id="axiom-2"><h6 class="heading">
+<span class="type">Axioma</span> <span class="codenumber">2.2.5</span>. <span class="title">de la Multiplicación.</span>
+</h6>
+<p id="p-76">Para cada par de elementos \(a,b\) de un conjunto cualquiera K, deben de estar unívocamente definido el elemento \(a \odot b\text{,}\) llamado el producto de los dos elementos dados.</p>
+<ol id="p-77" class="decimal">
+<li id="li-11">Dos elementos del conjunto K siempre pueden ser multiplicados: <p id="p-78">Es decir, dado dos elementos arbitrarios \(a\) y \(b\) del conjunto K, existe otro elemento de K unívocamente determinado, llamado producto y denotado por \(a \odot b.\)</p>
+</li>
+<li id="li-12">Propiedad asociativa: <p id="p-79">Dado, tres elementos arbitrarios \(a,b,c\) del conjunto K, la identidad: \((a \odot b) \odot c = a \odot (b \odot c)\) es siempre válida.</p>
+</li>
+<li id="li-13">Existencia del elemento neutro: <p id="p-80">Existe un elementos determinado del conjunto K, que llamaremos identidad \(e = 1\text{,}\) tal que todo elemento \(a\) del conjunto K, satisface la relación \(a \odot e = e \odot a = a\text{.}\)</p>
+</li>
+<li id="li-14">Existencia de elemento inverso: <p id="p-81">Para todo elementos \(a\) arbitrarios del conjunto K, existe un único elemento  \(a^{-1}\) llamado su inverso, que satisface la identidad: \(a\cdot a^{-1} = a^{-1}\cdot a\text{;}\) para todos los elementos del conjunto.</p>
+</li>
+<li id="li-15">Conmutatividad: <p id="p-82">El orden de operación de los elementos no altera el producto, \(a \odot b = b \odot a\text{.}\)</p>
+</li>
+</ol></article></section><p id="p-83">Para no saltar la explicación, pero sin ánimo de profundizarla, es conveniente tratar  a las estructuras matemáticas en el orden planteado <a data-knowl="./knowl/clasificacion-estructural.html" title="Tabla 2.2.3: Clasificación de algunas estructuras matemáticas">Tabla 2.2.3</a>; sin embargo sólo haremos referencia a las estructuras más relevantes para alcanzar el objeto de este libro.</p>
+<section class="subsection" id="grupo"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.2.3</span> <span class="title">Grupos</span>
+</h3>
+<a href="estructuras-matematicas.html#grupo" class="permalink">¶</a><p id="p-84">Utilizando la base axiomática asumida para la suma, es posible definir con esa única operación y condiciones, la base Axiomática de Definición de Grupo.  La teoría de grupos tiene muchas aplicaciones en diversos aspectos de las ciencias; luego de los trabajos de Galois, los grupos fueron consolidandose dentro de la nueva álgebra. Para finales del siglo XIX, ya estaban arraigandose en el Analisis matemático, en Geometria, en Mecanica, y en la Fisica teorica. Más de un siglo después (en el primer cuarto del XXI), la teoría de los grupos se ha expandido a todos los campos del saber.</p>
+<p id="p-85">Los grupos forman parte de las estructuras matemáticas que cumplen con una ley de composición interna (una única operación binaria entre dos elementos del conjunto considerado; ya sea este abstracto o simbólico).</p>
+<article class="definition-like" id="definition-2"><h6 class="heading">
+<span class="type">Definición</span> <span class="codenumber">2.2.6</span>.</h6>
+<p id="p-86">Se llama Grupo a un conjunto \(G\) en el cuál está definida una ley de composición interna que llamaremos adición (\(\oplus\)); y que satiface las tres condiciones siguientes:</p>
+<ol id="p-87" class="decimal">
+<li id="li-16">Asociatividad.</li>
+<li id="li-17">Existencia de un elemento neutro.</li>
+<li id="li-18">Existencia de elemento opuestos.</li>
+</ol>
+<article class="hiddenproof" id="proof-2"><a data-knowl="" class="id-ref" data-refid="hk-proof-2"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-2" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-88">Axiomas que deben cumplir las Leyes de Composición Interna para los grupos aditivos:</p>
+<ol class="decimal">
+<li id="li-19">Asociatividad: <p id="p-89">Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{align}
+a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c\tag{2.2.1}
+\end{align}
+</div>
+</li>
+<li id="li-20">Existencia de un elemento neutro: <p id="p-90">Existe un elemento único \(e = 0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus e = a\text{.}\)</p>
+</li>
+<li id="li-21">Existencia de elemento opuesto: <p id="p-91">Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-25" id="fn-25"><sup> 4 </sup></a><span id="hk-fn-25" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "-a" o "b", como "opuesto de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</p>
+</li>
+</ol>
+<article class="remark-like" id="note-2"><h6 class="heading">
+<span class="type">Nota</span> <span class="codenumber">2.2.7</span>.</h6>
+<p id="p-92">Tener presente que los grupos también pueden ser definidos por una operación binaria o ley de composición "multiplicativa"; en ese caso hablamos de grupos multiplicativos.</p></article></article></div></article><p id="p-93">Para abreviar (cuando no haya riesgo de confusión), podemos hablar del grupo \(\lt G,\oplus \gt\) o del grupo G con la operación \(\oplus\) o, simplemente del grupo G.</p></section><aside class="aside-like" id="biographical-2"><h6 class="heading"><span class="title">Evaristo Galois.</span></h6> <figure class="figure-like" id="evaristo-galois"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="./images/galois.jpg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figura</span> <span class="codenumber">2.2.8.</span> Galois</figcaption></figure> <p id="p-94">Bourg-la-Reine, 25 de octubre de 1811- París,31 de mayo de 1832. Matemático francés, mientras aún era un adolescente, fue capaz de determinar la condición necesaria y suficiente para que una ecuación algebraica sea resuelta por radicación. Dió solución a un problema abierto mediante el nuevo concepto de grupo de permutaciones. Su trabajo ofreció las bases fundamentales para la teoría que lleva su nombre, una rama principal del álgebra abstracta. Fue el primero en utilizar el término «grupo» en un contexto matemático. La teoría constituye una de las bases matemáticas de la modulación CDMA utilizada en celdas de comunicaciones para teléfonos portátiles; y especialmente, en los Sistemas de navegación por satélite, como GPS, GLONASS, etc., <em class="emphasis">Galois fallece en un duelo de pistolas a la edad de 20 años</em> (Wiky).</p></aside><section class="subsection" id="cuerpo-campo"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.2.4</span> <span class="title">Cuerpos</span>
+</h3>
+<a href="estructuras-matematicas.html#cuerpo-campo" class="permalink">¶</a><p id="p-95">Como se ha dicho, los cuerpos o campos satisfacen dos leyes de composición interna binarias: (\(\oplus\) y \(\odot\));  en otras palabras, son cerrados a dos operaciones definidas binarias que podemos llamar "adición" (\(\oplus\)) y "multiplicación" (\(\odot\)). Lo que quiere decir, que si operamos dos números pertenecientes a un conjunto K, el resultado será otro número perteneciente al mismo conjunto K.</p>
+<article class="definition-like" id="definition-3"><h6 class="heading">
+<span class="type">Definición</span> <span class="codenumber">2.2.9</span>.</h6>
+<p id="p-96">Se conocen como Cuerpo, a aquellas estructuras matemáticas que cumplen con los siguientes axiomas de definición para sus leyes de composición interna:</p>
+<ol class="decimal">
+<li id="li-22">Asociatividad.</li>
+<li id="li-23">Conmutatividad.</li>
+<li id="li-24">Existencia de un elemento neutro.</li>
+<li id="li-25">Existencia de elemento opuestos y de inversos.</li>
+<li id="li-26">Distributividad de la multiplicación respecto de la adición.</li>
+</ol>
+<article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-3" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-97">Axiomas que deben cumplir las Leyes de Composición Interna para los campos:</p>
+<ol class="decimal">
+<li id="li-27">Asociatividad: <p id="p-98">Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{align}
+a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c\tag{2.2.2}\\
+a \odot (b \odot c) \amp = (a \odot b) \odot c\tag{2.2.3}
+\end{align}
+</div>
+</li>
+<li id="li-28">Conmutatividad: <p id="p-99">Para toda \(a, b\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<div class="displaymath">
+\begin{gather}
+a \oplus b = b \oplus a\tag{2.2.4}\\
+a \odot b = b \odot a\tag{2.2.5}
+\end{gather}
+</div>
+</li>
+<li id="li-29">Existencia de un elemento neutro: <ol class="lower-alpha">
+<li id="li-30">Existe un único elemento \(e = 0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus e = a\text{.}\)</li>
+<li id="li-31">Existe un elemento \(e = 1\) en un conjunto cualquiera K, diferente de \(0\text{,}\) tal que para todo \(a\) elemento de K se verifique la identidad: \(a \odot e = a\text{.}\)</li>
+</ol>
+</li>
+<li id="li-32">Existencia de elemento opuesto e inverso: <ol class="lower-alpha">
+<li id="li-33">Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-26" id="fn-26"><sup> 5 </sup></a><span id="hk-fn-26" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "-a" o "b", como "opuesto de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</li>
+<li id="li-34">Para cada \(a \neq  0\) pertenecientes a un conjunto cualquiera K, existe un elemento \(a - 1\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-27" id="fn-27"><sup> 6 </sup></a><span id="hk-fn-27" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "a-1" o "b", como "inverso de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \odot b = 1\text{.}\)</li>
+</ol>
+</li>
+<li id="li-35">Distributividad de la multiplicación respecto de la adición: <p id="p-100">Para toda \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se debe cumplir la identidad:</p>
+<div class="displaymath">
+\begin{gather}
+a \odot (b \oplus c) = (a \odot b) \oplus (a \odot c)\tag{2.2.6}
+\end{gather}
+</div>
+</li>
+</ol></article></div></article><p id="p-101">Los números reales (el conjunto de todos ellos: <a data-knowl="./knowl/recta-real.html" title="Apunte 2.1.2: La Recta Real">Apunte 2.1.2</a>), representa un buen ejemplo de la estructura matemática llamada «cuerpo»<a data-knowl="" class="id-ref" data-refid="hk-fn-28" id="fn-28"><sup> 7 </sup></a><span id="hk-fn-28" class="hidden-content tex2jax_ignore"><span class="footnote">Un campo o cuerpo: es cualquier conjunto de elementos que satisface los axiomas de campo tanto para la "suma" como para la "multiplicación" y es una división algebraica conmutativa. Un nombre arcaico para un campo es dominio racional. El término francés para un campo es cuerpo y la palabra alemana es Körper, ambos significan "cuerpo".</span></span> ya que cumple con las dos premisas que se exigen para definirlas: aquellos conjuntos donde es posible utilizar dos operaciones básicas ("adición" y "multiplicación"); donde éstas «funcionan» correctamente. Hay que hacer un alto, para explicar el por que del entrecomillado: las mencionadas operaciones, no tienen que ser iguales a las operaciones aritméticas de suma y producto, aunque sus propiedades intrínsecas al respecto de las <em class="emphasis">leyes de composición interna</em> son idénticas si se aplican sobre un cuerpo o campo; pero tal "adición" o "multiplicación" no tienen necesariamente que ser operaciones de suma o producto, pudiera ser de otros tipos: rotación, transformaciones,  o cualquier otra par de operaciones que cumpla con los axiomas indicados más adelante. Otros ejemplo de cuerpo, son los conjuntos numéricos: \(\mathbb{Q}\text{,}\) \(\mathbb{R}\) y \(\mathbb{C}\text{;}\) con este último símbolo se designan los números llamados «imaginarios» o «complejos» (que serán útiles y necesarios en los siguientes capítulos).</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C} 
+\end{equation*}
+</div>
+<p id="p-102">También podemos definir cuerpos de elementos finitos<a data-knowl="" class="id-ref" data-refid="hk-fn-29" id="fn-29"><sup> 8 </sup></a><span id="hk-fn-29" class="hidden-content tex2jax_ignore"><span class="footnote">Todos los cuerpos finitos tienen un número de elementos \(q=p^{n}\) para algún número primo \(p\) y algún entero positivo \(n\text{.}\) Para cada cardinalidad q así definida hay una y solo una manera posible de definir un campo finito, por lo que todos los campos finitos del mismo orden son isomorfos entre sí (sus estructuras matemáticas son idénticas). Un campo con un número finito de miembros se conoce como campo finito o campo de Galois.</span></span> como subconjunto de \(\mathbb{R}\text{,}\) en forma de otros objetos matemáticos como los elementos que cumplen con las ecuaciones y sus expresiones geométricas; algunas de ellas conocidas desde la antigüedad.</p></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>
