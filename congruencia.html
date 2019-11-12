@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-11T09:11:31-04:00    *-->
+<!--*    on 2019-11-11T16:46:55-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -143,14 +143,15 @@ var js_version = 0.12;
 <span class="type">Sección</span> <span class="codenumber">2.3</span> <span class="title">Congruencia o módulo</span>
 </h2>
 <a href="congruencia.html" class="permalink">¶</a><section class="introduction" id="introduction-4"><p id="p-104">La aritmética modular a veces es llamada aritmética del reloj, ya que en sus operaciones el conteo numérico se reinicia al alcanzar un determinado valor llamado módulo; como se observa en el reloj al paso de las horas. Esta modularidad o congruencias satisfacen una serie de propiedades importantes, por ello son indispensable en la teoría y aplicaciones del álgebra y en la teoría de números. Son usados en criptografía, teoría de códigos, y en la detección de errores. Las operaciones aritméticas que realizan las computadoras son de aritmética modular (booleana); donde el módulo es \(2^b\text{,}\) el número de bit de la palabra digital sobre la que se opera es \(b\text{,}\) y 2 es la base del sistema numérico utilizado: el binario.</p></section><section class="subsection" id="integers-mod-n"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">2.3.1</span> <span class="title">Los enteros módulo \(n\)</span>
+<span class="type">Subsección</span> <span class="codenumber">2.3.1</span> <span class="title">Los enteros módulo \(n\)Congruencia o módulo</span>
 </h3>
-<a href="congruencia.html#integers-mod-n" class="permalink">¶</a><p id="p-105">En notación de Gauss, esa clase de congruencia se expresa como: \(a \equiv b(mod\;n)\) y se lee: \(a\) es congruente con \(b\) módulo \(n\text{;}\) también puede leerse: en módulo \(n\text{,}\) \(a\) y \(b\) son congruentes. Como ejemplo: \(83 \equiv 63 (mod\;10)\text{;}\) ya que \(63\) y \(83\) dejan el mismo resto \(3\text{,}\) o usando \(83 - 63 = 20\text{,}\)  que verifica un resultado múltiplo de \(10\text{.}\)</p>
+<a href="congruencia.html#integers-mod-n" class="permalink">¶</a><section class="introduction" id="introduction-5"><p id="p-105">La aritmética modular a veces es llamada aritmética del reloj, ya que en sus operaciones el conteo numérico se reinicia al alcanzar un determinado valor llamado módulo; como se observa en el reloj al paso de las horas. Esta modularidad o congruencias satisfacen una serie de propiedades importantes, por ello son indispensable en la teoría y aplicaciones del álgebra y en la teoría de números. Son usados en criptografía, teoría de códigos, y en la detección de errores. Las operaciones aritméticas que realizan las computadoras son de aritmética modular (booleana); donde el módulo es \(2^b\text{,}\) el número de bit de la palabra digital sobre la que se opera es \(b\text{,}\) y 2 es la base del sistema numérico utilizado: el binario.</p></section><p id="p-106">En notación de Gauss, esa clase de congruencia se expresa como: \(a \equiv b(mod\;n)\) y se lee: \(a\) es congruente con \(b\) módulo \(n\text{;}\) también puede leerse: en módulo \(n\text{,}\) \(a\) y \(b\) son congruentes. Como ejemplo: \(83 \equiv 63 (mod\;10)\text{;}\) ya que \(63\) y \(83\) dejan el mismo resto \(3\text{,}\) o usando \(83 - 63 = 20\text{,}\)  que verifica un resultado múltiplo de \(10\text{.}\)</p>
 <article class="definition-like" id="definition-4"><h6 class="heading">
 <span class="type">Definición</span> <span class="codenumber">2.3.1</span>.</h6>
-<p id="p-106">Dos elementos \(a\) y \(b\) son congruentes si ellos generan el mismo residuo \(r\) cuando se dividen por \(p\text{.}\)</p>
-<article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-107">Sean \(a\) y \(b\) dos enteros y supongamos que \(n \in N\text{.}\) Diremos que: \(a\) es congruente a \(b\) módulo \(n\text{;}\) o: en mod \(n\text{,}\) \(a\) es congruente a \(b\text{,}\) si y sólo si \(a - b\) es divisible por \(n\text{;}\) es decir, \(a - b = nk\) para algún \(k \in \mathbb{Z}\text{.}\) En este caso escribimos \(a \equiv b (mod \; n) \text{.}\) Por ejemplo, \(41 \equiv 17(mod \;8) \) pues \(41 - 17 = 24\) es divisible por \(8\text{.}\) Afirmamos que congruencia módulo \(n\) es una <em class="emphasis">relación de equivalencia</em> en \(\mathbb{Z}\text{.}\) Ciertamente cualquier entero \(r\) es equivalente a si mismo pues \(r - r = 0\) es divisible por \(n\text{.}\) Mostraremos ahora que la relación es simétrica. Si \(a \equiv b (mod \; n) \text{,}\) entonces \(a - b = - (b - a) \) es divisible por \(n\text{.}\) Así \(b - a\) es divisible por \(n\) y \(b \equiv a (mod \; n) \text{.}\) Ahora supongamos que \(a \equiv b (mod \; n) \) y \(b \equiv t (mod \; n) \text{.}\) Entonces existen algunos enteros \(k\) y \(l\) tales que \(a - b = kn\) y \(b - t = ln\text{.}\) Para mostrar la transitividad, es necesario probar que \(a - t\) es divisible por \(n\text{.}\)</p></article></div></article><article class="example-like" id="ejemplo-adicion-groupos-zn"><a data-knowl="" class="id-ref" data-refid="hk-ejemplo-adicion-groupos-zn"><h6 class="heading">
-<span class="type">Ejemplo</span> <span class="codenumber">2.3.2</span>.</h6></a></article><div id="hk-ejemplo-adicion-groupos-zn" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-108">Los siguientes ejemplos ilustran la arítmetica módulo \(n\text{:}\)</p>
+<p id="p-107">Dos elementos \(a\) y \(b\) son congruentes si ellos generan el mismo residuo \(r\) cuando se dividen por \(p\text{.}\)</p>
+<article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-108">Sean \(a\) y \(b\) dos enteros y supongamos que \(n \in N\text{.}\) Diremos que: \(a\) es congruente a \(b\) módulo \(n\text{;}\) o: en mod \(n\text{,}\) \(a\) es congruente a \(b\text{,}\) si y sólo si \(a - b\) es divisible por \(n\text{;}\) es decir, \(a - b = nk\) para algún \(k \in \mathbb{Z}\text{.}\) En este caso escribimos \(a \equiv b (mod \; n) \text{.}\) Por ejemplo, \(41 \equiv 17(mod \;8) \) pues \(41 - 17 = 24\) es divisible por \(8\text{.}\)</p>
+<p id="p-109">Afirmamos que congruencia módulo \(n\) es una <em class="emphasis">relación de equivalencia</em> en \(\mathbb{Z}\text{.}\) Ciertamente cualquier entero \(r\) es equivalente a si mismo pues \(r - r = 0\) es divisible por \(n\text{.}\) Mostraremos ahora que la relación es simétrica. Si \(a \equiv b (mod \; n) \text{,}\) entonces \(a - b = - (b - a) \) es divisible por \(n\text{.}\) Así \(b - a\) es divisible por \(n\) y \(b \equiv a (mod \; n) \text{.}\) Ahora supongamos que \(a \equiv b (mod \; n) \) y \(b \equiv t (mod \; n) \text{.}\) Entonces existen algunos enteros \(k\) y \(l\) tales que \(a - b = kn\) y \(b - t = ln\text{.}\) Para mostrar la transitividad, es necesario probar que \(a - t\) es divisible por \(n\text{.}\)</p></article></div></article><article class="example-like" id="ejemplo-adicion-groupos-zn"><a data-knowl="" class="id-ref" data-refid="hk-ejemplo-adicion-groupos-zn"><h6 class="heading">
+<span class="type">Ejemplo</span> <span class="codenumber">2.3.2</span>.</h6></a></article><div id="hk-ejemplo-adicion-groupos-zn" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-110">Los siguientes ejemplos ilustran la arítmetica módulo \(n\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
 7 + 4 &amp; \equiv  1 \pmod{ 5} &amp; 7 \cdot 3 &amp; \equiv 1 \pmod{ 5}\\
@@ -159,35 +160,35 @@ var js_version = 0.12;
 \end{align*}
 </div>
 <p>En particular, note que es posible que el producto de dos números (no ceros) módulo \(n\text{,}\) puede ser equivalente a \(0\) módulo \(n\text{.}\)</p></article></div>
-<p id="p-109">==========================================================</p>
-<p id="p-110">Notes or examples related to computation or technology can go in blocks of the same name.</p>
+<p id="p-111">==========================================================</p>
+<p id="p-112">Notes or examples related to computation or technology can go in blocks of the same name.</p>
 <article class="remark-like" id="technology-1"><h6 class="heading">
 <span class="type">Tecnología</span> <span class="codenumber">2.3.3</span>. <span class="title">Sample Use of Sage.</span>
 </h6>
-<p id="p-111">This would be a good place to talk about Sage, including a cell or two.</p>
+<p id="p-113">This would be a good place to talk about Sage, including a cell or two.</p>
 <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">diff(x^4, x)
 </script></div>
-<p id="p-112">But you might want to describe how to use some other calculator, or maybe some numerical method.</p></article><section class="glossary" id="glossary-1"><h4 class="heading hide-type">
+<p id="p-114">But you might want to describe how to use some other calculator, or maybe some numerical method.</p></article><section class="glossary" id="glossary-1"><h4 class="heading hide-type">
 <span class="type">Glosario</span> <span class="codenumber"></span> <span class="title">Glosario</span>
 </h4>
-<section class="introduction" id="introduction-5"><p id="p-113">A glossary may have an <code class="code-inline tex2jax_ignore">&lt;introduction&gt;</code>, perhaps with some explanation.</p></section><dl class="glossary">
+<section class="introduction" id="introduction-6"><p id="p-115">A glossary may have an <code class="code-inline tex2jax_ignore">&lt;introduction&gt;</code>, perhaps with some explanation.</p></section><dl class="glossary">
 <dt id="defined-term-1">bar.</dt>
-<dd><p id="p-114">A part of <dfn class="terminology">foobar</dfn>.  See <a data-knowl="./knowl/foobar-defined.html" title="Término: foobar">foobar</a>.</p></dd>
+<dd><p id="p-116">A part of <dfn class="terminology">foobar</dfn>.  See <a data-knowl="./knowl/foobar-defined.html" title="Término: foobar">foobar</a>.</p></dd>
 <dt id="foobar-defined">foobar.</dt>
-<dd><p id="p-115">A synonym for the acronym <abbr class="acronym">FUBAR</abbr>.</p></dd>
+<dd><p id="p-117">A synonym for the acronym <abbr class="acronym">FUBAR</abbr>.</p></dd>
 </dl>
-<section class="conclusion" id="conclusion-1"><p id="p-116">And for symmetry, a <code class="code-inline tex2jax_ignore">&lt;conclusion&gt;</code>.</p></section></section><article class="paragraphs" id="hierarchy-structure"><h5 class="heading"><span class="title">Structure.</span></h5>
-<p id="p-117">This section of <dfn class="terminology">this article</dfn> has subsections and subsubsections.  In a book you can have chapters enclosing multiple sections.  There is one finer subdivision, it is achieved with the <code class="code-inline tex2jax_ignore">paragraphs</code> element.</p>
-<p id="p-118">It is basically a sequence of paragraphs, where the first one gets an inline title.  You are reading the second, and final, paragraph of one right now. It is useful for organizing very short documents, where numbered subdivisions might be overkill.</p></article><article class="outcomes" id="outcomes-structures"><h6 class="heading">
+<section class="conclusion" id="conclusion-1"><p id="p-118">And for symmetry, a <code class="code-inline tex2jax_ignore">&lt;conclusion&gt;</code>.</p></section></section><article class="paragraphs" id="hierarchy-structure"><h5 class="heading"><span class="title">Structure.</span></h5>
+<p id="p-119">This section of <dfn class="terminology">this article</dfn> has subsections and subsubsections.  In a book you can have chapters enclosing multiple sections.  There is one finer subdivision, it is achieved with the <code class="code-inline tex2jax_ignore">paragraphs</code> element.</p>
+<p id="p-120">It is basically a sequence of paragraphs, where the first one gets an inline title.  You are reading the second, and final, paragraph of one right now. It is useful for organizing very short documents, where numbered subdivisions might be overkill.</p></article><article class="outcomes" id="outcomes-structures"><h6 class="heading">
 <span class="type">Resultados:</span> <span class="title">Fundamental Structures, Revisited</span>
 </h6>
-<div class="introduction" id="introduction-6"><p id="p-119">This is a <code class="code-inline tex2jax_ignore">&lt;outcomes&gt;</code> element you are reading, and this is its introduction.  This early section has really grown and we have tried to accomplish many things.  Not all of them are listed here.</p></div>
+<div class="introduction" id="introduction-7"><p id="p-121">This is a <code class="code-inline tex2jax_ignore">&lt;outcomes&gt;</code> element you are reading, and this is its introduction.  This early section has really grown and we have tried to accomplish many things.  Not all of them are listed here.</p></div>
 <ol class="decimal">
 <li id="li-38">Display various “blocks”, fundamental units of the flow.</li>
 <li id="outcome-structure">More, and this is what the cross-references above are pointing to.</li>
 <li id="li-40">Evermore.</li>
 </ol>
-<div class="conclusion" id="conclusion-2"><p id="p-120">This concludes the (incomplete) outcomes for this section, so now we can carry-on to the next section.</p></div></article><figure class="figure-like" id="table-4"><table>
+<div class="conclusion" id="conclusion-2"><p id="p-122">This concludes the (incomplete) outcomes for this section, so now we can carry-on to the next section.</p></div></article><figure class="figure-like" id="table-4"><table>
 <tr>
 <td class="c m b2 r2 l1 t1 lines">nada</td>
 <td class="c m b2 r1 l0 t1 lines">Estructuras</td>

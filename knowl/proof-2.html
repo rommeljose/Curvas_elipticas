@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-11T09:11:36-04:00    *-->
+<!--*    on 2019-11-12T17:40:34-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,28 +13,12 @@
 </head>
 <body>
 <article class="hiddenproof"><h6 class="heading"><span class="type">Formalmente</span></h6>
-<p>Axiomas que deben cumplir las Leyes de Composición Interna para los grupos aditivos:</p>
-<ol class="decimal">
-<li>Asociatividad: <p>Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
-<div class="displaymath">
-\begin{align}
-a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c.\tag{2.2.1}
-\end{align}
-</div>
-</li>
-<li>Existencia de un elemento neutro: <p>Existe un elemento único \(e = 0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus e = a\text{.}\)</p>
-</li>
-<li>Existencia de elemento opuesto: <p>Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="./knowl/fn-23-hidden.html" title="Nota a pie de página 2.2.2"><sup> 2 </sup></a>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</p>
-</li>
-</ol>
-<article class="remark-like"><h6 class="heading">
-<span class="type">Nota</span> <span class="codenumber">2.2.8</span>.</h6>
-<p>Tener presente que los grupos también pueden ser definidos por una operación binaria o ley de composición "multiplicativa"; en ese caso hablamos de grupos multiplicativos.</p></article><article class="assemblage-like"><p>Solo como referencia comparativa, diremos que un matemático requiere menos símbolos para comprender y comunicar la definición de grupo en lenguaje formal matemático, como se verifica en la siguiente definición de grupo multiplicativo:</p>
+<p>Sean \(a\) y \(b\) elementos de un conjunto cualquiera \(\heartsuit\)  (\(a,b \in \heartsuit \)). Si \(a\) tiene alguna relación con \(b\text{,}\) lo denotaremos por \(\sim\text{.}\) Si es una Relación de Equivalencia, debe satisfacer:</p>
 <ul class="disc">
-<li>\(\exists !e\in G: e\odot r=r,\forall r\in G\text{.}\) <p>Que significa: \(\left(G,\odot \right)\) es un monoide o semigrupo con elemento neutro <a data-knowl="./knowl/propiedades-estructural-1.html" title="Tabla 2.2.3: Algunas estructuras con una LCI.">Tabla 2.2.3</a>.; y se puede leer como: <em class="emphasis">Existe un único elemento de G, tal que, e "producto" r es igual a r, para todo r elemento de G</em>.</p>
-</li>
-<li>\(\forall r\in G, \exists \bar{r} : r\odot \bar{r} = e\text{.}\) <p>Que significa: \(\left(G,\odot \right)\) verifica la existencia de elemento simétrico para cada uno de sus elementos. <a data-knowl="./knowl/propiedades-estructural-1.html" title="Tabla 2.2.3: Algunas estructuras con una LCI.">Tabla 2.2.3</a>.; y se puede leer como: <em class="emphasis">Para todo \(r\) elemento de G, existe otro \(\bar{r}\) elemento de G (llamado simétrico de \(r\)), tal que, \(\bar{r}\) "producto" \(r\) es igual a e</em>.</p>
-</li>
-</ul></article></article><span class="incontext"><a href="estructuras-matematicas.html#proof-2">in-context</a></span>
+<li><p>Reflexividad: \(a \sim a\) para toda \(a\) en \(\heartsuit\text{.}\)</p></li>
+<li><p>Simetría: Si \(a \sim b\text{,}\) entonces \(b \sim a\text{.}\)</p></li>
+<li><p>Transitividad: Si \(a \sim b\) y \(b \sim c\text{,}\) entonces \(a \sim c\text{.}\)</p></li>
+</ul>
+<p>Nota: Con el \(\heartsuit\text{,}\) recordar a <a data-knowl="./knowl/hilbert-jarra.html" title="Entrecomillas: Hilbert Imaginativo">Hilbert</a> …</p></article><span class="incontext"><a href="relaciones.html#proof-2">in-context</a></span>
 </body>
 </html>
