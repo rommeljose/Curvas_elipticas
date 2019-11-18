@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-11-17T22:37:29-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RJCGrjcg SageMath</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body id="c-elipticas-rjcg" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://ciencia.digital.info.ve" target="_blank"><img src="./images/que_puede_hacer_un_fisico_trasparente.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="libro-estructura.html"><span class="title">Curvas Elípticas:</span> <span class="subtitle">Base criptográfica de las monedas electrónicas</span></a></h1>
+<p class="byline">Rommel J. Contreras G.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético">Índice alfabético</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="references-2.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="parte-primera.html" title="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="eqweweq.html" title="Siguiente">Siguiente</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="references-2.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="parte-primera.html" title="Arriba">Arriba</a><a class="next-button button toolbar-item" href="eqweweq.html" title="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Páginas preliminares</span></a><ul>
+<li><a href="front-colophon.html" data-scroll="front-colophon">Colofón</a></li>
+<li><a href="author-bio-RJCG.html" data-scroll="author-bio-RJCG">Biografía del autor</a></li>
+<li><a href="dedicatoria.html" data-scroll="dedicatoria">Dedicatoria</a></li>
+<li><a href="reconocimiento.html" data-scroll="reconocimiento">Agradecimentos</a></li>
+<li><a href="prefacio.html" data-scroll="prefacio">Prefacio</a></li>
+<li><a href="contribuidores.html" data-scroll="contribuidores">Colaboradores de la 1\(^\mathrm{ra}\) Edición.</a></li>
+</ul>
+</li>
+<li class="link part"><a href="parte-primera.html" data-scroll="parte-primera"><span class="codenumber">I</span> <span class="title">Parte I</span></a></li>
+<li class="link">
+<a href="cap_1.html" data-scroll="cap_1"><span class="codenumber">1</span> <span class="title">Preliminares</span></a><ul>
+<li><a href="lenguaje-matematico.html" data-scroll="lenguaje-matematico">Recordatorio</a></li>
+<li><a href="section-2.html" data-scroll="section-2">El lenguaje de los matemáticos</a></li>
+<li><a href="references-1.html" data-scroll="references-1">Referencias y lecturas recomendadas</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="cap_2.html" data-scroll="cap_2"><span class="codenumber">2</span> <span class="title">La Nueva Álgebra</span></a><ul>
+<li><a href="la-nueva-algebra.html" data-scroll="la-nueva-algebra">Álgebra Moderna</a></li>
+<li><a href="relaciones.html" data-scroll="relaciones">Relaciones Binarias</a></li>
+<li><a href="estructuras-matematicas.html" data-scroll="estructuras-matematicas">Las estructuras matemáticas</a></li>
+<li><a href="section-6.html" data-scroll="section-6">XXXX La Congruencia XXXX</a></li>
+<li><a href="references-2.html" data-scroll="references-2">Referencias y lecturas recomendadas</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="cap_3.html" data-scroll="cap_3"><span class="codenumber">3</span> <span class="title">SageMath</span></a><ul><li><a href="eqweweq.html" data-scroll="eqweweq">Tutoria básico de SageMath</a></li></ul>
+</li>
+<li class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Materiales Finales</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Pista y soluciones de algunos ejercicios palanteados</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">B</span> <span class="title">Cuaquier apéndice</span></a></li>
+<li class="link">
+<a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">C</span> <span class="title">Estructura para el Apéndice</span></a><ul>
+<li><a href="section-8.html" data-scroll="section-8">A Section in an Appendix</a></li>
+<li><a href="section-9.html" data-scroll="section-9">Numbering in the Back Matter</a></li>
+</ul>
+</li>
+<li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">D</span> <span class="title">GNU Free Documentation License</span></a></li>
+<li class="link"><a href="notacion.html" data-scroll="notacion"><span class="codenumber">E</span> <span class="title">Notación</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Índice alfabético</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colofón</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="not-implemented.html" target="_blank">Comentarios y otros</a><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="chapter" id="cap_3"><h2 class="heading">
+<span class="type">Capítulo</span> <span class="codenumber">3</span> <span class="title">SageMath</span>
+</h2>
+<a href="cap_3.html" class="permalink">¶</a><section class="introduction" id="introduction-10"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:25%;justify-content:center;"><figure class="figure-like" id="logo-sage"><img src="images/sage.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">3.0.1.</span> Logo SageMath.</figcaption></figure></div>
+<div class="sbspanel" style="width:70%;justify-content:flex-end;"><p id="p-143">Los entornos de cálculos matemáticos son complejos y requieren una gran cantidad de tiempo y esfuerzo para dominarlos, sin embargo, para digerir y ayudar manipular y comprender el cúmulo de conceptos y abstracciones matemáticas incluidas en este libro, se presenta y sugiere el programa <a class="external" href="http://www.sagemath.org/index.html" target="_blank">SageMath</a>: inicialmente sólo SAGE (Software for Algebra and Geometry Experimentation); una suite de programas matemáticos que incorpora un conjunto de potentes algoritmos matemáticos que pueden facilitar el análisis y entendimiento de los aspectos prácticos a tratar.</p></div>
+</div></div>
+<p id="p-144">SageMath, es un sistema algebraico computacional (en inglés CAS), especializado para cálculos algebraicos, simbólicos y numéricos. SageMath se divide en un núcleo que realiza los cálculos y una interfaz (a elegir) que los muestra y permite la interacción con el usuario; reúne y unifica bajo un solo entorno, toda una colección de software matemático. SageMath utiliza el lenguaje de programación Python, que soporta expresiones funcionales y en programación orientada a objetos; internamente está escrito en Python y en una versión modificada de Pyrex llamada Cython. SageMath es software libre, distribuido bajo los términos de la GNU General Public License <a href="appendix-gfdl.html" class="internal" title="Apéndice D: GNU Free Documentation License">Apéndice D</a>.</p></section><nav class="summary-links"><ul><li><a href="eqweweq.html"><span class="codenumber">3.1</span> <span class="title">Tutoria básico de SageMath</span></a></li></ul></nav></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>
