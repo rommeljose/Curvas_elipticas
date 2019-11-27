@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-26T21:59:00-04:00    *-->
+<!--*    on 2019-11-27T15:07:58-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,32 +13,32 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Párrafo</span></h6>
-<p>Sea \(\mathbb{Z}n\) el conjunto de clases de equivalencia de los enteros mod \(n\text{,}\) y \(A,B,C \in \mathbb{Z}_{n}\text{,}\) entonces \(A,B,C\) cumplen con:</p>
+<p>Sea \(\mathbb{Z}n\) el conjunto de clases de equivalencia de los enteros \(\pmod{n}\text{,}\) y \(A,B,C \in \mathbb{Z}_{n}\text{,}\) entonces \(A,B,C\) cumplen con:</p>
 <ul class="disc">
 <li>
 <p>Conmutatividad:</p>
 <div class="displaymath">
 \begin{equation*}
-A \oplus B \equiv B \oplus A (mod \; n)
+A \oplus B \equiv B \oplus A \pmod{n}
 \end{equation*}
 </div>
 <div class="displaymath">
 \begin{equation*}
-A \otimes B \equiv B \otimes A (mod \; n).
+A \otimes B \equiv B \otimes A \pmod{n}.
 \end{equation*}
 </div>
-<p>La adición y la multiplicación son conmutativas \(mod n\) ya que el remanente de \(A \oplus B\) dividido por \(n\) es lo mismo que el remanente de \(B \oplus A\) dividido por \(n\text{.}\)</p>
+<p>La adición y la multiplicación son conmutativas \(\pmod{n}\) ya que el remanente de \(A \oplus B\) dividido por \(n\) es lo mismo que el remanente de \(B \oplus A\) dividido por \(n\text{.}\)</p>
 </li>
 <li>
 <p>Asociatividad:</p>
 <div class="displaymath">
 \begin{equation*}
-(A \oplus B) \oplus C \equiv A \oplus (B \oplus C) (mod \; n)
+(A \oplus B) \oplus C \equiv A \oplus (B \oplus C) \pmod{n}
 \end{equation*}
 </div>
 <div class="displaymath">
 \begin{equation*}
-(A \otimes B)\otimes C \equiv A \otimes (B \otimes C) (mod \; n).
+(A \otimes B)\otimes C \equiv A \otimes (B \otimes C) (\pmod{n}.
 \end{equation*}
 </div>
 </li>
@@ -51,7 +51,7 @@ A \oplus 0 \equiv A
 </div>
 <div class="displaymath">
 \begin{equation*}
-A \otimes 1 \equiv A (mod \; n).
+A \otimes 1 \equiv A \pmod{n}.
 \end{equation*}
 </div>
 </li>
@@ -67,15 +67,15 @@ A \otimes (B \oplus C) \equiv A \otimes B \oplus A \otimes C .
 <p>Inverso aditivo:</p>
 <div class="displaymath">
 \begin{equation*}
-A \oplus (-A) \equiv 0 (mod \; n) .
+A \oplus (-A) \equiv 0 \pmod{n}\text{.}
 \end{equation*}
 </div>
 </li>
 <li>
 <p>Máximo Común Divisor:</p>
-<p>Sea \(A\) un número entero distinto de cero. Entonces existe un máximo común divisor (mcd) de valor \(B\) entre \(A\) y \(n\text{,}\) tal que \(A \otimes B \equiv 1 (mod \; n) .\)</p>
-<p>Supongamos que \(mcd(A,n) = 1\text{.}\) Entonces existe un entero \(r\) y \(s\) tal que \(A \otimes r \oplus n \otimes s = 1\text{.}\) Como \(n \otimes s = 1 - A \otimes r\text{,}\) este debe ser el caso de que \(A \otimes r \equiv 1 (mod \; n)\text{.}\) Permitiendo que \(B\) sea la clase de equivalencia de \(r\text{,}\) \(A \otimes B \equiv 1 (mod \;n)\text{.}\)</p>
-<p>Como caso contrario, supongamos que existe un número entero \(B\) tal que \(A \otimes B \equiv 1 (mod \; n)\text{.}\) Entonces \(n\) divide a \(A \otimes B - 1\text{,}\) luego existe un número entero \(k\) tal que \(A \otimes B - n \otimes K = 1 \text{.}\) Sea \(d = mcd (A, \; n)\text{.}\) Como \(d\) divide a \(A \otimes B - n \otimes k\text{,}\) \(d\) debe también dividir a \(1\text{;}\) por lo tanto \(d = 1\text{.}\)</p>
+<p>Sea \(A\) un número entero distinto de cero. Entonces existe un máximo común divisor (mcd) de valor \(B\) entre \(A\) y \(n\text{,}\) tal que \(A \otimes B \equiv 1 \pmod{n}\text{.}\)</p>
+<p>Supongamos que \(mcd(A,n) = 1\text{.}\) Entonces existe un entero \(r\) y \(s\) tal que \(A \otimes r \oplus n \otimes s = 1\text{.}\) Como \(n \otimes s = 1 - A \otimes r\text{,}\) este debe ser el caso de que \(A \otimes r \equiv 1 \pmod{n}\text{.}\) Permitiendo que \(B\) sea la clase de equivalencia de \(r\text{,}\) \(A \otimes B \equiv 1 \pmod{n}\text{.}\)</p>
+<p>Como caso contrario, supongamos que existe un número entero \(B\) tal que \(A \otimes B \equiv 1 \pmod{n}\text{.}\) Entonces \(n\) divide a \(A \otimes B - 1\text{,}\) luego existe un número entero \(k\) tal que \(A \otimes B - n \otimes K = 1 \text{.}\) Sea \(d = mcd (A, \; n)\text{.}\) Como \(d\) divide a \(A \otimes B - n \otimes k\text{,}\) \(d\) debe también dividir a \(1\text{;}\) por lo tanto \(d = 1\text{.}\)</p>
 </li>
 </ul>
 <span class="incontext"><a href="relaciones.html#p-114">in-context</a></span>

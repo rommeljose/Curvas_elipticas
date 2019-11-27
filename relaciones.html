@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-26T21:58:51-04:00    *-->
+<!--*    on 2019-11-27T15:07:50-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -246,30 +246,33 @@ A / \mathcal{R} = \left\{\left\{0,3,6,9\right\},\left\{1,4,7\right\},\left\{2,5,
 </div></article></div></section><section class="subsection" id="enteros-mod-n"><h3 class="heading hide-type">
 <span class="type">Subsección</span> <span class="codenumber">2.2.5</span> <span class="title">Los enteros módulo \(n\)</span>
 </h3>
-<a href="relaciones.html#enteros-mod-n" class="permalink">¶</a><section class="introduction" id="introduction-5"><p id="p-90">La aritmética modular o congruencia modular, es un tipo de operación con aritmética binaria propia; sus propiedades son de gran trascendencia. A veces es llamada aritmética del reloj, ya que en sus operaciones el conteo numérico se reinicia al alcanzar un determinado valor llamado módulo; como se observa en el reloj al paso de las horas. Esta modularidad o congruencias satisfacen una serie de propiedades importantes, por ello son indispensable en la teoría y aplicaciones del álgebra y en la teoría de números. Son usados en criptografía, teoría de códigos, y en la detección de errores. Por ejemplo, las operaciones aritméticas que realizan las computadoras son de aritmética modular (booleana); donde el módulo es \(2^b\text{,}\) el número de bit de la palabra digital sobre la que se opera es \(b\text{,}\) y 2 es la base del sistema numérico utilizado: el binario.</p>
-<p id="p-91">En principio la aritmética modular difiere de la aritmética tradicional; pero su estructura matemática, como relación de equivalencia es en esencia igual a cualquier otra, y como induce una partición en el conjunto donde está definida: es sólo una operación que separa en clases de equivalencia un determinado conjunto (crea o genera clases de equivalencia, también llamadas clases de congruencias); e.g., los enteros mod \(n\) dividen \(\mathbb{Z}\) en \(n\) diferentes clases de equivalencia; denotamos al conjunto de estas clases de equivalencia por \(\mathbb{Z}_{n}\text{.}\)</p></section><p id="p-92">En notación de Gauss, esa clase de congruencia se expresa como: \(A \equiv B(mod\;n)\) y se lee: \(A\) es congruente con \(B\) módulo \(n\text{;}\) también puede leerse: en módulo \(n\text{,}\) \(A\) y \(B\) son congruentes. Como ejemplo: \(83 \equiv 63 (mod\;10)\text{;}\) ya que \(63\) y \(83\) dejan el mismo resto \(3\text{,}\) o usando \(83 - 63 = 20\text{,}\)  que verifica un resultado múltiplo de \(10\text{.}\)</p>
+<a href="relaciones.html#enteros-mod-n" class="permalink">¶</a><section class="introduction" id="introduction-5"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-90">La aritmética modular o congruencia modular, es un tipo de operación con aritmética binaria propia; sus propiedades son de gran trascendencia. A veces es llamada aritmética del reloj, ya que en sus operaciones el conteo numérico se reinicia al alcanzar un determinado valor llamado módulo; como se observa en el reloj al paso de las horas.</p></div>
+<div class="sbspanel" style="width:25%;justify-content:flex-start;"><figure class="figure-like" id="reloj-modular"><img src="images/reloj1.jpg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.2.9.</span> \(19 \equiv 7\pmod{12}\)</figcaption></figure></div>
+</div></div>
+<p id="p-91">Esta modularidad o congruencias satisfacen una serie de propiedades importantes, por ello son indispensable en la teoría y aplicaciones del álgebra y en la teoría de números. Son usados en criptografía, teoría de códigos, y en la detección de errores. Por ejemplo, las operaciones aritméticas que realizan las computadoras son de aritmética modular (booleana); donde el módulo es \(2^b\text{,}\) el número de bit de la palabra digital sobre la que se opera es \(b\text{,}\) y 2 es la base del sistema numérico utilizado: el binario.</p></section><p id="p-92">En notación de Gauss, esa clase de congruencia se expresa como: \(A \equiv B\pmod{n}\) y se lee: \(A\) es congruente con \(B\) módulo \(n\text{;}\) también puede leerse: en módulo \(n\text{,}\) \(A\) y \(B\) son congruentes. Como ejemplos: \(83 \equiv 63 \pmod{10}\text{;}\) ya que \(63\) y \(83\) dejan el mismo resto \(3\) al dividirlos por \(10\text{,}\) o usando \(83 - 63 = 20\text{,}\)  que verifica un resultado múltiplo de \(10\text{.}\) También \(19 \equiv 7\pmod{12}\text{,}\) ya que \(19 - 7\) verifica la modularidad; todo número es múltiplo de si mismo <a data-knowl="./knowl/reloj-modular.html" title="Figura 2.2.9">Figura 2.2.9</a>.</p>
 <article class="definition-like" id="congruencia-modulo"><h6 class="heading">
-<span class="type">Definición</span> <span class="codenumber">2.2.9</span>. <span class="title">Congruencia.</span>
+<span class="type">Definición</span> <span class="codenumber">2.2.10</span>. <span class="title">Congruencia.</span>
 </h6>
-<p id="p-93">Dos elementos \(A\) y \(B\) son congruentes si ellos generan el mismo residuo \(r\) cuando se dividen por \(n\text{.}\)</p>
-<article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-94">Sean \(A\) y \(B\) dos enteros y supongamos que \(n \in \mathbb{N}\text{.}\) Diremos que: \(A\) es congruente a \(B\) módulo \(n\text{;}\) o: en mod \(n\text{,}\) \(A\) es congruente a \(B\text{,}\) si y sólo si \(A - B\) es divisible por \(n\text{;}\) es decir, \(A - B = nk\) para algún \(k \in \mathbb{Z}\text{.}\) En este caso escribimos \(A \equiv B (mod \; n) \text{.}\) e.g., \(41 \equiv 17(mod \;8) \) pues \(41 - 17 = 24\) es divisible por \(8\text{.}\)</p>
-<p id="p-95">Afirmativamente la congruencia módulo \(n\) es una <em class="emphasis">relación de equivalencia</em> en \(\mathbb{Z}\text{.}\) Ciertamente cualquier entero \(r\) es equivalente a si mismo pues \(r - r = 0\) es divisible por \(n\text{.}\) Mostraremos ahora que la relación es simétrica. Si \(A \equiv B (mod \; n) \text{,}\) entonces \(A - B = - (B - A) \) es divisible por \(n\text{.}\) Así \(B - A\) es divisible por \(n\) y \(B \equiv A (mod \; n) \text{.}\) Ahora supongamos que \(A \equiv B (mod \; n) \) y \(B \equiv t (mod \; n) \text{.}\) Entonces existen algunos enteros \(k\) y \(l\) tales que \(A - B = kn\) y \(B - t = ln\text{.}\)</p>
+<p id="p-93">Dos elementos \(A\) y \(B\) son congruentes módulo \(n\text{,}\) si ellos generan el mismo residuo \(r\) cuando se dividen por \(n\text{.}\)</p>
+<article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-94">Sean \(A\) y \(B\) dos enteros y supongamos que \(n \in \mathbb{N}\text{.}\) Diremos que: \(A\) es congruente a \(B\) módulo \(n\text{;}\) o: en \pmod{n}, \(A\) es congruente a \(B\text{,}\) si y sólo si \(A - B\) es divisible por \(n\text{;}\) es decir, \(A - B = nk\) para algún \(k \in \mathbb{Z}\text{.}\) En este caso escribimos \(A \equiv B \pmod{n} \text{.}\) e.g., \(41 \equiv 17\pmod{8} \) pues \(41 - 17 = 24\) es divisible por \(8\text{.}\)</p>
+<p id="p-95">Afirmativamente la congruencia módulo \(n\) es una <em class="emphasis">relación de equivalencia</em> en \(\mathbb{Z}\text{.}\) Ciertamente cualquier entero \(r\) es equivalente a si mismo pues \(r - r = 0\) es divisible por \(n\text{.}\) Mostraremos ahora que la relación es simétrica. Si \(A \equiv B \pmod{n} \text{,}\) entonces \(A - B = - (B - A) \) es divisible por \(n\text{.}\) Así \(B - A\) es divisible por \(n\) y \(B \equiv A \pmod{n}) \text{.}\) Ahora supongamos que \(A \equiv B \pmod{n} \) y \(B \equiv t \pmod{n} \text{.}\) Entonces existen algunos enteros \(k\) y \(l\) tales que \(A - B = kn\) y \(B - t = ln\text{.}\)</p>
 <article class="remark-like" id="note-1"><h6 class="heading">
-<span class="type">Nota</span> <span class="codenumber">2.2.10</span>.</h6>
+<span class="type">Nota</span> <span class="codenumber">2.2.11</span>.</h6>
 <p id="p-96">En esta definición se ha utilizado la notación tradicional aritmética para la suma y la resta: \((+,\; -)\text{;}\) el producto queda supuesto entre \(A\) y \(B\text{,}\) cuando se escribe \(AB\text{.}\)</p></article></article></div></article></section><section class="subsection" id="aritmetica-modular"><h3 class="heading hide-type">
 <span class="type">Subsección</span> <span class="codenumber">2.2.6</span> <span class="title">Reglas o axiomas de la Aritmética Modular</span>
 </h3>
 <a href="relaciones.html#aritmetica-modular" class="permalink">¶</a><section class="introduction" id="introduction-6">Las reglas (o axiomas) que manejan las operaciones de la relación de equivalencia módulo \(n\) en \(\mathbb{Z}\text{,}\) se pueden resumir mediante propiedades fáciles de confirmar; sistemáticamente fueron estudiadas por Gauss a finales del siglo XVIII.</section><article class="definition-like" id="reglas-relaciones-equivalencia"><h6 class="heading">
-<span class="type">Definición</span> <span class="codenumber">2.2.11</span>. <span class="title">Reglas de las Relaciones de Equivalencias.</span>
+<span class="type">Definición</span> <span class="codenumber">2.2.12</span>. <span class="title">Reglas de las Relaciones de Equivalencias.</span>
 </h6>
 <p id="p-97"></p>
-<p id="p-98">Si \(A \equiv B (mod \; n) \) y \(C \equiv D (mod \; n) \text{,}\) entonces se cumplen las siguientes reglas:</p>
+<p id="p-98">Si \(A \equiv B \pmod{n} \) y \(C \equiv D \pmod{n} \text{,}\) entonces se cumplen las siguientes reglas:</p>
 <ul class="disc">
-<li id="li-14"><p id="p-99">Suma modular: \(A \oplus C \equiv B \oplus D (mod \; n) \text{.}\)</p></li>
-<li id="li-15"><p id="p-100">Resta modular: \(A \ominus  C \equiv B \ominus  D (mod \; n) \text{.}\)</p></li>
+<li id="li-14"><p id="p-99">Suma modular: \(A \oplus C \equiv B \oplus D \pmod{n} \text{.}\)</p></li>
+<li id="li-15"><p id="p-100">Resta modular: \(A \ominus  C \equiv B \ominus  D \pmod{n} \text{.}\)</p></li>
 <li id="li-16"><p id="p-101">Producto modular: \(A \otimes C \equiv B \otimes D \text{.}\)</p></li>
 </ul></article><article class="definition-like" id="maximo-comun-divisor"><h6 class="heading">
-<span class="type">Definición</span> <span class="codenumber">2.2.12</span>. <span class="title">Máximo Común Divisor.</span>
+<span class="type">Definición</span> <span class="codenumber">2.2.13</span>. <span class="title">Máximo Común Divisor.</span>
 </h6>
 <p id="p-102"></p>
 <p id="p-103">Dado \(a,b\) \(\in \mathbb{Z}\text{,}\) se dice que \(d \in \mathbb{Z}^+\) es un máximo común divisor, abreviado mcd. de a y b, si:</p>
@@ -279,11 +282,11 @@ A / \mathcal{R} = \left\{\left\{0,3,6,9\right\},\left\{1,4,7\right\},\left\{2,5,
 </ol>
 <p>Si \(d\) u otro entero \(d_1\) satisface (i) e (ii) entonces \(d = d_1\)</p>
 <article class="remark-like" id="note-2"><h6 class="heading">
-<span class="type">Nota</span> <span class="codenumber">2.2.13</span>.</h6>Con la notación \(\mathbb{Z}^+\) se indican los enteros sin el cero. Con la barra vertical "\(|\)" se indica la división entera; no se ha encerrado en círculo como en el caso de las otras operaciones aritméticas (\(\oplus, \ominus, \otimes\)); debido a que la división no siempre es una operación interna, puede dar resultados fuera del conjunto donde opera. </article></article><article class="theorem-like" id="proposition-1"><h6 class="heading">
-<span class="type">Proposición</span> <span class="codenumber">2.2.14</span>. <span class="title">Propiedades de Clases de Equivalencia mod n.</span>
+<span class="type">Nota</span> <span class="codenumber">2.2.14</span>.</h6>Con la notación \(\mathbb{Z}^+\) se indican los enteros sin el cero. Con la barra vertical "\(|\)" se indica la división entera; no se ha encerrado en círculo como en el caso de las otras operaciones aritméticas (\(\oplus, \ominus, \otimes\)); debido a que la división no siempre es una operación interna, puede dar resultados fuera del conjunto donde opera. </article></article><article class="theorem-like" id="proposition-1"><h6 class="heading">
+<span class="type">Proposición</span> <span class="codenumber">2.2.15</span>. <span class="title">Propiedades de Clases de Equivalencia \(\pmod{n}\).</span>
 </h6>
 <p id="p-106"></p>
-<p id="p-107">Sea \(\mathbb{Z}n\) el conjunto de clases de equivalencia de los enteros mod \(n\text{,}\) y \(A,B,C \in \mathbb{Z}_{n}\text{.}\)</p>
+<p id="p-107">Sea \(\mathbb{Z}n\) el conjunto de clases de equivalencia de los enteros \(\pmod{n}\text{,}\) y \(A,B,C \in \mathbb{Z}_{n}\text{.}\)</p>
 <ul class="disc">
 <li id="li-19"><p id="p-108">La adición y la multiplicación son conmutativas.</p></li>
 <li id="li-20"><p id="p-109">La adición y la multiplicación son asociativas.</p></li>
@@ -291,32 +294,32 @@ A / \mathcal{R} = \left\{\left\{0,3,6,9\right\},\left\{1,4,7\right\},\left\{2,5,
 <li id="li-22"><p id="p-111">La multiplicación es distributiva respecto a la adición.</p></li>
 <li id="li-23"><p id="p-112">Para cada entero \(A\) existe un inverso aditivo \(-A\text{.}\)</p></li>
 <li id="li-24"><p id="p-113">Existe un entero \(B\) que llamaremos Máximo Común Divisor (mcd)  entre \(A\) y \(n\text{.}\)</p></li>
-</ul></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-5" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-114">Sea \(\mathbb{Z}n\) el conjunto de clases de equivalencia de los enteros mod \(n\text{,}\) y \(A,B,C \in \mathbb{Z}_{n}\text{,}\) entonces \(A,B,C\) cumplen con:</p>
+</ul></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-5" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-114">Sea \(\mathbb{Z}n\) el conjunto de clases de equivalencia de los enteros \(\pmod{n}\text{,}\) y \(A,B,C \in \mathbb{Z}_{n}\text{,}\) entonces \(A,B,C\) cumplen con:</p>
 <ul class="disc">
 <li id="li-25">
 <p id="p-115">Conmutatividad:</p>
 <div class="displaymath">
 \begin{equation*}
-A \oplus B \equiv B \oplus A (mod \; n)
+A \oplus B \equiv B \oplus A \pmod{n}
 \end{equation*}
 </div>
 <div class="displaymath">
 \begin{equation*}
-A \otimes B \equiv B \otimes A (mod \; n).
+A \otimes B \equiv B \otimes A \pmod{n}.
 \end{equation*}
 </div>
-<p id="p-116">La adición y la multiplicación son conmutativas \(mod n\) ya que el remanente de \(A \oplus B\) dividido por \(n\) es lo mismo que el remanente de \(B \oplus A\) dividido por \(n\text{.}\)</p>
+<p id="p-116">La adición y la multiplicación son conmutativas \(\pmod{n}\) ya que el remanente de \(A \oplus B\) dividido por \(n\) es lo mismo que el remanente de \(B \oplus A\) dividido por \(n\text{.}\)</p>
 </li>
 <li id="li-26">
 <p id="p-117">Asociatividad:</p>
 <div class="displaymath">
 \begin{equation*}
-(A \oplus B) \oplus C \equiv A \oplus (B \oplus C) (mod \; n)
+(A \oplus B) \oplus C \equiv A \oplus (B \oplus C) \pmod{n}
 \end{equation*}
 </div>
 <div class="displaymath">
 \begin{equation*}
-(A \otimes B)\otimes C \equiv A \otimes (B \otimes C) (mod \; n).
+(A \otimes B)\otimes C \equiv A \otimes (B \otimes C) (\pmod{n}.
 \end{equation*}
 </div>
 </li>
@@ -329,7 +332,7 @@ A \oplus 0 \equiv A
 </div>
 <div class="displaymath">
 \begin{equation*}
-A \otimes 1 \equiv A (mod \; n).
+A \otimes 1 \equiv A \pmod{n}.
 \end{equation*}
 </div>
 </li>
@@ -345,20 +348,33 @@ A \otimes (B \oplus C) \equiv A \otimes B \oplus A \otimes C .
 <p id="p-120">Inverso aditivo:</p>
 <div class="displaymath">
 \begin{equation*}
-A \oplus (-A) \equiv 0 (mod \; n) .
+A \oplus (-A) \equiv 0 \pmod{n}\text{.}
 \end{equation*}
 </div>
 </li>
 <li id="li-30">
 <p id="p-121">Máximo Común Divisor:</p>
-<p id="p-122">Sea \(A\) un número entero distinto de cero. Entonces existe un máximo común divisor (mcd) de valor \(B\) entre \(A\) y \(n\text{,}\) tal que \(A \otimes B \equiv 1 (mod \; n) .\)</p>
-<p id="p-123">Supongamos que \(mcd(A,n) = 1\text{.}\) Entonces existe un entero \(r\) y \(s\) tal que \(A \otimes r \oplus n \otimes s = 1\text{.}\) Como \(n \otimes s = 1 - A \otimes r\text{,}\) este debe ser el caso de que \(A \otimes r \equiv 1 (mod \; n)\text{.}\) Permitiendo que \(B\) sea la clase de equivalencia de \(r\text{,}\) \(A \otimes B \equiv 1 (mod \;n)\text{.}\)</p>
-<p id="p-124">Como caso contrario, supongamos que existe un número entero \(B\) tal que \(A \otimes B \equiv 1 (mod \; n)\text{.}\) Entonces \(n\) divide a \(A \otimes B - 1\text{,}\) luego existe un número entero \(k\) tal que \(A \otimes B - n \otimes K = 1 \text{.}\) Sea \(d = mcd (A, \; n)\text{.}\) Como \(d\) divide a \(A \otimes B - n \otimes k\text{,}\) \(d\) debe también dividir a \(1\text{;}\) por lo tanto \(d = 1\text{.}\)</p>
+<p id="p-122">Sea \(A\) un número entero distinto de cero. Entonces existe un máximo común divisor (mcd) de valor \(B\) entre \(A\) y \(n\text{,}\) tal que \(A \otimes B \equiv 1 \pmod{n}\text{.}\)</p>
+<p id="p-123">Supongamos que \(mcd(A,n) = 1\text{.}\) Entonces existe un entero \(r\) y \(s\) tal que \(A \otimes r \oplus n \otimes s = 1\text{.}\) Como \(n \otimes s = 1 - A \otimes r\text{,}\) este debe ser el caso de que \(A \otimes r \equiv 1 \pmod{n}\text{.}\) Permitiendo que \(B\) sea la clase de equivalencia de \(r\text{,}\) \(A \otimes B \equiv 1 \pmod{n}\text{.}\)</p>
+<p id="p-124">Como caso contrario, supongamos que existe un número entero \(B\) tal que \(A \otimes B \equiv 1 \pmod{n}\text{.}\) Entonces \(n\) divide a \(A \otimes B - 1\text{,}\) luego existe un número entero \(k\) tal que \(A \otimes B - n \otimes K = 1 \text{.}\) Sea \(d = mcd (A, \; n)\text{.}\) Como \(d\) divide a \(A \otimes B - n \otimes k\text{,}\) \(d\) debe también dividir a \(1\text{;}\) por lo tanto \(d = 1\text{.}\)</p>
 </li>
 </ul></article></div>
-<article class="example-like" id="ejemplo-adicion-groupos-zn"><a data-knowl="" class="id-ref" data-refid="hk-ejemplo-adicion-groupos-zn"><h6 class="heading">
-<span class="type">Ejemplo</span> <span class="codenumber">2.2.15</span>. <span class="title">Aritmética modular.</span>
-</h6></a></article><div id="hk-ejemplo-adicion-groupos-zn" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-125">Los siguientes ejemplos ilustran la arítmetica módulo \(n\text{:}\)</p>
+<section class="subsection" id="particion-modular"><h4 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.2.6.1</span> <span class="title">Partición modular</span>
+</h4>
+<a href="relaciones.html#particion-modular" class="permalink">¶</a><section class="introduction" id="introduction-7"><p id="p-125">En principio la aritmética modular difiere de la aritmética tradicional; pero su estructura matemática, como relación de equivalencia es en esencia igual a cualquier otra. La congruencia módulo \(n\) induce una partición en el conjunto donde está definida: es sólo una operación que separa en clases de equivalencia un determinado conjunto (creando o generando Clases de Equivalencia, también llamadas Clases de Congruencias)<a data-knowl="./knowl/clase-de-equivalencia.html" title="Definición 2.2.6: Clase de equivalencia">Definición 2.2.6</a>; e.g., los enteros \(\pmod{n}\) dividen \(\mathbb{Z}\) en \(n\) diferentes clases de equivalencia; denotamos al conjunto de estas clases de equivalencia por \(\mathbb{Z}_{n}\) .</p></section><p id="p-126">Por ejemplo, el entero módulo \(12\text{,}\) particiona a los enteros de la siguiente manera:</p>
+<div class="displaymath">
+\begin{align*}
+{[0]} &amp; = \{ \ldots, -12, 0, 12, 24, \ldots \},\\
+{[1]} &amp; = \{ \ldots, -11, 1, 13, 25, \ldots \},\\
+{[2]} &amp; = \{ \ldots, -10, 2, 14, 26, \ldots \},\\
+&amp; \vdots\\
+{[11]} &amp; = \{ \ldots, -1, 11, 23, 35, \ldots \}\text{.}
+\end{align*}
+</div>
+<p id="p-127">A estas clases de equivalencias o de congruencias, se les define una aritmética \(\mathbb{Z}_{n}\text{.}\) Para dos enteros \(A\) y \(B\text{,}\) la adición módulo \(n\text{:}\) \((A \oplus B) \pmod{n} \text{,}\) será el resto de \(A \oplus B\) cuando es dividido por \(n\text{.}\) La multiplicación módulo \(n\text{,}\) esta definida cómo: \((A \otimes B) \pmod{n}\text{,}\) y se corresponde a el resto de \(A \otimes B\) cuando es dividido por \(n\text{.}\)</p></section><article class="example-like" id="ejemplo-adicion-groupos-zn"><a data-knowl="" class="id-ref" data-refid="hk-ejemplo-adicion-groupos-zn"><h6 class="heading">
+<span class="type">Ejemplo</span> <span class="codenumber">2.2.16</span>. <span class="title">Aritmética modular.</span>
+</h6></a></article><div id="hk-ejemplo-adicion-groupos-zn" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-128">Los siguientes ejemplos ilustran la arítmetica módulo \(n\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
 7 + 4 &amp; \equiv  1 \pmod{ 5} &amp; 7 \cdot 3 &amp; \equiv 1 \pmod{ 5}\\
@@ -368,18 +384,18 @@ A \oplus (-A) \equiv 0 (mod \; n) .
 </div>
 <p>En particular, note que es posible que el producto de dos números (no ceros) módulo \(n\text{,}\) puede ser equivalente a \(0\) módulo \(n\text{.}\)</p></article></div>
 <article class="example-like" id="example-3"><a data-knowl="" class="id-ref" data-refid="hk-example-3"><h6 class="heading">
-<span class="type">Ejemplo</span> <span class="codenumber">2.2.16</span>. <span class="title">Código corrector del RIF venezolano; \(mod(11)\).</span>
+<span class="type">Ejemplo</span> <span class="codenumber">2.2.17</span>. <span class="title">Código corrector del RIF venezolano; \(\pmod{11}\).</span>
 </h6></a></article><div id="hk-example-3" class="hidden-content tex2jax_ignore"><article class="example-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:35%;justify-content:center;"><figure class="figure-like" id="rif-image"><img src="./images/rif_rommel.jpg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.2.17.</span> </figcaption></figure></div>
-<div class="sbspanel" style="width:60%;justify-content:center;"><p id="p-126">El RIF personal o jurídico es un número de registro que se asigna a cada persona natural o jurídica. Esta  relacionado con la solvencia de los impuestos, tasas y otros afines en la República Bolivariana de Venezuela. En general, respecto a las personas naturales, a cada número de cédula de identidad, se le agrega un código de validación complementario.</p></div>
+<div class="sbspanel" style="width:35%;justify-content:center;"><figure class="figure-like" id="rif-image"><img src="./images/rif_rommel.jpg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.2.18.</span> </figcaption></figure></div>
+<div class="sbspanel" style="width:60%;justify-content:center;"><p id="p-129">El RIF personal o jurídico es un número de registro que se asigna a cada persona natural o jurídica. Esta  relacionado con la solvencia de los impuestos, tasas y otros afines en la República Bolivariana de Venezuela. En general, respecto a las personas naturales, a cada número de cédula de identidad, se le agrega un código de validación complementario.</p></div>
 </div></div>
-<p id="p-127">El código corrector, permite validar la transcripción de datos, evitando la presencia de errores en las bases de datos; de no usarse, un error de transcripción pudiera hacer que un impuesto sea cobrado a otro ciudadano. Los analistas ante la presencia de un error pueden corregir exactamente el RIF equivocado. Este código no está presente en los números de cédulas de identidad; es una de las causas de la necesidad del RIF.</p>
-<p id="p-128">El código de validación es calculado de acuerdo al siguiente algoritmo:</p>
+<p id="p-130">El código corrector, permite validar la transcripción de datos, evitando la presencia de errores en las bases de datos; de no usarse, un error de transcripción pudiera hacer que un impuesto sea cobrado a otro ciudadano. Los analistas ante la presencia de un error pueden corregir exactamente el RIF equivocado. Este código no está presente en los números de cédulas de identidad; es una de las causas de la necesidad del RIF.</p>
+<p id="p-131">El código de validación es calculado de acuerdo al siguiente algoritmo:</p>
 <ol class="decimal">
-<li id="li-31"><p id="p-129">Si es persona natural y su documento de identidad inicia con <code class="code-inline tex2jax_ignore">V</code> (ej., <code class="code-inline tex2jax_ignore">V08446211</code>), un variable base toma el valor <code class="code-inline tex2jax_ignore">4</code>, si inicia con <code class="code-inline tex2jax_ignore">E</code>, la base toma el valor <code class="code-inline tex2jax_ignore">8</code>. Si es persona jurídica y su código inicia con <code class="code-inline tex2jax_ignore">J</code>, la variable base toma el valor <code class="code-inline tex2jax_ignore">12</code>.</p></li>
-<li id="li-32"><p id="p-130">Cada uno de los <code class="code-inline tex2jax_ignore">8</code> dígito del documento de identidad se parea con los dígitos constantes \([0,3,2,7,6,5,4,3,2]\text{,}\) resultando para el ejemplo: \([(V=4),(0,3),(8,2),(4,7),(4,6),(6,5),(2,4),(1,3),(1,2)]\text{.}\)</p></li>
+<li id="li-31"><p id="p-132">Si es persona natural y su documento de identidad inicia con <code class="code-inline tex2jax_ignore">V</code> (ej., <code class="code-inline tex2jax_ignore">V08446211</code>), un variable base toma el valor <code class="code-inline tex2jax_ignore">4</code>, si inicia con <code class="code-inline tex2jax_ignore">E</code>, la base toma el valor <code class="code-inline tex2jax_ignore">8</code>. Si es persona jurídica y su código inicia con <code class="code-inline tex2jax_ignore">J</code>, la variable base toma el valor <code class="code-inline tex2jax_ignore">12</code>.</p></li>
+<li id="li-32"><p id="p-133">Cada uno de los <code class="code-inline tex2jax_ignore">8</code> dígito del documento de identidad se parea con los dígitos constantes \([0,3,2,7,6,5,4,3,2]\text{,}\) resultando para el ejemplo: \([(V=4),(0,3),(8,2),(4,7),(4,6),(6,5),(2,4),(1,3),(1,2)]\text{.}\)</p></li>
 <li id="li-33">
-<p id="p-131">Calculan la suma resultante del producto de los pares ordenados:</p>
+<p id="p-134">Calculan la suma resultante del producto de los pares ordenados:</p>
 <div class="displaymath">
 \begin{equation*}
 val=[(4)+(0)+(16)+(28)+(24)+(30)+(8)+(3)+(2)] = 105\text{.}
@@ -387,7 +403,7 @@ val=[(4)+(0)+(16)+(28)+(24)+(30)+(8)+(3)+(2)] = 105\text{.}
 </div>
 </li>
 <li id="li-34">
-<p id="p-132">Calcula el <code class="code-inline tex2jax_ignore">mod (11)</code> de la operación anterior: Resta de <code class="code-inline tex2jax_ignore">11</code> el resto de la suma anterior dividido entre <code class="code-inline tex2jax_ignore">11</code>. El código de verificación resultante es:</p>
+<p id="p-135">Calcula el <code class="code-inline tex2jax_ignore">\pmod{11}</code> de la operación anterior: Resta de <code class="code-inline tex2jax_ignore">11</code> el resto de la suma anterior dividido entre <code class="code-inline tex2jax_ignore">11</code>. El código de verificación resultante es:</p>
 <div class="displaymath">
 \begin{equation*}
 código = 11 - Resto (val / 11) = 6\text{.}
@@ -413,7 +429,7 @@ def digito_rif(ci):
 	digit = 11 - (val % 11)
 	return '%s%s' % (ci[:9], str(digit)[-1])
 </pre>
-<p id="p-133">Al ejecutar la rutina <code class="code-inline tex2jax_ignore">digito_rif("V08446211")</code>, se obtiene: <code class="code-inline tex2jax_ignore">V084462116</code>; el número <code class="code-inline tex2jax_ignore">6</code> es el código de verificación agregado.</p></article></div></section></section></div></main>
+<p id="p-136">Al ejecutar la rutina <code class="code-inline tex2jax_ignore">digito_rif("V08446211")</code>, se obtiene: <code class="code-inline tex2jax_ignore">V084462116</code>; el número <code class="code-inline tex2jax_ignore">6</code> es el código de verificación agregado.</p></article></div></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.12/login.js"></script>
