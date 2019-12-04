@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-27T15:46:21-04:00    *-->
+<!--*    on 2019-12-04T15:17:01-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,8 +13,52 @@
 </head>
 <body>
 <article class="example-like"><h6 class="heading">
-<span class="type">Ejemplo</span> <span class="codenumber">B.0.1</span>. <span class="title">¿De que color es el caballo blanco de Bolívar?</span>
+<span class="type">Ejemplo</span> <span class="codenumber">2.2.19</span>. <span class="title">Código corrector del RIF venezolano; \(\pmod{11}\).</span>
 </h6>
-<p>piense, piense, piense ...?</p></article><span class="incontext"><a href="appendix-1.html#example-4">in-context</a></span>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:35%;justify-content:center;"><figure class="figure-like"><img src="./images/rif_rommel.jpg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.2.20.</span> </figcaption></figure></div>
+<div class="sbspanel" style="width:60%;justify-content:center;"><p>El RIF personal o jurídico es un número de registro que se asigna a cada persona natural o jurídica. Esta  relacionado con la solvencia de los impuestos, tasas y otros afines en la República Bolivariana de Venezuela. En general, respecto a las personas naturales, a cada número de cédula de identidad, se le agrega un código de validación complementario.</p></div>
+</div></div>
+<p>El código corrector, permite validar la transcripción de datos, evitando la presencia de errores en las bases de datos; de no usarse, un error de transcripción pudiera hacer que un impuesto sea cobrado a otro ciudadano. Los analistas ante la presencia de un error pueden corregir exactamente el RIF equivocado. Este código no está presente en los números de cédulas de identidad; es una de las causas de la necesidad del RIF.</p>
+<p>El código de validación es calculado de acuerdo al siguiente algoritmo:</p>
+<ol class="decimal">
+<li><p>Si es persona natural y su documento de identidad inicia con <code class="code-inline tex2jax_ignore">V</code> (ej., <code class="code-inline tex2jax_ignore">V08446211</code>), un variable base toma el valor <code class="code-inline tex2jax_ignore">4</code>, si inicia con <code class="code-inline tex2jax_ignore">E</code>, la base toma el valor <code class="code-inline tex2jax_ignore">8</code>. Si es persona jurídica y su código inicia con <code class="code-inline tex2jax_ignore">J</code>, la variable base toma el valor <code class="code-inline tex2jax_ignore">12</code>.</p></li>
+<li><p>Cada uno de los <code class="code-inline tex2jax_ignore">8</code> dígito del documento de identidad se parea con los dígitos constantes \([0,3,2,7,6,5,4,3,2]\text{,}\) resultando para el ejemplo: \([(V=4),(0,3),(8,2),(4,7),(4,6),(6,5),(2,4),(1,3),(1,2)]\text{.}\)</p></li>
+<li>
+<p>Calculan la suma resultante del producto de los pares ordenados:</p>
+<div class="displaymath">
+\begin{equation*}
+val=[(4)+(0)+(16)+(28)+(24)+(30)+(8)+(3)+(2)] = 105\text{.}
+\end{equation*}
+</div>
+</li>
+<li>
+<p>Calcula el \(\pmod{11}\) de la operación anterior: Resta de <code class="code-inline tex2jax_ignore">11</code> el resto de la suma anterior dividido entre <code class="code-inline tex2jax_ignore">11</code>. El código de verificación resultante es:</p>
+<div class="displaymath">
+\begin{equation*}
+código = 11 - Resto (val / 11) = 6\text{.}
+\end{equation*}
+</div>
+</li>
+</ol>
+<pre class="code-block tex2jax_ignore"># Codigo Python (puede ser ejecutado en SageMath)
+def digito_rif(ci):
+	'''
+	toma un número de cedula o rif y verifica el digito validador
+	ej.  V08446211 ó J12345678
+
+	'''
+	base = {'V': 1 * 4, 'E': 2 * 4, 'J': 3 * 4}
+	oper = [0, 3, 2, 7, 6, 5, 4, 3, 2]
+	for i in range(len(ci[:9])):
+		if i == 0:
+			val = base.get(ci[0], 0)
+		else:
+			val += oper[i] * int(ci[i])
+			#print val, oper[i], int(ci[i]), 11 - (val % 11)
+	digit = 11 - (val % 11)
+	return '%s%s' % (ci[:9], str(digit)[-1])
+</pre>
+<p>Al ejecutar la rutina <code class="code-inline tex2jax_ignore">digito_rif("V08446211")</code>, se obtiene: <code class="code-inline tex2jax_ignore">V084462116</code>; el número <code class="code-inline tex2jax_ignore">6</code> es el código de verificación agregado.</p></article><span class="incontext"><a href="relaciones.html#example-4">in-context</a></span>
 </body>
 </html>

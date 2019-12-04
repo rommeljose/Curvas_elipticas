@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-27T15:46:17-04:00    *-->
+<!--*    on 2019-12-04T15:17:02-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,27 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Párrafo</span></h6>
-<p>El código de validación es calculado de acuerdo al siguiente algoritmo:</p>
-<ol class="decimal">
-<li><p>Si es persona natural y su documento de identidad inicia con <code class="code-inline tex2jax_ignore">V</code> (ej., <code class="code-inline tex2jax_ignore">V08446211</code>), un variable base toma el valor <code class="code-inline tex2jax_ignore">4</code>, si inicia con <code class="code-inline tex2jax_ignore">E</code>, la base toma el valor <code class="code-inline tex2jax_ignore">8</code>. Si es persona jurídica y su código inicia con <code class="code-inline tex2jax_ignore">J</code>, la variable base toma el valor <code class="code-inline tex2jax_ignore">12</code>.</p></li>
-<li><p>Cada uno de los <code class="code-inline tex2jax_ignore">8</code> dígito del documento de identidad se parea con los dígitos constantes \([0,3,2,7,6,5,4,3,2]\text{,}\) resultando para el ejemplo: \([(V=4),(0,3),(8,2),(4,7),(4,6),(6,5),(2,4),(1,3),(1,2)]\text{.}\)</p></li>
-<li>
-<p>Calculan la suma resultante del producto de los pares ordenados:</p>
-<div class="displaymath">
-\begin{equation*}
-val=[(4)+(0)+(16)+(28)+(24)+(30)+(8)+(3)+(2)] = 105\text{.}
-\end{equation*}
-</div>
-</li>
-<li>
-<p>Calcula el <code class="code-inline tex2jax_ignore">\pmod{11}</code> de la operación anterior: Resta de <code class="code-inline tex2jax_ignore">11</code> el resto de la suma anterior dividido entre <code class="code-inline tex2jax_ignore">11</code>. El código de verificación resultante es:</p>
-<div class="displaymath">
-\begin{equation*}
-código = 11 - Resto (val / 11) = 6\text{.}
-\end{equation*}
-</div>
-</li>
-</ol>
+<p>El RIF personal o jurídico es un número de registro que se asigna a cada persona natural o jurídica. Esta  relacionado con la solvencia de los impuestos, tasas y otros afines en la República Bolivariana de Venezuela. En general, respecto a las personas naturales, a cada número de cédula de identidad, se le agrega un código de validación complementario.</p>
 <span class="incontext"><a href="relaciones.html#p-132">in-context</a></span>
 </body>
 </html>

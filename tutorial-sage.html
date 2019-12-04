@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-27T15:37:12-04:00    *-->
+<!--*    on 2019-12-04T15:16:53-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -121,7 +121,6 @@ var js_version = 0.12;
 <li><a href="la-nueva-algebra.html" data-scroll="la-nueva-algebra">Álgebra Moderna</a></li>
 <li><a href="relaciones.html" data-scroll="relaciones">Relaciones Binarias</a></li>
 <li><a href="estructuras-matematicas.html" data-scroll="estructuras-matematicas">Las estructuras matemáticas</a></li>
-<li><a href="section-6.html" data-scroll="section-6">XXXX La Congruencia XXXX</a></li>
 <li><a href="references-2.html" data-scroll="references-2">Referencias y lecturas recomendadas</a></li>
 </ul>
 </li>
@@ -133,8 +132,8 @@ var js_version = 0.12;
 <li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">B</span> <span class="title">Cuaquier apéndice</span></a></li>
 <li class="link">
 <a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">C</span> <span class="title">Estructura para el Apéndice</span></a><ul>
-<li><a href="section-8.html" data-scroll="section-8">A Section in an Appendix</a></li>
-<li><a href="section-9.html" data-scroll="section-9">Numbering in the Back Matter</a></li>
+<li><a href="section-7.html" data-scroll="section-7">A Section in an Appendix</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Numbering in the Back Matter</a></li>
 </ul>
 </li>
 <li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">D</span> <span class="title">GNU Free Documentation License</span></a></li>
@@ -149,27 +148,104 @@ var js_version = 0.12;
 <a href="tutorial-sage.html" class="permalink">¶</a><section class="subsection" id="ejercicios-sage"><h3 class="heading hide-type">
 <span class="type">Subsección</span> <span class="codenumber">3.1.1</span> <span class="title">Aritmética Básica</span>
 </h3>
-<a href="tutorial-sage.html#ejercicios-sage" class="permalink">¶</a><p id="p-211">Las operaciones aritméticas con enteros se realizan en SageMath con los operadores habituales y tradicionales; así como la operación con paréntesis y el orden de precedencia de los operadores. Las fracciones se escriben en la forma habitual, con la barra de división. Los números reales se escriben con el punto decimal, y la raíz cuadrada mediante el uso del operador sqrt(), etc., los siguiente ejercicios interactivos muestran las potencialidades de SageMath, y su simplicidad para las operaciones aritméticas tradicionales; tal y cual como se usa una calculadora en notación algebraica verdadera.</p>
-<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">3+2
+<a href="tutorial-sage.html#ejercicios-sage" class="permalink">¶</a><p id="p-221">Las operaciones aritméticas con enteros se realizan en SageMath con los operadores habituales y tradicionales; así como la operación con paréntesis y el orden de precedencia de los operadores. Las fracciones se escriben en la forma habitual, con la barra de división. Los números reales se escriben con el punto decimal, y la raíz cuadrada mediante el uso del operador sqrt(), etc., los siguiente ejercicios interactivos muestran las potencialidades de SageMath, y su simplicidad para las operaciones aritméticas tradicionales; tal y cual como se usa una calculadora en notación algebraica verdadera.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">3+2
 </script></div>
-<p id="p-212">Puede escribir una operación aritmética en la celda de entrada e.g., <code class="code-inline tex2jax_ignore">3+2</code> y verificar el resultado, para cada caso a considerar; incluso la operación puede ser una serie de instrucciones utilizando varias líneas dentro de la celda de cálculo:</p>
-<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">a = 10
+<p id="p-222">Puede escribir una operación aritmética en la celda de entrada e.g., <code class="code-inline tex2jax_ignore">3+2</code> y verificar el resultado, para cada caso a considerar; incluso la operación puede ser una serie de instrucciones utilizando varias líneas dentro de la celda de cálculo:</p>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">a = 10
 b = 6
 b = b - a
 a = a + 20
 a
 </script></div>
-<p id="p-213">SageMath opera como un cuaderno de trabajo, donde el resultado de cada operación queda guardado en "memoria" y puede ser utilizado más adelante en cualquier operación de calculo. e.g., el valor de <code class="code-inline tex2jax_ignore">a</code> resultante del paso anterior, puede ser reutilizado para otra operación; es por ello que se debe tener cuidado al ejecutar una celda; se actualizaran los valores de las variables afectadas en la memoria de cálculo:</p>
-<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">a = a + 50
+<p id="p-223">SageMath opera como un cuaderno de trabajo, donde el resultado de cada operación queda guardado en "memoria" y puede ser utilizado más adelante en cualquier operación de calculo. e.g., el valor de <code class="code-inline tex2jax_ignore">a</code> resultante del paso anterior, puede ser reutilizado para otra operación; es por ello que se debe tener cuidado al ejecutar una celda; se actualizaran los valores de las variables afectadas en la memoria de cálculo:</p>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">a = a + 50
 b = b - 16
 a + b
 </script></div>
-<p id="p-214">al ejecutar la anterior y luego la siguiente celda, se puede detallar los posibles resultados dependiendo de la interacción que ha tenido el usuario con las distintas celdas de entrada de datos y evaluación de las mismas:</p>
-<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">a - b
-</script></div></section><section class="subsection" id="aritmetica-modular"><h3 class="heading hide-type">
+<p id="p-224">al ejecutar la anterior y luego la siguiente celda, se puede detallar los posibles resultados dependiendo de la interacción que ha tenido el usuario con las distintas celdas de entrada de datos y evaluación de las mismas:</p>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">a - b
+</script></div>
+<p id="p-225">========== PARA LOS CRÉDITOS: http://doc.sagemath.org/html/en/thematic_tutorials/index.html ==============</p>
+<article class="remark-like" id="remark-3"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.1</span>. <span class="title">División de enteros.</span>
+</h6>
+<p id="p-226">El comando \(a % b\) devolverá el resto tras la división de \(a\) por \(b\text{.}\) En otras palabras, el valor es el entero único \(r\) tal que:</p>
+<ul class="disc">
+<li id="li-73"><p id="p-227">\(0 \leq r\lt b\text{.}\)</p></li>
+<li id="li-74"><p id="p-228">\(a = bq + r\) para algún entero \(q\) que llamaremos "el cociente".</p></li>
+</ul>
+<p id="p-229">Entonces \(\left(a - b\right) / r\) será igual a \(q\text{,}\) e.g.:</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">r = 14 % 3
+q = ( 14 - r ) / 3
+r , q
+</script></div>
+<p id="p-230">devolverá \(2\) para el valor de \(R\) y \(4\) para el valor de \(q\text{.}\) Tenga en cuenta que el "\(/\)" es la división de enteros , donde se desecha cualquier resto y el resultado es siempre un entero. Entonces, por ejemplo, \(4.66666\) nuevamente será igual a \(4\text{,}\) no a \(4.66666\text{.}\)</p></article><article class="remark-like" id="remark-4"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.2</span>. <span class="title">Máximo común divisor.</span>
+</h6>
+<p id="p-231">El <dfn class="terminology">máximo común divisor</dfn> de \(a\) y \(b\) se obtiene con el comando <code class="code-inline tex2jax_ignore">gcd(a,b)</code> , donde en nuestros primeros usos, \(a\) y \(b\) son enteros. Más tarde, \(a\) y \(b\) pueden ser otros objetos con una noción de divisibilidad mas abstracta, como los polinomios. e.g.:</p>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">gcd ( 2776 , 2452 )
+</script></div></article><article class="remark-like" id="remark-5"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.3</span>. <span class="title">Máximo divisor común extendido.</span>
+</h6>
+<p id="p-232">El comando <code class="code-inline tex2jax_ignore">xgcd(a, b)</code> (“eXtended GCD”) devuelve un triple donde el primer elemento es el máximo divisor común de \(a\) y \(b\) (como con el comando <code class="code-inline tex2jax_ignore">gcd(a, b)</code> anterior ), pero los siguientes dos elementos son los valores de \(r\) y \(s\) tales que \(ra+sb =\) <code class="code-inline tex2jax_ignore">xgcd(a, b)</code>  e.g., xgcd\((633, 331)\) devuelve \((1, 194, -371)\text{.}\) Se pueden extraer partes del triple usando \([\;]\) para acceder a las entradas del triple, comenzando con el primero como número \(0\text{.}\) Por ejemplo, lo siguiente debería devolver el resultado <code class="code-inline tex2jax_ignore">True</code> (incluso si cambia los valores de \(a\) y \(b\)). Estudiar este bloque de código contribuirá en gran medida a ayudarlo a aprovechar al máximo la producción de Sage. (Con "\(=\)" se asigna un valor a una variable, mientras que con "\(==\)" es cómo se determina la igualdad de dos elementos).</p>
+<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">a = 633
+b = 331
+extended = xgcd ( a , b )
+g = extended [ 0 ]
+r = extended [ 1 ]
+s = extended [ 2 ]
+g == r * a + s * b
+</script></div></article><article class="remark-like" id="remark-6"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.4</span>. <span class="title">Divisibilidad.</span>
+</h6>
+<p id="p-233">Un resto igua a cero indica divisibilidad. Entonces \((a % b) == 0\) devolverá <code class="code-inline tex2jax_ignore">True</code> si \(b\) divide \(a\) , y de lo contrario devolverá <code class="code-inline tex2jax_ignore">False</code>. Por ejemplo, \(\left(9\; \% \; 3\right) == 0\) es <code class="code-inline tex2jax_ignore">True</code>, pero \(\left(9\; \% \; 4\right) == 0\) es <code class="code-inline tex2jax_ignore">False</code>, e.g.:</p>
+<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">answer1 = (( 20 % 5 ) == 0 )
+answer2 = (( 17 % 4 ) == 0 )
+answer1 , answer2
+</script></div></article><article class="remark-like" id="remark-7"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.5</span>. <span class="title">Factorizar.</span>
+</h6>
+<p id="p-234">Teorema fundamental de la aritmética, el <code class="code-inline tex2jax_ignore">factor (a)</code> devolverá una expresión única para \(a\) como producto de potencias de números primos. Impreso de forma agradablemente y legible, pero también se puede manipular con Python como una lista de pares \((p_i,e_i)\) contienen primos como bases y sus exponentes asociados. Por ejemplo:</p>
+<div class="sagecell-sage" id="sage-9"><script type="text/x-sage">factor ( 2600 )
+</script></div>
+<p id="p-235">Si solo desea los divisores primos de un número entero, utilice el <code class="code-inline tex2jax_ignore">prime_divisors(a)</code> , que devolverá una lista de todos los divisores primos de \(a\text{.}\) Por ejemplo:</p>
+<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">prime_divisors ( 2600 )
+</script></div></article><article class="remark-like" id="remark-8"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.6</span>. <span class="title">Multiplicativa inversa.</span>
+</h6>
+<p id="p-236">El comando <code class="code-inline tex2jax_ignore">inverse_mod(a, n)</code> produce el inverso multiplicativo de a \(\pmod{n}\text{;}\) o un error si no existe. Por ejemplo:</p>
+<div class="sagecell-sage" id="sage-11"><script type="text/x-sage">inverse_mod ( 352 , 917 )
+</script></div>
+<p id="p-237">e.g., el entero \(m\) tal que \(352*508 == m*917+1\text{.}\)  Luego :</p>
+<div class="sagecell-sage" id="sage-12"><script type="text/x-sage">inverse_mod ( 4 , 24 )
+</script></div>
+<p id="p-238">Como la división por cero no es posible, la salida será una advertencia de error: <code class="code-inline tex2jax_ignore">ZeroDivisionError: inverse of Mod(4, 24) does not exist</code>.</p></article></section><section class="subsection" id="aritmetica-modular"><h3 class="heading hide-type">
 <span class="type">Subsección</span> <span class="codenumber">3.1.2</span> <span class="title">Aritmética modular</span>
 </h3>
-<a href="tutorial-sage.html#aritmetica-modular" class="permalink">¶</a></section></section></div></main>
+<a href="tutorial-sage.html#aritmetica-modular" class="permalink">¶</a><article class="remark-like" id="remark-9"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.7</span>. <span class="title">Potencias con aritmética modular.</span>
+</h6>
+<p id="p-239">El comando <code class="code-inline tex2jax_ignore">power_mod(a, m, n)</code> produce \(a^{m} \pmod{11}\text{.}\) Por ejemplo:</p>
+<div class="sagecell-sage" id="sage-13"><script type="text/x-sage">power_mod ( 15 , 831 , 23 )
+</script></div></article><article class="remark-like" id="remark-10"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.8</span>. <span class="title">Números Primos.</span>
+</h6>
+<p id="p-240">El comando <code class="code-inline tex2jax_ignore">is_prime(a)</code> devuelve <code class="code-inline tex2jax_ignore">True</code> o <code class="code-inline tex2jax_ignore">False</code> dependiendo de si \(a\) es primo o no. Por ejemplo,:</p>
+<div class="sagecell-sage" id="sage-14"><script type="text/x-sage">is_prime ( 117371 )
+</script></div>
+<p id="p-241">mientras:</p>
+<div class="sagecell-sage" id="sage-15"><script type="text/x-sage">is_prime ( 14547073 )
+</script></div>
+<p id="p-242">El comando <code class="code-inline tex2jax_ignore">random_prime(a, True)</code> devolverá un primo aleatorio entre \(2\) y \(a\text{.}\) Experimentar con:</p>
+<div class="sagecell-sage" id="sage-16"><script type="text/x-sage">p = random_prime ( 10^21, True )
+is_prime ( p )
+</script></div>
+<p id="p-243">(Reemplazar <code class="code-inline tex2jax_ignore">True</code> por <code class="code-inline tex2jax_ignore">False</code> acelerará la búsqueda, pero habrá una probabilidad muy pequeña de que el resultado no sea primo)</p>
+<p id="p-244">El comando <code class="code-inline tex2jax_ignore">prime_range(a, b)</code> devuelve una lista ordenada de todos los primos desde \(a\) hasta \(b−1\text{,}\) inclusive. Por ejemplo,</p>
+<div class="sagecell-sage" id="sage-17"><script type="text/x-sage">prime_range ( 500 , 550 )
+</script></div>
+<p id="p-245">Los comandos <code class="code-inline tex2jax_ignore">next_prime(a)</code> y <code class="code-inline tex2jax_ignore">previous_prime(a)</code> son otras formas de obtener un único número primo del tamaño deseado.</p></article></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.12/login.js"></script>

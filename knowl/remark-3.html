@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-11-03T10:10:22-04:00    *-->
+<!--*    on 2019-12-04T15:17:08-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -10,9 +10,30 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluar:  (Sage)'});
+});
+</script>
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">Nota</span> <span class="codenumber">2.1.4</span>.</h6>Existencia de un elemento neutro:</article><span class="incontext"><a href="section-3.html#remark-3">in-context</a></span>
+<span class="type">Apunte</span> <span class="codenumber">3.1.1</span>. <span class="title">División de enteros.</span>
+</h6>
+<p>El comando \(a % b\) devolverá el resto tras la división de \(a\) por \(b\text{.}\) En otras palabras, el valor es el entero único \(r\) tal que:</p>
+<ul class="disc">
+<li><p>\(0 \leq r\lt b\text{.}\)</p></li>
+<li><p>\(a = bq + r\) para algún entero \(q\) que llamaremos "el cociente".</p></li>
+</ul>
+<p>Entonces \(\left(a - b\right) / r\) será igual a \(q\text{,}\) e.g.:</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">r = 14 % 3
+q = ( 14 - r ) / 3
+r , q
+</script></div>
+<p>devolverá \(2\) para el valor de \(R\) y \(4\) para el valor de \(q\text{.}\) Tenga en cuenta que el "\(/\)" es la división de enteros , donde se desecha cualquier resto y el resultado es siempre un entero. Entonces, por ejemplo, \(4.66666\) nuevamente será igual a \(4\text{,}\) no a \(4.66666\text{.}\)</p></article><span class="incontext"><a href="tutorial-sage.html#remark-3">in-context</a></span>
 </body>
 </html>

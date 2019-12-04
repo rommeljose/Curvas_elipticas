@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-04T15:17:09-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluar:  (Sage)'});
+});
+</script>
+</head>
+<body>
+<article class="remark-like"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">3.1.8</span>. <span class="title">Números Primos.</span>
+</h6>
+<p>El comando <code class="code-inline tex2jax_ignore">is_prime(a)</code> devuelve <code class="code-inline tex2jax_ignore">True</code> o <code class="code-inline tex2jax_ignore">False</code> dependiendo de si \(a\) es primo o no. Por ejemplo,:</p>
+<div class="sagecell-sage" id="sage-14"><script type="text/x-sage">is_prime ( 117371 )
+</script></div>
+<p>mientras:</p>
+<div class="sagecell-sage" id="sage-15"><script type="text/x-sage">is_prime ( 14547073 )
+</script></div>
+<p>El comando <code class="code-inline tex2jax_ignore">random_prime(a, True)</code> devolverá un primo aleatorio entre \(2\) y \(a\text{.}\) Experimentar con:</p>
+<div class="sagecell-sage" id="sage-16"><script type="text/x-sage">p = random_prime ( 10^21, True )
+is_prime ( p )
+</script></div>
+<p>(Reemplazar <code class="code-inline tex2jax_ignore">True</code> por <code class="code-inline tex2jax_ignore">False</code> acelerará la búsqueda, pero habrá una probabilidad muy pequeña de que el resultado no sea primo)</p>
+<p>El comando <code class="code-inline tex2jax_ignore">prime_range(a, b)</code> devuelve una lista ordenada de todos los primos desde \(a\) hasta \(b−1\text{,}\) inclusive. Por ejemplo,</p>
+<div class="sagecell-sage" id="sage-17"><script type="text/x-sage">prime_range ( 500 , 550 )
+</script></div>
+<p>Los comandos <code class="code-inline tex2jax_ignore">next_prime(a)</code> y <code class="code-inline tex2jax_ignore">previous_prime(a)</code> son otras formas de obtener un único número primo del tamaño deseado.</p></article><span class="incontext"><a href="tutorial-sage.html#remark-10">in-context</a></span>
+</body>
+</html>
