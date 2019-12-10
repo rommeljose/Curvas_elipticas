@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:17:08-04:00    *-->
+<!--*    on 2019-12-08T04:29:16-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -22,12 +22,16 @@
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">Apunte</span> <span class="codenumber">3.1.4</span>. <span class="title">Divisibilidad.</span>
+<span class="type">Apunte</span> <span class="codenumber">3.1.3</span>. <span class="title">Máximo divisor común extendido.</span>
 </h6>
-<p>Un resto igua a cero indica divisibilidad. Entonces \((a % b) == 0\) devolverá <code class="code-inline tex2jax_ignore">True</code> si \(b\) divide \(a\) , y de lo contrario devolverá <code class="code-inline tex2jax_ignore">False</code>. Por ejemplo, \(\left(9\; \% \; 3\right) == 0\) es <code class="code-inline tex2jax_ignore">True</code>, pero \(\left(9\; \% \; 4\right) == 0\) es <code class="code-inline tex2jax_ignore">False</code>, e.g.:</p>
-<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">answer1 = (( 20 % 5 ) == 0 )
-answer2 = (( 17 % 4 ) == 0 )
-answer1 , answer2
+<p>El comando <code class="code-inline tex2jax_ignore">xgcd(a, b)</code> (“eXtended GCD”) devuelve un triple donde el primer elemento es el máximo divisor común de \(a\) y \(b\) (como con el comando <code class="code-inline tex2jax_ignore">gcd(a, b)</code> anterior ), pero los siguientes dos elementos son los valores de \(r\) y \(s\) tales que \(ra+sb =\) <code class="code-inline tex2jax_ignore">xgcd(a, b)</code>  e.g., xgcd\((633, 331)\) devuelve \((1, 194, -371)\text{.}\) Se pueden extraer partes del triple usando \([\;]\) para acceder a las entradas del triple, comenzando con el primero como número \(0\text{.}\) Por ejemplo, lo siguiente debería devolver el resultado <code class="code-inline tex2jax_ignore">True</code> (incluso si cambia los valores de \(a\) y \(b\)). Estudiar este bloque de código contribuirá en gran medida a ayudarlo a aprovechar al máximo la producción de Sage. (Con "\(=\)" se asigna un valor a una variable, mientras que con "\(==\)" es cómo se determina la igualdad de dos elementos).</p>
+<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">a = 633
+b = 331
+extended = xgcd ( a , b )
+g = extended [ 0 ]
+r = extended [ 1 ]
+s = extended [ 2 ]
+g == r * a + s * b
 </script></div></article><span class="incontext"><a href="tutorial-sage.html#remark-6">in-context</a></span>
 </body>
 </html>

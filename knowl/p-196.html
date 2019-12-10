@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:17:06-04:00    *-->
+<!--*    on 2019-12-08T04:29:13-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,16 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Párrafo</span></h6>
-<p>Diremos que dos rotaciones son idénticas si difieren en un número entero de giros (en múltiplos enteros de \(360^{\circ}\)); son rotaciones nulas, ya que disponen los vértices a su posición inicial. De todas las rotaciones posibles del triangulo \(\bigtriangleup ABC\text{,}\) hay sólo tres que lo llevan a coincidir consigo mismo: la rotación de \(120^{\circ}\text{,}\) la de \(240^{\circ}\) y la <dfn class="terminology">rotación nula</dfn> o <dfn class="terminology">rotación identidad</dfn> <a data-knowl="./knowl/alexandroff_0.html" title="Entrada bibliográfica 1.3.13: Introducción a la teoría de los grupos">[1.3.13]</a>. En el triangulo existen \(3 \cdot 2 \cdot 1 = 3! = 6\) arreglos diferentes. Para denotar la permutación de los vértices de un triángulo equilátero que envía \(A \rightarrow B\text{,}\) \(B \rightarrow C\text{,}\) y \(C \rightarrow A\text{,}\) se puede usar la forma matricial:</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{pmatrix}
-A &amp; B &amp; C \\
-B &amp; C &amp; A
-\end{pmatrix}\text{.}
-\end{equation*}
-</div>
-<p>Observar que ésta particular permutación  se corresponde al movimiento rígido de girar el triángulo \(120^{\circ}\) en el sentido de las agujas del reloj (\(\circlearrowright \)). De hecho, cada permutación da lugar a una simetría del triángulo; todas esas simetrías se muestran en <a data-knowl="./knowl/figura-grupo-triangulo.html" title="Figura 2.3.17">Figura 2.3.17</a>.</p>
+<p>Una notación más compacta e intuitiva, es la que verifica los ciclos dentro de la matriz, revelando más eficientemente la estructura interna de la permutación. El siguiente algoritmo, indica los pasos para usar la notación cíclica.</p>
+<ol class="decimal">
+<li><p>Empezamos con cualquier elemento. Lo escribimos, a su derecha escribimos su imagen, a la derecha de esta, la imagen de su imagen, y seguimos así hasta que se complete un ciclo.</p></li>
+<li><p>Luego cogemos cualquier elemento no contenido en el primer ciclo, volvemos a escribir su imagen a su derecha, y continuamos hasta completar el segundo ciclo.</p></li>
+<li><p>El proceso continúa hasta que la permutación entera ha quedado descrita como producto de ciclos disjuntos.</p></li>
+</ol>
 <span class="incontext"><a href="estructuras-matematicas.html#p-196">in-context</a></span>
 </body>
 </html>

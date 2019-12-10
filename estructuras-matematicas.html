@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:16:52-04:00    *-->
+<!--*    on 2019-12-08T04:29:00-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -117,15 +117,20 @@ var js_version = 0.12;
 </ul>
 </li>
 <li class="link">
-<a href="cap_3.html" data-scroll="cap_3"><span class="codenumber">3</span> <span class="title">SageMath</span></a><ul><li><a href="tutorial-sage.html" data-scroll="tutorial-sage">Tutoria básico de SageMath</a></li></ul>
+<a href="cap_3.html" data-scroll="cap_3"><span class="codenumber">3</span> <span class="title">Tutorial SageMath</span></a><ul>
+<li><a href="tutorial-sage.html" data-scroll="tutorial-sage">Aritmética Básica</a></li>
+<li><a href="aritmetica-modulo-n.html" data-scroll="aritmetica-modulo-n">Aritmética modular</a></li>
+<li><a href="permutacion-notacion.html" data-scroll="permutacion-notacion">Notación de las permutaciones</a></li>
+<li><a href="references-3.html" data-scroll="references-3">Referencias y lecturas recomendadas</a></li>
+</ul>
 </li>
 <li class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Materiales Finales</span></a></li>
 <li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Pista y soluciones de algunos ejercicios palanteados</span></a></li>
 <li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">B</span> <span class="title">Cuaquier apéndice</span></a></li>
 <li class="link">
 <a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">C</span> <span class="title">Estructura para el Apéndice</span></a><ul>
-<li><a href="section-7.html" data-scroll="section-7">A Section in an Appendix</a></li>
-<li><a href="section-8.html" data-scroll="section-8">Numbering in the Back Matter</a></li>
+<li><a href="section-9.html" data-scroll="section-9">A Section in an Appendix</a></li>
+<li><a href="section-10.html" data-scroll="section-10">Numbering in the Back Matter</a></li>
 </ul>
 </li>
 <li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">D</span> <span class="title">GNU Free Documentation License</span></a></li>
@@ -216,7 +221,7 @@ var js_version = 0.12;
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="c m b1 r2 l1 t0 lines"><a href="estructuras-matematicas.html#cuerpo" class="internal" title="Subsección 2.3.5: Cuerpos o Campo">Cuerpo</a></td>
+<td class="c m b1 r2 l1 t0 lines"><a href="estructuras-matematicas.html#cuerpo" class="internal" title="Subsección 2.3.6: Cuerpos o Campo">Cuerpo</a></td>
 <td class="c m b1 r1 l0 t0 lines">Si</td>
 <td class="c m b1 r1 l0 t0 lines">Si</td>
 <td class="c m b1 r1 l0 t0 lines">Si</td>
@@ -341,20 +346,107 @@ a^n= \underbrace{a \odot  ... \odot  a}_{n}
 <ul class="disc">
 <li id="li-55"><p id="p-190">Tiene orden infinito, si todas las potencias de \(a\) son distintas entre si.</p></li>
 <li id="li-56"><p id="p-191">Tiene orden finito, si existen \(0 \lt n \lt m\) tales que \(a^n = a^m\text{.}\)</p></li>
-</ul></article></div></article></section><section class="subsection" id="grupos-simetrias"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">2.3.4</span> <span class="title">Grupos de Simetrías Diedral</span>
+</ul></article></div></article></section><section class="subsection" id="permutacion-notacion"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.3.4</span> <span class="title">Notación de las permutaciones</span>
 </h3>
-<a href="estructuras-matematicas.html#grupos-simetrias" class="permalink">¶</a><section class="introduction" id="introduction-9"><p id="p-192">La <dfn class="terminology">simetría</dfn> de una figura geométrica, se evidencia por una rotación o reflexión; las cuales preservan la disposición de sus lados, vértices, distancias y ángulos; la figura no sufre deformación, siendo su forma y disposición invariante. Un diagrama del plano de la figura, preservando su simetría, es llamado <dfn class="terminology">movimiento rígido</dfn>. </p>
-<p id="p-193">En matemáticas, un <dfn class="terminology">grupo diedral</dfn> o <dfn class="terminology">grupo diédrico</dfn> es el grupo de simetría de un polígono regular, incluyendo tanto rotaciones como reflexiones. <em class="emphasis">Los grupos diedrales conforman los más simples ejemplos de grupos finitos</em>. Un polígono regular con \(n\) lados tiene \(2n\) simetrías diferentes: \(n\) simetrías de rotación y \(n\) simetrías de reflexión. Las rotaciones y reflexiones juntas forman el grupo diedral \(D_n\text{.}\) Si \(n\) es impar, cada eje de simetría conecta el punto medio de un lado hasta el vértice opuesto. Si  \(n\) es par, existen \(n/2\) ejes de simetrías conectando los puntos medios de lados opuestos y \(n/2\) ejes de simetrías conectando vértices opuestos. En cada caso hay \(n\) ejes de simetrías y \(2n\) elementos en el grupo de simetría; cuya cardinalidad u orden será: \(|D_n| = 2n\text{.}\) Un buen ejemplo es el grupo diedral \(D_8\) <a data-knowl="./knowl/figura-grupo-diedral-d8.html" title="Figura 2.3.16">Figura 2.3.16</a>cuya tabla de operar ya mostramos en <a data-knowl="./knowl/table-mult-z8.html" title="Tabla 2.2.18: Tabla de Multiplicar para \(\mathbb{Z}_{8}\)">Tabla 2.2.18</a>.</p>
+<a href="estructuras-matematicas.html#permutacion-notacion" class="permalink">¶</a><section class="introduction" id="introduction-9"><p id="p-192">La permutación de los elementos de un conjunto \(X\) es una función biyectiva de dicho conjunto en sí mismo. En la definición de permutación, no se establece condición alguna sobre \(X\text{,}\) el cual puede incluso ser infinito. Sin embargo, es común considerar únicamente el caso en que \(X\) es un conjunto finito al estudiar permutaciones.</p></section><section class="subsubsection" id="notacion-matricial"><h4 class="heading hide-type">
+<span class="type">Subsubsección</span> <span class="codenumber">2.3.4.1</span> <span class="title">Notación Matricial</span>
+</h4>
+<a href="estructuras-matematicas.html#notacion-matricial" class="permalink">¶</a><p id="p-193">Existen varias formas de denotar una permutación, digamos \(\sigma\text{;}\) unas más o menos compactas. Fundamentalmente las permutaciones se escriben en forma de matriz de dos filas, colocando en la primera fila la cardinalización de los elementos ordenados del dominio (elementos de partida): \(1, 2, 3, \ldots, n\text{;}\) y en la segunda fila, las imágenes correspondientes de llegadas: \(\sigma_{1}, \sigma_{2}, \sigma_{3}, \ldots, \sigma_{n}\) (las permutaciones es una función biyectiva de un conjunto en sí mismo).</p>
+<p id="p-194">Por ejemplo:</p>
+<div class="displaymath">
+\begin{equation*}
+\sigma = \left ( \begin{matrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\ 3 &amp; 4 &amp; 5 &amp; 7 &amp; 6 &amp; 1 &amp; 8 &amp; 2 \end{matrix}  \right ) \text{.}
+\end{equation*}
+</div>
+<article class="example-like" id="ejemplo-permutacion"><a data-knowl="" class="id-ref" data-refid="hk-ejemplo-permutacion"><h6 class="heading">
+<span class="type">Ejemplo</span> <span class="codenumber">2.3.16</span>. <span class="title">Matriz de una permutación.</span>
+</h6></a></article><div id="hk-ejemplo-permutacion" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-195">El siguientes ejemplos ilustra la notación matricial de las permutaciones:</p>
+<div class="displaymath">
+\begin{equation*}
+\sigma = \left ( \begin{matrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\ 3 &amp; 4 &amp; 5 &amp; 7 &amp; 6 &amp; 1 &amp; 8 &amp; 2 \end{matrix}  \right ) \text{.}
+\end{equation*}
+</div>
+<p>La biyectividad de las permutaciones; por definición, permite encontrar una aplicación inversa \(\sigma^{-1}\) de forma que \(\sigma \otimes \sigma^{-1} = 1\) (genera la aplicación identidad). La operación implica, intercambiar las filas y finalmente reordenar las columnas, de modo que los elementos del dominio queden ordenados de forma natural.</p>
+<div class="displaymath">
+\begin{equation*}
+\sigma^{-1} = \left ( \begin{matrix} 3 &amp; 4 &amp; 5 &amp; 7 &amp; 6 &amp; 1 &amp; 8 &amp; 2 \\ 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \end{matrix}  \right ) = \left ( \begin{matrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\ 6 &amp; 8 &amp; 1 &amp; 2 &amp; 3 &amp; 5 &amp; 4 &amp; 7 \end{matrix}  \right )\text{.}
+\end{equation*}
+</div></article></div></section><section class="subsubsection" id="notacion-ciclica"><h4 class="heading hide-type">
+<span class="type">Subsubsección</span> <span class="codenumber">2.3.4.2</span> <span class="title">Notación Cíclica</span>
+</h4>
+<a href="estructuras-matematicas.html#notacion-ciclica" class="permalink">¶</a><p id="p-196">Una notación más compacta e intuitiva, es la que verifica los ciclos dentro de la matriz, revelando más eficientemente la estructura interna de la permutación. El siguiente algoritmo, indica los pasos para usar la notación cíclica.</p>
+<ol class="decimal">
+<li id="li-57"><p id="p-197">Empezamos con cualquier elemento. Lo escribimos, a su derecha escribimos su imagen, a la derecha de esta, la imagen de su imagen, y seguimos así hasta que se complete un ciclo.</p></li>
+<li id="li-58"><p id="p-198">Luego cogemos cualquier elemento no contenido en el primer ciclo, volvemos a escribir su imagen a su derecha, y continuamos hasta completar el segundo ciclo.</p></li>
+<li id="li-59"><p id="p-199">El proceso continúa hasta que la permutación entera ha quedado descrita como producto de ciclos disjuntos.</p></li>
+</ol>
+<article class="remark-like" id="formal-notacion-ciclica"><h6 class="heading">
+<span class="type">Apunte</span> <span class="codenumber">2.3.17</span>. <span class="title">Notación Cíclica.</span>
+</h6>
+<p id="p-200">Sea \(X_1, X_2, \dots, X_r\) con \(1 \leq r \leq n\text{,}\) con: \(r\) distintos elementos del conjunto \(\left\{1,2,3,\dots,n\right\}\text{.}\) El \(r\) ciclo \(\left(X_1, X_2, \dots, X_r\right)\) son los llamados elementos \(S_n\) que mapean:</p>
+<div class="displaymath">
+\begin{equation*}
+\underbrace{X_1 \longrightarrow X_2 \longrightarrow X_3\longrightarrow ^{\dots} \longrightarrow X_1}_{ciclo}
+\end{equation*}
+</div>
+<p>En particular, el \(1-ciclo X_i\) mapea \(X_1 \rightarrow X_i\) (el \(1-ciclo\) normalmente es omitido)</p>
+<article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref" data-refid="hk-proof-10"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-10" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-201">Por ejemplo:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \end{pmatrix} = \begin{pmatrix} 2 &amp; 1 &amp; 3 \\ 3 &amp; 2 &amp; 1 \end{pmatrix}\text{.}
+\end{equation*}
+</div>
+<p>Al operar se debe considerar:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{pmatrix} i_1 &amp; i_2 &amp; \dots &amp; i_{r-1} &amp; i_r &amp; i_{r+1} &amp; \dots &amp; i_n \\ i_2 &amp; i_3 &amp; \dots &amp; i_{r} &amp; i_1 &amp; i_{r+1} &amp; \dots &amp; i_n \end{pmatrix} 
+\end{equation*}
+</div>
+<p>donde \(r \geq 1\text{.}\) Lo que implica que podamos hablar enfáticamente de un \(r-ciclo\text{,}\) donde quedan expresadas las órbitas de los sub-grupos generados, como sub conjuntos de \(n\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\left\{i_1, \dots, i_r\right\} , \left\{i_r + 1\right\}, \dots, \left\{i_n\right\}
+\end{equation*}
+</div>
+<p>Podemos abreviar el ciclo, escribiendolo como:</p>
+<div class="displaymath">
+\begin{equation*}
+\left(i_1, \dots, i_r \right) \left(i_r + 1 \right) \dots \left(i_n\right)
+\end{equation*}
+</div>
+<p>donde las permutaciones permitidas son puestas alrededor de paréntesis, e.g.:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \end{pmatrix} = \left(2, 3 \right) \left(1 \right)
+\end{equation*}
+</div></article></div></article><article class="example-like" id="ejemplo-permutacion-2"><a data-knowl="" class="id-ref" data-refid="hk-ejemplo-permutacion-2"><h6 class="heading">
+<span class="type">Ejemplo</span> <span class="codenumber">2.3.18</span>. <span class="title">Notación cíclica.</span>
+</h6></a></article><div id="hk-ejemplo-permutacion-2" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-202">La notación de ciclos es muy compacta, el siguientes ejemplos la ilustra en comparación con la notación matricial:</p>
+<div class="displaymath">
+\begin{equation*}
+\sigma = \left ( \begin{matrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\ 3 &amp; 4 &amp; 5 &amp; 7 &amp; 6 &amp; 1 &amp; 8 &amp; 2 \end{matrix}  \right ) \text{.}
+\end{equation*}
+</div>
+<p>En notación de ciclos, \(\sigma\) quedaría expresada como la composición de dos ciclos:</p>
+<div class="displaymath">
+\begin{equation*}
+\sigma = \left (1 \: 3 \; 5 \; 6 \right )\left (2 \; 4 \; 7 \; 8 \right )\text{.}
+\end{equation*}
+</div></article></div></section></section><section class="subsection" id="grupos-simetrias"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">2.3.5</span> <span class="title">Grupos de Simetrías Diedral</span>
+</h3>
+<a href="estructuras-matematicas.html#grupos-simetrias" class="permalink">¶</a><section class="introduction" id="introduction-10"><p id="p-203">La <dfn class="terminology">simetría</dfn> de una figura geométrica, se evidencia por una rotación o reflexión; las cuales preservan la disposición de sus lados, vértices, distancias y ángulos; la figura no sufre deformación, siendo su forma y disposición invariante. Un diagrama del plano de la figura, preservando su simetría, es llamado <dfn class="terminology">movimiento rígido</dfn>. </p>
+<p id="p-204">En matemáticas, un <dfn class="terminology">grupo diedral</dfn> o <dfn class="terminology">grupo diédrico</dfn> es el grupo de simetría de un polígono regular, incluyendo tanto rotaciones como reflexiones. <em class="emphasis">Los grupos diedrales conforman los más simples ejemplos de grupos finitos</em>. Un polígono regular con \(n\) lados tiene \(2n\) simetrías diferentes: \(n\) simetrías de rotación y \(n\) simetrías de reflexión. Las rotaciones y reflexiones juntas forman el grupo diedral \(D_n\text{.}\) Si \(n\) es impar, cada eje de simetría conecta el punto medio de un lado hasta el vértice opuesto. Si  \(n\) es par, existen \(n/2\) ejes de simetrías conectando los puntos medios de lados opuestos y \(n/2\) ejes de simetrías conectando vértices opuestos. En cada caso hay \(n\) ejes de simetrías y \(2n\) elementos en el grupo de simetría; cuya cardinalidad u orden será: \(|D_n| = 2n\text{.}\) Un buen ejemplo es el grupo diedral \(D_8\) <a data-knowl="./knowl/figura-grupo-diedral-d8.html" title="Figura 2.3.19">Figura 2.3.19</a>cuya tabla de operar ya mostramos en <a data-knowl="./knowl/table-mult-z8.html" title="Tabla 2.2.18: Tabla de Multiplicar para \(\mathbb{Z}_{8}\)">Tabla 2.2.18</a>.</p>
 <figure class="figure-like" id="figura-grupo-diedral-d8"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/grupo_diedral_D8.png" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figura</span> <span class="codenumber">2.3.16.</span> El grupo diedral \(D_8\)</figcaption></figure><p id="p-194">En general, el conjunto de simetrías de una figura plana, conforma un conjunto \(G\) en el cuál está definida una ley de composición interna, mediante una operación de:  giro o reflexión. Las simetrías de una figura plana forma un grupo cíclico; mediante las cuales podemos construir un álgebra que satisfaga los <a data-knowl="./knowl/axioma-de-grupo.html" title="Definición 2.3.7: de Grupo">axiomas de los grupos</a>, manejables sin necesidad de grandes abstracciones, a pesar de que <em class="emphasis">no trabajamos con números</em>. Las simetrías de figuras en dos dimensiones (en general), permiten una diversidad de ejemplos simplificados de grupos cíclicos, en contraste con otros de mayor complejidad como: los cristales, el cubo de <a data-knowl="./knowl/cubo-rubik.html" title="Apunte 2.1.2: El cubo de Rubik">Rubik</a>; o grupos cíclicos aún más abstractos y complejos como las <dfn class="terminology">curvas elípticas</dfn> (el <a data-knowl="./knowl/objetivo.html" title="Párrafo: Objetivo">objetivo</a> a desarrollar en el capítulo 4 de este libro).</p></section><section class="subsubsection" id="simetria-triangulo"><h4 class="heading hide-type">
-<span class="type">Subsubsección</span> <span class="codenumber">2.3.4.1</span> <span class="title">Simetrías de un triangulo</span>
+<figcaption><span class="type">Figura</span> <span class="codenumber">2.3.19.</span> El grupo diedral \(D_8\)</figcaption></figure><p id="p-205">En general, el conjunto de simetrías de una figura plana, conforma un conjunto \(G\) en el cuál está definida una ley de composición interna, mediante una operación de:  giro o reflexión. Las simetrías de una figura plana forma un grupo cíclico; mediante las cuales podemos construir un álgebra que satisfaga los <a data-knowl="./knowl/axioma-de-grupo.html" title="Definición 2.3.7: de Grupo">axiomas de los grupos</a>, manejables sin necesidad de grandes abstracciones, a pesar de que <em class="emphasis">no trabajamos con números</em>. Las simetrías de figuras en dos dimensiones (en general), permiten una diversidad de ejemplos simplificados de grupos cíclicos, en contraste con otros de mayor complejidad como: los cristales, el cubo de <a data-knowl="./knowl/cubo-rubik.html" title="Apunte 2.1.2: El cubo de Rubik">Rubik</a>; o grupos cíclicos aún más abstractos y complejos como las <dfn class="terminology">curvas elípticas</dfn> (el <a data-knowl="./knowl/objetivo.html" title="Párrafo: Objetivo">objetivo</a> a desarrollar en el capítulo 4 de este libro).</p></section><section class="subsubsection" id="simetria-triangulo"><h4 class="heading hide-type">
+<span class="type">Subsubsección</span> <span class="codenumber">2.3.5.1</span> <span class="title">Simetrías de un triangulo</span>
 </h4>
 <a href="estructuras-matematicas.html#simetria-triangulo" class="permalink">¶</a><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:60%;justify-content:center;"><p id="p-195">Un polígono de tres lados, se llama triangulo. Aquellos,cuyos lados son iguales en longitud, se les llama triangulo equilátero \(\bigtriangleup ABC\text{.}\) A un triangulo equilátero se le puede encontrar las simetrías observando como permutan los vértices \(A\text{,}\) \(B\text{,}\) y \(C\text{;}\) y verificando si una determinada permutación genera una simetría para el triangulo. Una <dfn class="terminology">permutación</dfn> de un conjunto \(S\) es un mapeo uno a uno de  \(\pi :S \rightarrow S\text{.}\) Tres vértices generan \(3! = 6\) permutaciones, por lo que el triángulo tendrá como máximo seis simetrías. Observe que hay tres posibilidades diferentes para el primer vértice, y dos para el segundo; y el vértice restante está determinado por la colocación de los dos primeros.</p></div>
-<div class="sbspanel" style="width:35%;justify-content:flex-end;"><figure class="figure-like" id="figura-grupo-triangulo"><img src="images/grupo-triangulo-fc.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.3.17.</span> Movimiento rígido de un triangulo</figcaption></figure></div>
+<div class="sbspanel" style="width:60%;justify-content:center;"><p id="p-206">Un polígono de tres lados, se llama triangulo. Aquellos,cuyos lados son iguales en longitud, se les llama triangulo equilátero \(\bigtriangleup ABC\text{.}\) A un triangulo equilátero se le puede encontrar las simetrías observando como permutan los vértices \(A\text{,}\) \(B\text{,}\) y \(C\text{;}\) y verificando si una determinada permutación genera una simetría para el triangulo. Una <dfn class="terminology">permutación</dfn> de un conjunto \(S\) es un mapeo uno a uno de  \(\pi :S \rightarrow S\text{.}\) Tres vértices generan \(3! = 6\) permutaciones, por lo que el triángulo tendrá como máximo seis simetrías. Observe que hay tres posibilidades diferentes para el primer vértice, y dos para el segundo; y el vértice restante está determinado por la colocación de los dos primeros.</p></div>
+<div class="sbspanel" style="width:35%;justify-content:flex-end;"><figure class="figure-like" id="figura-grupo-triangulo"><img src="images/grupo-triangulo-fc.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.3.20.</span> Movimiento rígido de un triangulo</figcaption></figure></div>
 </div></div>
-<p id="p-196">Diremos que dos rotaciones son idénticas si difieren en un número entero de giros (en múltiplos enteros de \(360^{\circ}\)); son rotaciones nulas, ya que disponen los vértices a su posición inicial. De todas las rotaciones posibles del triangulo \(\bigtriangleup ABC\text{,}\) hay sólo tres que lo llevan a coincidir consigo mismo: la rotación de \(120^{\circ}\text{,}\) la de \(240^{\circ}\) y la <dfn class="terminology">rotación nula</dfn> o <dfn class="terminology">rotación identidad</dfn> <a data-knowl="./knowl/alexandroff_0.html" title="Entrada bibliográfica 1.3.13: Introducción a la teoría de los grupos">[1.3.13]</a>. En el triangulo existen \(3 \cdot 2 \cdot 1 = 3! = 6\) arreglos diferentes. Para denotar la permutación de los vértices de un triángulo equilátero que envía \(A \rightarrow B\text{,}\) \(B \rightarrow C\text{,}\) y \(C \rightarrow A\text{,}\) se puede usar la forma matricial:</p>
+<p id="p-207">Diremos que dos rotaciones son idénticas si difieren en un número entero de giros (en múltiplos enteros de \(360^{\circ}\)); son rotaciones nulas, ya que disponen los vértices a su posición inicial. De todas las rotaciones posibles del triangulo \(\bigtriangleup ABC\text{,}\) hay sólo tres que lo llevan a coincidir consigo mismo: la rotación de \(120^{\circ}\text{,}\) la de \(240^{\circ}\) y la <dfn class="terminology">rotación nula</dfn> o <dfn class="terminology">rotación identidad</dfn> <a data-knowl="./knowl/alexandroff_0.html" title="Entrada bibliográfica 1.3.13: Introducción a la teoría de los grupos">[1.3.13]</a>. En el triangulo existen \(3 \cdot 2 \cdot 1 = 3! = 6\) arreglos diferentes. Para denotar la permutación de los vértices de un triángulo equilátero que envía \(A \rightarrow B\text{,}\) \(B \rightarrow C\text{,}\) y \(C \rightarrow A\text{,}\) se puede usar la forma matricial:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{pmatrix}
@@ -363,8 +455,8 @@ B &amp; C &amp; A
 \end{pmatrix}\text{.}
 \end{equation*}
 </div>
-<p>Observar que ésta particular permutación  se corresponde al movimiento rígido de girar el triángulo \(120^{\circ}\) en el sentido de las agujas del reloj (\(\circlearrowright \)). De hecho, cada permutación da lugar a una simetría del triángulo; todas esas simetrías se muestran en <a data-knowl="./knowl/figura-grupo-triangulo.html" title="Figura 2.3.17">Figura 2.3.17</a>.</p>
-<p id="p-197">Si al movimiento del triangulo \(\bigtriangleup ABC\) ocasionado por la operación indicada por la ley de composición interna (digamos la permutación \(\rightarrow\)), le sigue otra operación indicada por \(\circledast\text{,}\) la simetría resultante será: \(\mu_1 \circledast \rho_1\text{;}\) la permutación \(\rho_1\) seguida por la permutación \(\mu_1\text{.}\) Esto indica una composición de funciones (que se ejecuta de derecha a izquierda<a data-knowl="" class="id-ref" data-refid="hk-fn-30" id="fn-30"><sup> 6 </sup></a><span id="hk-fn-30" class="hidden-content tex2jax_ignore"><span class="footnote">Si se ejecuta la composición de izquierda a derecha, \(\rho_1\) luego \(\mu_1\text{,}\) el resultado será \(\mu_3\text{.}\) Se debe tener presente que  \(\rho_1 \mu_1 \neq \mu_1 \rho_1\text{.}\)</span></span>):</p>
+<p>Observar que ésta particular permutación  se corresponde al movimiento rígido de girar el triángulo \(120^{\circ}\) en el sentido de las agujas del reloj (\(\circlearrowright \)). De hecho, cada permutación da lugar a una simetría del triángulo; todas esas simetrías se muestran en <a data-knowl="./knowl/figura-grupo-triangulo.html" title="Figura 2.3.20">Figura 2.3.20</a>.</p>
+<p id="p-208">Si al movimiento del triangulo \(\bigtriangleup ABC\) ocasionado por la operación indicada por la ley de composición interna (digamos la permutación \(\rightarrow\)), le sigue otra operación indicada por \(\circledast\text{,}\) la simetría resultante será: \(\mu_1 \circledast \rho_1\text{;}\) la permutación \(\rho_1\) seguida por la permutación \(\mu_1\text{.}\) Esto indica una composición de funciones (que se ejecuta de derecha a izquierda<a data-knowl="" class="id-ref" data-refid="hk-fn-30" id="fn-30"><sup> 6 </sup></a><span id="hk-fn-30" class="hidden-content tex2jax_ignore"><span class="footnote">Si se ejecuta la composición de izquierda a derecha, \(\rho_1\) luego \(\mu_1\text{,}\) el resultado será \(\mu_3\text{.}\) Se debe tener presente que  \(\rho_1 \mu_1 \neq \mu_1 \rho_1\text{.}\)</span></span>):</p>
 <div class="displaymath">
 \begin{align*}
 (\mu_1 \circledast  \rho_1) \rightarrow  (A) &amp; = \mu_1 \circledast  ( \rho_1 \rightarrow ( A ) ) = \mu_1 \circledast ( B ) = C\\
@@ -372,9 +464,9 @@ B &amp; C &amp; A
 (\mu_1 \circledast  \rho_1) \rightarrow  (C) &amp; = \mu_1 \circledast  ( \rho_1 \rightarrow ( C ) ) = \mu_1 \circledast ( A ) = A\text{.}
 \end{align*}
 </div>
-<p>Para este caso, el resultado será la simetría \(\mu_2\text{;}\) como se muestra en la tabla, <a data-knowl="./knowl/tabla-s3.html" title="Tabla 2.3.18: Simetrías de un triangulo equilátero">Tabla 2.3.18</a>.</p>
-<p id="p-198">En la tabla de "multiplicación" para las simetrías de un triangulo equilátero \(\bigtriangleup ABC\text{,}\) para cada operación sobre el triangulo \(\alpha\text{,}\) existe otra operación \(\beta\text{,}\) tal que \(\alpha \beta = \identity\) (identidad \(= \identity\)); esto implica que para cada operación sobre el triangulo existe otra que lo retorna a su estado original.</p>
-<figure class="figure-like" id="tabla-s3"><div class="displaymath" id="p-199">
+<p>Para este caso, el resultado será la simetría \(\mu_2\text{;}\) como se muestra en la tabla, <a data-knowl="./knowl/tabla-s3.html" title="Tabla 2.3.21: Simetrías de un triangulo equilátero">Tabla 2.3.21</a>.</p>
+<p id="p-209">En la tabla de "multiplicación" para las simetrías de un triangulo equilátero \(\bigtriangleup ABC\text{,}\) para cada operación sobre el triangulo \(\alpha\text{,}\) existe otra operación \(\beta\text{,}\) tal que \(\alpha \beta = \identity\) (identidad \(= \identity\)); esto implica que para cada operación sobre el triangulo existe otra que lo retorna a su estado original.</p>
+<figure class="figure-like" id="tabla-s3"><div class="displaymath" id="p-210">
 \begin{equation*}
 \begin{array}{c|cccccc}
 \circledast   &amp; \identity     &amp; \rho_1 &amp; \rho_2 &amp; \mu_1 &amp; \mu_2 &amp; \mu_3 \\
@@ -388,17 +480,17 @@ B &amp; C &amp; A
 \end{array}
 \end{equation*}
 </div>
-<figcaption><span class="type">Tabla</span> <span class="codenumber">2.3.18.</span> Simetrías de un triangulo equilátero</figcaption></figure><article class="example-like" id="isomorfismo-grupos-D3"><a data-knowl="" class="id-ref" data-refid="hk-isomorfismo-grupos-D3"><h6 class="heading">
-<span class="type">Ejemplo</span> <span class="codenumber">2.3.19</span>. <span class="title">Todos los grupos de orden 3 son isomorfos entre si.</span>
-</h6></a></article><div id="hk-isomorfismo-grupos-D3" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-200">Sean \(a_0, a_1, a_2\) los elementos de un grupo cuyo elemento neutro es \(a_0\text{,}\) entonces se verifica:</p>
+<figcaption><span class="type">Tabla</span> <span class="codenumber">2.3.21.</span> Simetrías de un triangulo equilátero</figcaption></figure><article class="example-like" id="isomorfismo-grupos-D3"><a data-knowl="" class="id-ref" data-refid="hk-isomorfismo-grupos-D3"><h6 class="heading">
+<span class="type">Ejemplo</span> <span class="codenumber">2.3.22</span>. <span class="title">Todos los grupos de orden 3 son isomorfos entre si.</span>
+</h6></a></article><div id="hk-isomorfismo-grupos-D3" class="hidden-content tex2jax_ignore"><article class="example-like"><p id="p-211">Sean \(a_0, a_1, a_2\) los elementos de un grupo cuyo elemento neutro es \(a_0\text{,}\) entonces se verifica:</p>
 <div class="displaymath">
 \begin{equation*}
 a_0 + a_0 = a_0; a_0 + a_1 = a_1; a_0 + a_2 = a_2\text{,}
 \end{equation*}
 </div>
 <p>No es posible que \(a_1 + a_1 = a_1\text{,}\) ya que resultaría \(a_1 = a_0\text{,}\) por lo tanto será. \(a_1 + a_1 = a_2\) y por el mismo razonamiento  \(a_1 + a_2 \neq a_2\) y \(a_1 + a_2 \neq a_1\text{,}\) se puede concluir que: \(a_1 + a_2 = a_0\text{.}\) Análogamente se obtienen, \(a_2 + a_1 = a_0\text{,}\) además, \(a_2 + a_2 \neq a_2\)  ya que lo contrario no es posible \(a_2 = a_0\text{.}\) Igualmente se tiene que \(a_2 + a_2 \neq a_0\) ya que \(a_1 + a_2 = a_0\text{.}\) Todo ello verifica que \(a_2 + a_2 = a_1\text{.}\)</p>
-<p id="p-201">De las consideraciones anteriores, se deduce que para los grupos de orden 3 (todo los factibles), existe una sola tabla de adición posible:</p>
-<figure class="figure-like" id="isomorfismo-s3"><div class="displaymath" id="p-202">
+<p id="p-212">De las consideraciones anteriores, se deduce que para los grupos de orden 3 (todo los factibles), existe una sola tabla de adición posible:</p>
+<figure class="figure-like" id="isomorfismo-s3"><div class="displaymath" id="p-213">
 \begin{equation*}
 \begin{array}{c|ccc}
 \oplus  &amp; a_0     &amp; a_1 &amp; a_2 \\
@@ -409,36 +501,36 @@ a_2 &amp; a_2 &amp; a_0 &amp; a_1 \\
 \end{array}
 \end{equation*}
 </div>
-<figcaption><span class="type">Tabla</span> <span class="codenumber">2.3.20.</span> Tabla de adición para los grupos de orden 3</figcaption></figure></article></div></section><section class="subsubsection" id="simetria-rectangulo"><h4 class="heading hide-type">
-<span class="type">Subsubsección</span> <span class="codenumber">2.3.4.2</span> <span class="title">Simetrías de un rectángulo</span>
+<figcaption><span class="type">Tabla</span> <span class="codenumber">2.3.23.</span> Tabla de adición para los grupos de orden 3</figcaption></figure></article></div></section><section class="subsubsection" id="simetria-rectangulo"><h4 class="heading hide-type">
+<span class="type">Subsubsección</span> <span class="codenumber">2.3.5.2</span> <span class="title">Simetrías de un rectángulo</span>
 </h4>
 <a href="estructuras-matematicas.html#simetria-rectangulo" class="permalink">¶</a><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:60%;justify-content:flex-start;"><p id="p-203">En geometría plana, un rectángulo es un paralelogramo cuyos cuatro lados forman ángulos rectos entre sí; los lados opuestos tienen la misma longitud. Por ejemplo, si miramos el rectángulo en <a data-knowl="./knowl/figura-grupo-rectangulo.html" title="Figura 2.3.21">Figura 2.3.21</a> fácilmente podemos observar que la rotación de \(180^{\circ}\) o de \(360^{\circ}\) regresan al rectángulo a la disposición u orientación original. Una reflexión del rectángulo a través del eje vertical u horizontal, también representan simetría del rectángulo. Sin embargo, una rotación de \(90^{\circ}\) en cualquier dirección, no puede ser una simetría a menos que la figura sea un cuadrado.</p></div>
-<div class="sbspanel" style="width:35%;justify-content:center;"><figure class="figure-like" id="figura-grupo-rectangulo"><img src="images/grupo-rectangulo-fc.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.3.21.</span> Movimiento rígido de un rectángulo</figcaption></figure></div>
+<div class="sbspanel" style="width:60%;justify-content:flex-start;"><p id="p-214">En geometría plana, un rectángulo es un paralelogramo cuyos cuatro lados forman ángulos rectos entre sí; los lados opuestos tienen la misma longitud. Por ejemplo, si miramos el rectángulo en <a data-knowl="./knowl/figura-grupo-rectangulo.html" title="Figura 2.3.24">Figura 2.3.24</a> fácilmente podemos observar que la rotación de \(180^{\circ}\) o de \(360^{\circ}\) regresan al rectángulo a la disposición u orientación original. Una reflexión del rectángulo a través del eje vertical u horizontal, también representan simetría del rectángulo. Sin embargo, una rotación de \(90^{\circ}\) en cualquier dirección, no puede ser una simetría a menos que la figura sea un cuadrado.</p></div>
+<div class="sbspanel" style="width:35%;justify-content:center;"><figure class="figure-like" id="figura-grupo-rectangulo"><img src="images/grupo-rectangulo-fc.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">2.3.24.</span> Movimiento rígido de un rectángulo</figcaption></figure></div>
 </div></div>
-<p id="p-204">BLA BLA BLA</p>
-<p id="p-205">Mediante el rectángulo (o el cuadrado), podemos definir un grupo de cuatro elementos, que también poseen su algebrá y cumple con todos los axiomas de grupo; muy importante en álgebra superior (conocido como grupo de cuatro elementos de Klein<a data-knowl="" class="id-ref" data-refid="hk-fn-31" id="fn-31"><sup> 7 </sup></a><span id="hk-fn-31" class="hidden-content tex2jax_ignore"><span class="footnote">Felix Klein, matemático alemán (1849-1925)</span></span>).</p></section></section><aside class="aside-like" id="biographical-2"><h6 class="heading"><span class="title">Evaristo Galois.</span></h6> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<p id="p-215">BLA BLA BLA</p>
+<p id="p-216">Mediante el rectángulo (o el cuadrado), podemos definir un grupo de cuatro elementos, que también poseen su algebrá y cumple con todos los axiomas de grupo; muy importante en álgebra superior (conocido como grupo de cuatro elementos de Klein<a data-knowl="" class="id-ref" data-refid="hk-fn-31" id="fn-31"><sup> 7 </sup></a><span id="hk-fn-31" class="hidden-content tex2jax_ignore"><span class="footnote">Felix Klein, matemático alemán (1849-1925)</span></span>).</p></section></section><aside class="aside-like" id="biographical-2"><h6 class="heading"><span class="title">Evaristo Galois.</span></h6> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:25%;justify-content:center;"><img src="./images/galois.jpg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-206">Bourg-la-Reine, 25/10/1811- París,31/05/1832. Matemático francés, mientras aún era un adolescente, fue capaz de determinar la condición necesaria y suficiente para que una ecuación algebraica sea resuelta por radicación. Solucionó problemas abiertos mediante el concepto de grupo de permutaciones. Su trabajo ofreció las bases fundamentales para la teoría de una rama principal del álgebra abstracta que lleva su nombre. Fue el primero en utilizar el término «grupo» en un contexto matemático. <em class="emphasis">Galois fallece en un duelo de pistolas a tan solo 20 años</em>.(Wiky.)</p></div>
+<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-217">Bourg-la-Reine, 25/10/1811- París,31/05/1832. Matemático francés, mientras aún era un adolescente, fue capaz de determinar la condición necesaria y suficiente para que una ecuación algebraica sea resuelta por radicación. Solucionó problemas abiertos mediante el concepto de grupo de permutaciones. Su trabajo ofreció las bases fundamentales para la teoría de una rama principal del álgebra abstracta que lleva su nombre. Fue el primero en utilizar el término «grupo» en un contexto matemático. <em class="emphasis">Galois fallece en un duelo de pistolas a tan solo 20 años</em>.(Wiky.)</p></div>
 </div></div></aside><section class="subsection" id="cuerpo"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">2.3.5</span> <span class="title">Cuerpos o Campo</span>
+<span class="type">Subsección</span> <span class="codenumber">2.3.6</span> <span class="title">Cuerpos o Campo</span>
 </h3>
-<a href="estructuras-matematicas.html#cuerpo" class="permalink">¶</a><p id="p-207">Los cuerpos o campos satisfacen dos leyes de composición interna binarias: (\(\oplus\) y \(\odot\));  en otras palabras, son cerrados a dos operaciones definidas binarias que podemos llamar "adición" (\(\oplus\)) y "multiplicación" (\(\odot\)). Lo que quiere decir, que si operamos dos números pertenecientes a un conjunto K, el resultado será otro número perteneciente al mismo conjunto K.</p>
+<a href="estructuras-matematicas.html#cuerpo" class="permalink">¶</a><p id="p-218">Los cuerpos o campos satisfacen dos leyes de composición interna binarias: (\(\oplus\) y \(\odot\));  en otras palabras, son cerrados a dos operaciones definidas binarias que podemos llamar "adición" (\(\oplus\)) y "multiplicación" (\(\odot\)). Lo que quiere decir, que si operamos dos números pertenecientes a un conjunto K, el resultado será otro número perteneciente al mismo conjunto K.</p>
 <article class="definition-like" id="definition-14"><h6 class="heading">
-<span class="type">Definición</span> <span class="codenumber">2.3.22</span>. <span class="title">de Cuerpo o Campo.</span>
+<span class="type">Definición</span> <span class="codenumber">2.3.25</span>. <span class="title">de Cuerpo o Campo.</span>
 </h6>
-<p id="p-208"></p>
-<p id="p-209">Se conocen como Cuerpo o Campo, a aquellas estructuras matemáticas que cumplen con los siguientes axiomas de definición para sus leyes de composición interna:</p>
+<p id="p-219"></p>
+<p id="p-220">Se conocen como Cuerpo o Campo, a aquellas estructuras matemáticas que cumplen con los siguientes axiomas de definición para sus leyes de composición interna:</p>
 <ol class="decimal">
-<li id="li-57">Asociatividad.</li>
-<li id="li-58">Conmutatividad.</li>
-<li id="li-59">Existencia de un elemento neutro.</li>
-<li id="li-60">Existencia de elemento opuestos y de inversos.</li>
-<li id="li-61">Distributividad de la multiplicación respecto de la adición.</li>
+<li id="li-60">Asociatividad.</li>
+<li id="li-61">Conmutatividad.</li>
+<li id="li-62">Existencia de un elemento neutro.</li>
+<li id="li-63">Existencia de elemento opuestos y de inversos.</li>
+<li id="li-64">Distributividad de la multiplicación respecto de la adición.</li>
 </ol>
-<article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref" data-refid="hk-proof-10"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-10" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-210">Axiomas que deben cumplir las Leyes de Composición Interna para los cuerpos:</p>
+<article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref" data-refid="hk-proof-11"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-11" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-221">Axiomas que deben cumplir las Leyes de Composición Interna para los cuerpos:</p>
 <ol class="decimal">
-<li id="li-62">Asociatividad: <p id="p-211">Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<li id="li-65">Asociatividad: <p id="p-222">Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
 <div class="displaymath">
 \begin{align}
 a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c\tag{2.3.2}\\
@@ -446,7 +538,7 @@ a \odot (b \odot c) \amp = (a \odot b) \odot c\tag{2.3.3}
 \end{align}
 </div>
 </li>
-<li id="li-63">Conmutatividad: <p id="p-212">Para toda \(a, b\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<li id="li-66">Conmutatividad: <p id="p-223">Para toda \(a, b\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
 <div class="displaymath">
 \begin{gather}
 a \oplus b = b \oplus a\tag{2.3.4}\\
@@ -454,42 +546,42 @@ a \odot b = b \odot a\tag{2.3.5}
 \end{gather}
 </div>
 </li>
-<li id="li-64">Existencia de un elemento neutro: <ol class="lower-alpha">
-<li id="li-65">Existe un único elemento \(e = 0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus e = a\text{.}\)</li>
-<li id="li-66">Existe un elemento \(e = 1\) en un conjunto cualquiera K, diferente de \(0\text{,}\) tal que para todo \(a\) elemento de K se verifique la identidad: \(a \odot e = a\text{.}\)</li>
+<li id="li-67">Existencia de un elemento neutro: <ol class="lower-alpha">
+<li id="li-68">Existe un único elemento \(e = 0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus e = a\text{.}\)</li>
+<li id="li-69">Existe un elemento \(e = 1\) en un conjunto cualquiera K, diferente de \(0\text{,}\) tal que para todo \(a\) elemento de K se verifique la identidad: \(a \odot e = a\text{.}\)</li>
 </ol>
 </li>
-<li id="li-67">Existencia de elemento opuesto e inverso: <ol class="lower-alpha">
-<li id="li-68">Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-32" id="fn-32"><sup> 8 </sup></a><span id="hk-fn-32" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "-a" o "b", como "opuesto de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</li>
-<li id="li-69">Para cada \(a \neq  0\) pertenecientes a un conjunto cualquiera K, existe un elemento \(a^{-1}\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-33" id="fn-33"><sup> 9 </sup></a><span id="hk-fn-33" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "\(a\) a la -1" (o "b" como "inverso de a").</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \odot b = 1\text{.}\)</li>
+<li id="li-70">Existencia de elemento opuesto e inverso: <ol class="lower-alpha">
+<li id="li-71">Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-32" id="fn-32"><sup> 8 </sup></a><span id="hk-fn-32" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "-a" o "b", como "opuesto de a".</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</li>
+<li id="li-72">Para cada \(a \neq  0\) pertenecientes a un conjunto cualquiera K, existe un elemento \(a^{-1}\) de K (que llamaremos \(b\))<a data-knowl="" class="id-ref" data-refid="hk-fn-33" id="fn-33"><sup> 9 </sup></a><span id="hk-fn-33" class="hidden-content tex2jax_ignore"><span class="footnote">Léase el "\(a\) a la -1" (o "b" como "inverso de a").</span></span>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \odot b = 1\text{.}\)</li>
 </ol>
 </li>
-<li id="li-70">Distributividad de la multiplicación respecto de la adición: <p id="p-213">Para toda \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se debe cumplir la identidad:</p>
+<li id="li-73">Distributividad de la multiplicación respecto de la adición: <p id="p-224">Para toda \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se debe cumplir la identidad:</p>
 <div class="displaymath">
 \begin{gather}
 a \odot (b \oplus c) = (a \odot b) \oplus (a \odot c)\tag{2.3.6}
 \end{gather}
 </div>
 </li>
-</ol></article></div></article><p id="p-214">Los números reales (el conjunto de todos ellos: <a data-knowl="./knowl/recta-real.html" title="Apunte 2.1.3: La Recta Real">Apunte 2.1.3</a>), representa un buen ejemplo de la estructura matemática llamada «cuerpo»<a data-knowl="" class="id-ref" data-refid="hk-fn-34" id="fn-34"><sup> 10 </sup></a><span id="hk-fn-34" class="hidden-content tex2jax_ignore"><span class="footnote">Un campo o cuerpo: es cualquier conjunto de elementos que satisface los axiomas de campo tanto para la "suma" como para la "multiplicación" y es una división algebraica conmutativa. Un nombre arcaico para un campo es dominio racional. El término francés para un campo es cuerpo y la palabra alemana es Körper, ambos significan "cuerpo".</span></span> ya que cumple con las dos premisas que se exigen para definirlos: aquellos conjuntos donde es posible utilizar dos operaciones básicas ("adición" y "multiplicación"); donde éstas «funcionan» correctamente. Hay que hacer un alto, para re-explicar el por que del entrecomillado: las mencionadas operaciones, no tienen que ser iguales a las operaciones aritméticas de suma y producto, aunque sus propiedades intrínsecas al respecto de las <em class="emphasis">leyes de composición interna</em> son idénticas si se aplican sobre un cuerpo o campo; pero tal "adición" o "multiplicación" no tienen necesariamente que ser operaciones de suma o producto, pudiera ser de otros tipos: rotación, transformaciones,  o cualquier otra par de operaciones que cumpla con los axiomas indicados en la <a href="estructuras-matematicas.html#base-axiomatica" class="internal" title="Subsección 2.3.2: La base axiomática">Subsección 2.3.2</a>. Otros ejemplo de cuerpo, son los conjuntos numéricos: \(\mathbb{Q}\text{,}\) \(\mathbb{R}\) y \(\mathbb{C}\text{;}\) con este último símbolo se designan los números llamados «imaginarios» o «complejos» (que serán útiles y necesarios en los siguientes capítulos); los números complejos agrupan todas las estructuras, cuerpos y conjuntos numéricos mencionados; su análisis estructural no difiere sustancialmente de lo dicho hasta ahora para los otros conjuntos numéricos.</p>
+</ol></article></div></article><p id="p-225">Los números reales (el conjunto de todos ellos: <a data-knowl="./knowl/recta-real.html" title="Apunte 2.1.3: La Recta Real">Apunte 2.1.3</a>), representa un buen ejemplo de la estructura matemática llamada «cuerpo»<a data-knowl="" class="id-ref" data-refid="hk-fn-34" id="fn-34"><sup> 10 </sup></a><span id="hk-fn-34" class="hidden-content tex2jax_ignore"><span class="footnote">Un campo o cuerpo: es cualquier conjunto de elementos que satisface los axiomas de campo tanto para la "suma" como para la "multiplicación" y es una división algebraica conmutativa. Un nombre arcaico para un campo es dominio racional. El término francés para un campo es cuerpo y la palabra alemana es Körper, ambos significan "cuerpo".</span></span> ya que cumple con las dos premisas que se exigen para definirlos: aquellos conjuntos donde es posible utilizar dos operaciones básicas ("adición" y "multiplicación"); donde éstas «funcionan» correctamente. Hay que hacer un alto, para re-explicar el por que del entrecomillado: las mencionadas operaciones, no tienen que ser iguales a las operaciones aritméticas de suma y producto, aunque sus propiedades intrínsecas al respecto de las <em class="emphasis">leyes de composición interna</em> son idénticas si se aplican sobre un cuerpo o campo; pero tal "adición" o "multiplicación" no tienen necesariamente que ser operaciones de suma o producto, pudiera ser de otros tipos: rotación, transformaciones,  o cualquier otra par de operaciones que cumpla con los axiomas indicados en la <a href="estructuras-matematicas.html#base-axiomatica" class="internal" title="Subsección 2.3.2: La base axiomática">Subsección 2.3.2</a>. Otros ejemplo de cuerpo, son los conjuntos numéricos: \(\mathbb{Q}\text{,}\) \(\mathbb{R}\) y \(\mathbb{C}\text{;}\) con este último símbolo se designan los números llamados «imaginarios» o «complejos» (que serán útiles y necesarios en los siguientes capítulos); los números complejos agrupan todas las estructuras, cuerpos y conjuntos numéricos mencionados; su análisis estructural no difiere sustancialmente de lo dicho hasta ahora para los otros conjuntos numéricos.</p>
 <div class="displaymath">
 \begin{equation*}
 \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C} 
 \end{equation*}
 </div></section><section class="subsection" id="cuerpos-finitos"><h3 class="heading hide-type">
-<span class="type">Subsección</span> <span class="codenumber">2.3.6</span> <span class="title">Cuerpos Finitos o Campos de Galois</span>
+<span class="type">Subsección</span> <span class="codenumber">2.3.7</span> <span class="title">Cuerpos Finitos o Campos de Galois</span>
 </h3>
-<a href="estructuras-matematicas.html#cuerpos-finitos" class="permalink">¶</a><section class="introduction" id="introduction-10"><p id="p-215">Los cuerpos de elementos finitos (sub conjuntos de \(\mathbb{R}\) … o de \(\mathbb{C}\)), pueden definirse como objetos matemáticos algebraicos, e.g., los elementos que cumplen con las identidades y sus expresiones geométricas; algunos de esos conjuntos son conocidos desde la antigüedad, en forma de ecuaciones o funciones, e.g., la función de la línea recta: \(f(x) = m.x+b\text{;}\) e.g., las ecuaciones Diofantinas <a data-knowl="./knowl/rommel_1.html" title="Entrada bibliográfica 2.4.3: El Problema de los Números Congruentes">[2.4.3]</a>. El hecho de que que los cuerpos finitos tengan una cardinalidad delimitada, implican que son sub conjunto de algún campo numérico, e.g., \(\mathbb{R}\text{.}\)</p>
-<p id="p-216">Un cuerpo con un número finito de elementos \(q\) se conoce como Cuerpo Finito o Campo de Galois; poseen una cardinalidad finita (llamada orden \(q\)); cuyo antecedente son los grupos cíclicos <a data-knowl="./knowl/orden-de-grupo.html" title="Definición 2.3.15: Orden de un grupo">Definición 2.3.15</a>. Los Campos de Galois son denotado como \(GF\left(q\right)\) (del inglés Galois <i class="foreign">fiel</i>); sus propiedades son de extrema importancia en el álgebra abstracta y la teoría de números; principalmente por que todos los cuerpos finitos del mismo orden son isomorfos entre sí (sus estructuras matemáticas son idénticas).</p>
-<p id="p-217">Cuando los parámetros y las variables de las ecuaciones son elementos de un cuerpo finito \(GF\left(q\right)\text{,}\) una ecuación algebraica define una curva dentro del cuerpo finito, en consecuencia, se tratan de curvas algebraicas ya que las ecuaciones vienen siempre expresadas por polinomios. En un cuerpo finito todas las funciones son polinómicas, por ello el número de puntos de las curvas consideradas se corresponde al número de soluciones del correspondiente sistema de ecuaciones.</p></section><article class="definition-like" id="definition-15"><h6 class="heading">
-<span class="type">Definición</span> <span class="codenumber">2.3.23</span>. <span class="title">Cuerpos Finitos o Campos de Galois.</span>
+<a href="estructuras-matematicas.html#cuerpos-finitos" class="permalink">¶</a><section class="introduction" id="introduction-11"><p id="p-226">Los cuerpos de elementos finitos (sub conjuntos de \(\mathbb{R}\) … o de \(\mathbb{C}\)), pueden definirse como objetos matemáticos algebraicos, e.g., los elementos que cumplen con las identidades y sus expresiones geométricas; algunos de esos conjuntos son conocidos desde la antigüedad, en forma de ecuaciones o funciones, e.g., la función de la línea recta: \(f(x) = m.x+b\text{;}\) e.g., las ecuaciones Diofantinas <a data-knowl="./knowl/rommel_1.html" title="Entrada bibliográfica 2.4.3: El Problema de los Números Congruentes">[2.4.3]</a>. El hecho de que que los cuerpos finitos tengan una cardinalidad delimitada, implican que son sub conjunto de algún campo numérico, e.g., \(\mathbb{R}\text{.}\)</p>
+<p id="p-227">Un cuerpo con un número finito de elementos \(q\) se conoce como Cuerpo Finito o Campo de Galois; poseen una cardinalidad finita (llamada orden \(q\)); cuyo antecedente son los grupos cíclicos <a data-knowl="./knowl/orden-de-grupo.html" title="Definición 2.3.15: Orden de un grupo">Definición 2.3.15</a>. Los Campos de Galois son denotado como \(GF\left(q\right)\) (del inglés Galois <i class="foreign">fiel</i>); sus propiedades son de extrema importancia en el álgebra abstracta y la teoría de números; principalmente por que todos los cuerpos finitos del mismo orden son isomorfos entre sí (sus estructuras matemáticas son idénticas).</p>
+<p id="p-228">Cuando los parámetros y las variables de las ecuaciones son elementos de un cuerpo finito \(GF\left(q\right)\text{,}\) una ecuación algebraica define una curva dentro del cuerpo finito, en consecuencia, se tratan de curvas algebraicas ya que las ecuaciones vienen siempre expresadas por polinomios. En un cuerpo finito todas las funciones son polinómicas, por ello el número de puntos de las curvas consideradas se corresponde al número de soluciones del correspondiente sistema de ecuaciones.</p></section><article class="definition-like" id="definition-15"><h6 class="heading">
+<span class="type">Definición</span> <span class="codenumber">2.3.26</span>. <span class="title">Cuerpos Finitos o Campos de Galois.</span>
 </h6>
-<p id="p-218">Hay una y solo una manera posible de definir un cuerpo finito o campo de Galois: Para algún número primo<a data-knowl="" class="id-ref" data-refid="hk-fn-35" id="fn-35"><sup> 11 </sup></a><span id="hk-fn-35" class="hidden-content tex2jax_ignore"><span class="footnote">Número Primo: Un entero \(n \geq 2\) es un número primo, si este sólo es divisible por la unidad y por si mismo. Los números primos son objetos matemáticos discretos.</span></span> \(p\) y algún entero positivo \(n\text{,}\) existe un objeto matemático llamado Cuerpo Finito o Campo de Galois, con cardinalidad  u orden \(q\) definida por: \(q=p^{n}\text{.}\)</p>
+<p id="p-229">Hay una y solo una manera posible de definir un cuerpo finito o campo de Galois: Para algún número primo<a data-knowl="" class="id-ref" data-refid="hk-fn-35" id="fn-35"><sup> 11 </sup></a><span id="hk-fn-35" class="hidden-content tex2jax_ignore"><span class="footnote">Número Primo: Un entero \(n \geq 2\) es un número primo, si este sólo es divisible por la unidad y por si mismo. Los números primos son objetos matemáticos discretos.</span></span> \(p\) y algún entero positivo \(n\text{,}\) existe un objeto matemático llamado Cuerpo Finito o Campo de Galois, con cardinalidad  u orden \(q\) definida por: \(q=p^{n}\text{.}\)</p>
 <ol class="decimal">
-<li id="li-71">Cada elemento del cuerpo representa una clase de equivalencia <a data-knowl="./knowl/relacion-de-equivalencia.html" title="Definición 2.2.5: Relación de equivalencia">Definición 2.2.5</a>.</li>
-<li id="li-72">Para un campos finito \(GF\left(q\right)\) todos los enteros que "son congruentes” a cada otro \(\pmod{n}\) representa una clase de equivalencia <a data-knowl="./knowl/congruencia-modulo.html" title="Definición 2.2.10: Congruencia">Definición 2.2.10</a>.</li>
+<li id="li-74">Cada elemento del cuerpo representa una clase de equivalencia <a data-knowl="./knowl/relacion-de-equivalencia.html" title="Definición 2.2.5: Relación de equivalencia">Definición 2.2.5</a>.</li>
+<li id="li-75">Para un campos finito \(GF\left(q\right)\) todos los enteros que "son congruentes” a cada otro \(\pmod{n}\) representa una clase de equivalencia <a data-knowl="./knowl/congruencia-modulo.html" title="Definición 2.2.10: Congruencia">Definición 2.2.10</a>.</li>
 </ol>
-<article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref" data-refid="hk-proof-11"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-11" class="hidden-content tex2jax_ignore"><article class="hiddenproof"></article></div></article></section></section></div></main>
+<article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Formalmente.</span></h6></a></article><div id="hk-proof-12" class="hidden-content tex2jax_ignore"><article class="hiddenproof"></article></div></article></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.12/login.js"></script>

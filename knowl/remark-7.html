@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:17:08-04:00    *-->
+<!--*    on 2019-12-08T04:29:16-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -22,13 +22,12 @@
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">Apunte</span> <span class="codenumber">3.1.5</span>. <span class="title">Factorizar.</span>
+<span class="type">Apunte</span> <span class="codenumber">3.1.4</span>. <span class="title">Divisibilidad.</span>
 </h6>
-<p>Teorema fundamental de la aritmética, el <code class="code-inline tex2jax_ignore">factor (a)</code> devolverá una expresión única para \(a\) como producto de potencias de números primos. Impreso de forma agradablemente y legible, pero también se puede manipular con Python como una lista de pares \((p_i,e_i)\) contienen primos como bases y sus exponentes asociados. Por ejemplo:</p>
-<div class="sagecell-sage" id="sage-9"><script type="text/x-sage">factor ( 2600 )
-</script></div>
-<p>Si solo desea los divisores primos de un número entero, utilice el <code class="code-inline tex2jax_ignore">prime_divisors(a)</code> , que devolverá una lista de todos los divisores primos de \(a\text{.}\) Por ejemplo:</p>
-<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">prime_divisors ( 2600 )
+<p>Un resto igua a cero indica divisibilidad. Entonces \((a % b) == 0\) devolverá <code class="code-inline tex2jax_ignore">True</code> si \(b\) divide \(a\) , y de lo contrario devolverá <code class="code-inline tex2jax_ignore">False</code>. Por ejemplo, \(\left(9\; \% \; 3\right) == 0\) es <code class="code-inline tex2jax_ignore">True</code>, pero \(\left(9\; \% \; 4\right) == 0\) es <code class="code-inline tex2jax_ignore">False</code>, e.g.:</p>
+<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">answer1 = (( 20 % 5 ) == 0 )
+answer2 = (( 17 % 4 ) == 0 )
+answer1 , answer2
 </script></div></article><span class="incontext"><a href="tutorial-sage.html#remark-7">in-context</a></span>
 </body>
 </html>

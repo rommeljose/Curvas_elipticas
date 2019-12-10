@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:16:52-04:00    *-->
+<!--*    on 2019-12-08T04:29:00-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -9,7 +9,7 @@
 <html lang="es-ES">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>RJCGrjcg SageMath</title>
+<title>RJCGrjcg Tutorial SageMath</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -125,15 +125,20 @@ var js_version = 0.12;
 </ul>
 </li>
 <li class="link active">
-<a href="cap_3.html" data-scroll="cap_3"><span class="codenumber">3</span> <span class="title">SageMath</span></a><ul><li><a href="tutorial-sage.html" data-scroll="tutorial-sage">Tutoria básico de SageMath</a></li></ul>
+<a href="cap_3.html" data-scroll="cap_3"><span class="codenumber">3</span> <span class="title">Tutorial SageMath</span></a><ul>
+<li><a href="tutorial-sage.html" data-scroll="tutorial-sage">Aritmética Básica</a></li>
+<li><a href="aritmetica-modulo-n.html" data-scroll="aritmetica-modulo-n">Aritmética modular</a></li>
+<li><a href="permutacion-notacion.html" data-scroll="permutacion-notacion">Notación de las permutaciones</a></li>
+<li><a href="references-3.html" data-scroll="references-3">Referencias y lecturas recomendadas</a></li>
+</ul>
 </li>
 <li class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Materiales Finales</span></a></li>
 <li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">A</span> <span class="title">Pista y soluciones de algunos ejercicios palanteados</span></a></li>
 <li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">B</span> <span class="title">Cuaquier apéndice</span></a></li>
 <li class="link">
 <a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">C</span> <span class="title">Estructura para el Apéndice</span></a><ul>
-<li><a href="section-7.html" data-scroll="section-7">A Section in an Appendix</a></li>
-<li><a href="section-8.html" data-scroll="section-8">Numbering in the Back Matter</a></li>
+<li><a href="section-9.html" data-scroll="section-9">A Section in an Appendix</a></li>
+<li><a href="section-10.html" data-scroll="section-10">Numbering in the Back Matter</a></li>
 </ul>
 </li>
 <li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">D</span> <span class="title">GNU Free Documentation License</span></a></li>
@@ -143,13 +148,18 @@ var js_version = 0.12;
 </ul></nav><div class="extras"><nav><a class="feedback-link" href="not-implemented.html" target="_blank">Comentarios y otros</a><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="chapter" id="cap_3"><h2 class="heading">
-<span class="type">Capítulo</span> <span class="codenumber">3</span> <span class="title">SageMath</span>
+<span class="type">Capítulo</span> <span class="codenumber">3</span> <span class="title">Tutorial SageMath</span>
 </h2>
-<a href="cap_3.html" class="permalink">¶</a><section class="introduction" id="introduction-11"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<a href="cap_3.html" class="permalink">¶</a><section class="introduction" id="introduction-12"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:25%;justify-content:center;"><figure class="figure-like" id="logo-sage"><img src="images/sage.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figura</span> <span class="codenumber">3.0.1.</span> Logo SageMath.</figcaption></figure></div>
-<div class="sbspanel" style="width:70%;justify-content:flex-end;"><p id="p-219">Los entornos de cálculos matemáticos son complejos y requieren una gran cantidad de tiempo y esfuerzo para dominarlos, sin embargo, para digerir y ayudar manipular y comprender el cúmulo de conceptos y abstracciones matemáticas incluidas en este libro, se presenta y sugiere el programa <a class="external" href="http://www.sagemath.org/index.html" target="_blank">SageMath</a>: inicialmente sólo SAGE (Software for Algebra and Geometry Experimentation); una <i class="foreign">suite</i> de programas matemáticos que incorpora un conjunto de potentes algoritmos matemáticos que pueden facilitar el análisis y entendimiento de los aspectos prácticos a tratar.</p></div>
+<div class="sbspanel" style="width:70%;justify-content:flex-end;"><p id="p-230">Los entornos de cálculos matemáticos son complejos y requieren una gran cantidad de tiempo y esfuerzo para dominarlos, sin embargo, para digerir y ayudar manipular y comprender el cúmulo de conceptos y abstracciones matemáticas incluidas en este libro, se presenta y sugiere el programa <a class="external" href="http://www.sagemath.org/index.html" target="_blank">SageMath</a>: inicialmente sólo SAGE (Software for Algebra and Geometry Experimentation); una <i class="foreign">suite</i> de programas matemáticos que incorpora un conjunto de potentes algoritmos matemáticos que pueden facilitar el análisis y entendimiento de los aspectos prácticos a tratar.</p></div>
 </div></div>
-<p id="p-220">SageMath, es un sistema algebraico computacional (en inglés CAS), especializado para cálculos algebraicos, simbólicos y numéricos. SageMath se divide en un núcleo que realiza los cálculos y una interfaz (a elegir) que los muestra y permite la interacción con el usuario; reúne y unifica bajo un solo entorno, toda una colección de software matemático. SageMath utiliza el lenguaje de programación Python, que soporta expresiones funcionales y en programación orientada a objetos; internamente está escrito en Python y en una versión modificada de Pyrex llamada Cython. SageMath es software libre, distribuido bajo los términos de la GNU General Public License <a href="appendix-gfdl.html" class="internal" title="Apéndice D: GNU Free Documentation License">Apéndice D</a>.</p></section><nav class="summary-links"><ul><li><a href="tutorial-sage.html"><span class="codenumber">3.1</span> <span class="title">Tutoria básico de SageMath</span></a></li></ul></nav></section></div></main>
+<p id="p-231">SageMath, es un sistema algebraico computacional (en inglés CAS), especializado para cálculos algebraicos, simbólicos y numéricos. SageMath se divide en un núcleo que realiza los cálculos y una interfaz (a elegir) que los muestra y permite la interacción con el usuario; reúne y unifica bajo un solo entorno, toda una colección de software matemático. SageMath utiliza el lenguaje de programación Python, que soporta expresiones funcionales y en programación orientada a objetos; internamente está escrito en Python y en una versión modificada de Pyrex llamada Cython. SageMath es software libre, distribuido bajo los términos de la GNU General Public License <a href="appendix-gfdl.html" class="internal" title="Apéndice D: GNU Free Documentation License">Apéndice D</a>.</p></section><nav class="summary-links"><ul>
+<li><a href="tutorial-sage.html"><span class="codenumber">3.1</span> <span class="title">Aritmética Básica</span></a></li>
+<li><a href="aritmetica-modulo-n.html"><span class="codenumber">3.2</span> <span class="title">Aritmética modular</span></a></li>
+<li><a href="permutacion-notacion.html"><span class="codenumber">3.3</span> <span class="title">Notación de las permutaciones</span></a></li>
+<li><a href="references-3.html"><span class="codenumber">3.4</span> <span class="title">Referencias y lecturas recomendadas</span></a></li>
+</ul></nav></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.12/login.js"></script>

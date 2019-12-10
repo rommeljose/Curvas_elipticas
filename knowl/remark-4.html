@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:17:08-04:00    *-->
+<!--*    on 2019-12-08T04:29:16-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -22,10 +22,18 @@
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">Apunte</span> <span class="codenumber">3.1.2</span>. <span class="title">Máximo común divisor.</span>
+<span class="type">Apunte</span> <span class="codenumber">3.1.1</span>. <span class="title">División de enteros.</span>
 </h6>
-<p>El <dfn class="terminology">máximo común divisor</dfn> de \(a\) y \(b\) se obtiene con el comando <code class="code-inline tex2jax_ignore">gcd(a,b)</code> , donde en nuestros primeros usos, \(a\) y \(b\) son enteros. Más tarde, \(a\) y \(b\) pueden ser otros objetos con una noción de divisibilidad mas abstracta, como los polinomios. e.g.:</p>
-<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">gcd ( 2776 , 2452 )
-</script></div></article><span class="incontext"><a href="tutorial-sage.html#remark-4">in-context</a></span>
+<p>El comando \(a % b\) devolverá el resto tras la división de \(a\) por \(b\text{.}\) En otras palabras, el valor es el entero único \(r\) tal que:</p>
+<ol class="decimal">
+<li><p>\(0 \leq r\lt b\text{.}\)</p></li>
+<li><p>\(a = bq + r\) para algún entero \(q\) que llamaremos "el cociente".</p></li>
+</ol>
+<p>Entonces \(\left(a - b\right) / r\) será igual a \(q\text{,}\) e.g.:</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">r = 14 % 3
+q = ( 14 - r ) / 3
+r , q
+</script></div>
+<p>devolverá \(2\) para el valor de \(R\) y \(4\) para el valor de \(q\text{.}\) Tenga en cuenta que el "\(/\)" es la división de enteros , donde se desecha cualquier resto y el resultado es siempre un entero. Entonces, por ejemplo, \(4.66666\) nuevamente será igual a \(4\text{,}\) no a \(4.66666\text{.}\)</p></article><span class="incontext"><a href="tutorial-sage.html#remark-4">in-context</a></span>
 </body>
 </html>

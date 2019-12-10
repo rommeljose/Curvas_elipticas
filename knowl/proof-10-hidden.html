@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-12-04T15:17:06-04:00    *-->
+<!--*    on 2019-12-08T04:29:14-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,40 +11,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>Axiomas que deben cumplir las Leyes de Composición Interna para los cuerpos:</p>
-<ol class="decimal">
-<li>Asociatividad: <p>Para todo elemento \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<body><article class="hiddenproof"><p>Por ejemplo:</p>
 <div class="displaymath">
-\begin{align}
-a \oplus (b \oplus c) \amp = (a \oplus b) \oplus c\tag{2.3.2}\\
-a \odot (b \odot c) \amp = (a \odot b) \odot c\tag{2.3.3}
-\end{align}
+\begin{equation*}
+\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \end{pmatrix} = \begin{pmatrix} 2 &amp; 1 &amp; 3 \\ 3 &amp; 2 &amp; 1 \end{pmatrix}\text{.}
+\end{equation*}
 </div>
-</li>
-<li>Conmutatividad: <p>Para toda \(a, b\) pertenecientes a un conjunto cualquiera K, se deben cumplir las identidades:</p>
+<p>Al operar se debe considerar:</p>
 <div class="displaymath">
-\begin{gather}
-a \oplus b = b \oplus a\tag{2.3.4}\\
-a \odot b = b \odot a\tag{2.3.5}
-\end{gather}
+\begin{equation*}
+\begin{pmatrix} i_1 &amp; i_2 &amp; \dots &amp; i_{r-1} &amp; i_r &amp; i_{r+1} &amp; \dots &amp; i_n \\ i_2 &amp; i_3 &amp; \dots &amp; i_{r} &amp; i_1 &amp; i_{r+1} &amp; \dots &amp; i_n \end{pmatrix} 
+\end{equation*}
 </div>
-</li>
-<li>Existencia de un elemento neutro: <ol class="lower-alpha">
-<li>Existe un único elemento \(e = 0\) en un conjunto cualquiera K, tal que para todo \(a\) elemento de K se verifique la identidad: \(a \oplus e = a\text{.}\)</li>
-<li>Existe un elemento \(e = 1\) en un conjunto cualquiera K, diferente de \(0\text{,}\) tal que para todo \(a\) elemento de K se verifique la identidad: \(a \odot e = a\text{.}\)</li>
-</ol>
-</li>
-<li>Existencia de elemento opuesto e inverso: <ol class="lower-alpha">
-<li>Para cada \(a\) pertenecientes a un conjunto cualquiera K, existe un elemento \(-a\) de K (que llamaremos \(b\))<a data-knowl="./knowl/fn-32-hidden.html" title="Nota a pie de página 2.3.8"><sup> 8 </sup></a>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \oplus b = 0\text{.}\)</li>
-<li>Para cada \(a \neq  0\) pertenecientes a un conjunto cualquiera K, existe un elemento \(a^{-1}\) de K (que llamaremos \(b\))<a data-knowl="./knowl/fn-33-hidden.html" title="Nota a pie de página 2.3.9"><sup> 9 </sup></a>, tal que para todo \(a\) perteneciente a K se verifique la identidad: \(a \odot b = 1\text{.}\)</li>
-</ol>
-</li>
-<li>Distributividad de la multiplicación respecto de la adición: <p>Para toda \(a, b, c\text{;}\) pertenecientes a un conjunto cualquiera K, se debe cumplir la identidad:</p>
+<p>donde \(r \geq 1\text{.}\) Lo que implica que podamos hablar enfáticamente de un \(r-ciclo\text{,}\) donde quedan expresadas las órbitas de los sub-grupos generados, como sub conjuntos de \(n\text{:}\)</p>
 <div class="displaymath">
-\begin{gather}
-a \odot (b \oplus c) = (a \odot b) \oplus (a \odot c)\tag{2.3.6}
-\end{gather}
+\begin{equation*}
+\left\{i_1, \dots, i_r\right\} , \left\{i_r + 1\right\}, \dots, \left\{i_n\right\}
+\end{equation*}
 </div>
-</li>
-</ol></article></body>
+<p>Podemos abreviar el ciclo, escribiendolo como:</p>
+<div class="displaymath">
+\begin{equation*}
+\left(i_1, \dots, i_r \right) \left(i_r + 1 \right) \dots \left(i_n\right)
+\end{equation*}
+</div>
+<p>donde las permutaciones permitidas son puestas alrededor de paréntesis, e.g.:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \end{pmatrix} = \left(2, 3 \right) \left(1 \right)
+\end{equation*}
+</div></article></body>
 </html>
